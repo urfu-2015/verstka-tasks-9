@@ -1,1 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One:&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:&subset=latin,cyrillic');
+.main
+{
+    display: flex;
+}
 
+.code
+{
+    color: grey;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: rotateZ(-2deg);
+}
+
+.main_head
+{
+    display: flex;
+    justify-content: center;
+}
+
+.topOfSite
+{
+    text-align: center;
+    font-weight: 900;
+    transform: rotateZ(-2deg);
+    height: 100px;
+    width: 600px;
+    border: solid red 3px;
+    border-image: linear-gradient(to right, #000, #fff 22%, #f00 50%, #fff 80%, #f00) 1;
+    background-image: linear-gradient(to right, #fff 70%, #ffc0cb);
+    box-shadow: 8px 8px 8px -2px gray;
+}
+
+.yandex
+{
+    font-family: Roboto;
+    box-shadow: 0 10px 8px -2px #808080;
+}
+
+.ya
+{
+    color: red;
+    font-size: 80px;
+    text-transform: uppercase;
+    position: relative;
+    left: 150px;
+    top: -3px;
+    border: solid red 3px;
+    float: left;
+    box-shadow: 0 3px 8px 3px #808080;
+}
+
+.ndex
+{
+    font-size: 80px;
+    position: relative;
+    left: 147px;
+    top: -3px;
+    border: solid red 3px;
+    float: left;
+}
+
+.comptek
+{
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+.comp
+{
+    font-size: 20px;
+    position: relative;
+    border: solid 2px;
+    float: left;
+    left: 251px;
+    margin-top: 4px;
+    background: white;
+}
+
+.tek
+{
+    font-size: 20px;
+    position: relative;
+    border: solid black 2px;
+    background: red;
+    color: white;
+    float: left;
+    left: 249px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+.hot_news,
+.byLine
+{
+    font-family: Russo One;
+    font-size: 20px;
+    transform: rotateZ(-2deg);
+    color: red;
+}
+
+.news
+{
+    width: 40%;
+    border-style:solid;
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-image: linear-gradient(to bottom, #fff, #f00, #fff) 1;
+}
+
+.new,
+.langOfReq
+{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-top-width: 0;
+    border-style:solid;
+    border-image: linear-gradient(to right, #fff, #f00 40%, #fff 41%) 1;
+}
+
+.new,
+span,
+.langOfReq,
+.langOfReq_,
+footer
+{
+    font-size: 20px;
+}
+
+img
+{
+    height: 30px;
+    width: 180px;
+    transform: rotateZ(-2deg);
+    margin-top: 20px;
+}
+
+.date,
+.examples
+{
+    font-weight: 700;
+}
+
+.byLine
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.right_site
+{
+    width: 50%;
+}
+
+.red
+{
+    color: red;
+}
+
+.black
+{
+    color: black;
+}
+
+.red,
+.black
+{
+    margin: 5px;
+}
+
+.request
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.button:hover
+{
+    background: #93f5fc;
+}
+
+.footerComptek
+{
+    text-align: center;
+    transform: rotateZ(-2deg);
+    height: 40px;
+    width: 600px;
+    border: solid red 3px;
+    border-image: linear-gradient(to right, #000, #fff 22%, #f00 50%, #fff 80%, #f00) 1;
+    background-image: linear-gradient(to right, #fff 70%, #ffc0cb);
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.comp_footer
+{
+    font-size: 20px;
+    position: relative;
+    border: solid 2px;
+    float: left;
+    left: 520px;
+    margin-top: 4px;
+    background: white;
+}
+
+.tek_footer
+{
+    font-size: 20px;
+    position: relative;
+    border: solid black 2px;
+    background: red;
+    color: white;
+    float: left;
+    left: 518px;
+    margin-right: 4px;
+    margin-top: 4px;
+}
+
+footer
+{
+    text-align: center;
+}
