@@ -1,1 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700,400&subset=cyrillic,latin);
 
+.page
+{
+    min-width: 600px;
+    font-family: Roboto, 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.page,
+.header,
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border-hor-line
+{
+    margin: 10px 0;
+}
+
+.border-ver-line
+{
+    margin: 0 10px;
+}
+
+.content
+{
+    width: 95%;
+    display: flex;
+}
+
+.content-left
+{
+    width: 33%;
+}
+
+.content-left__article--p
+{
+    margin: 16px 0;
+}
+
+.content-left__article--date
+{
+    font-weight: 900;
+}
+
+.content-right
+{
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-right__menu
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.content-right__form
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.content-right__help
+{
+    font-size: .8em;
+}
+
+.content-right__help__title-example
+{
+    margin: 0;
+}
+
+.content-right__help__example
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer
+{
+    font-size: .8em;
+    text-align: center;
+}

@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Назад в будущее 2</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Поворачиваем время вспять здесь -->
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Назад в будущее 2</title>
+    <meta name="keyword" content="яндекс, поиск, новинка">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="page">
+<header class="header">
+    <img src="img/kod.gif">
+    <img src="img/LOGO.GIF">
+</header>
+<main class="content">
+    <div class="border-ver-line">
+        <img src="img/VERLINE.GIF" alt="var-line">
+    </div>
+    <div class="content-left">
+        <img src="img/GORNEWS.GIF"><br>
+        <img src="img/okur.gif">
+
+        <article class="content-left__article">
+            <!-- РАСКАЛЕННАЯ НОВОСТЬ -->
+            <p class="content-left__article--p">
+                <span class="content-left__article--date">21 августа 1997г.</span><br>
+                Яndex-Web, о котором так долго говорили,
+                наконец запущен в бета-тестирование.
+                Могло быть и хуже.
+                Поиск осуществляется по "русскому Интернету".
+                Присылайте замечания, идеи, а также стоящие сайты
+                (с русскими текстами, особенно кроме доменов 'su' и 'ru').
+            </p>
+        </article>
+
+        <div class="border-hor-line">
+            <img src="img/HORLINE.GIF" alt="hor-line">
+        </div>
+
+        <article class="content-left__article">
+            <p class="content-left__article--p">
+                <span class="content-left__article--date">5 сентября 1997г.</span><br>
+                Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю. Алтухов задал ему
+                несколько вопросов, в том числе: "Вы на чьей стороне?"
+
+            <p>
+                <!-- КОНЕЦ НОВОСТИ -->
+        </article>
+
+        <div class="border-hor-line">
+            <img src="img/HORLINE.GIF" alt="hor-line">
+        </div>
+    </div>
+
+    <div class="border-ver-line">
+        <img src="img/VERLINE.GIF" alt="var-line"><br>
+    </div>
+    <div class="content-right">
+        <nav class="content-right__menu">
+            <a href="ya_help.html"><img src="img/HELP.GIF"></a>
+            <a href="addurl.html"><img src="img/ADDURL.GIF"></a>
+            <a href="chh.html"><img src="img/CHH.GIF"></a>
+            <a href="stopword.html"><img src="img/STOP.GIF"></a>
+
+        </nav>
+        <!-- ПОИСК -->
+        <form name="web" method="get" action="http://beta.yandex.ru/yandsearch" class="content-right__form">
+
+            <label for="text">Запрос:</label>
+
+            <input type="text" name="text" id="text" size="35" value="" maxlength="60"><br>
+
+            <button type="submit">Найти</button>
+
+        </form>
+        <div class="content-right__help">
+
+            <p>Язык запросов аналогичен
+                <a href="http://company.yandex.ru/programs/site/docs/querylang.html">Яndex-Site</a>,
+                дополнение - поиск по точному слову (без учета других словоформ).</p>
+
+            <div class="border-hor-line">
+                <img src="img/HORLINE.GIF"  alt="hor-line">
+            </div>
+
+            <h4 class="content-right__help__title-example">Примеры правильных запросов:</h4>
+            <ul class="content-right__help__example">
+                <li>беспроводные сети</li>
+                <li>выставка !связь 97</li>
+                <li>разработка /1 приложений</li>
+                <li>(звонок,звонить) (Web, Internet, Интернет)</li>
+                <li>(модуль|продукт)/(-3 +2) лингвистический</li>
+                <li>(КомпТек | Dialogic)</li>
+                <li>(Яndex бесплатно)</li>
+            </ul>
+        </div>
+
+    </div>
+
+</main>
+<footer class="footer">
+    <img src="img/BOT.GIF" alt="footer">
+    <address>Copyright &copy; 1997 <a href="#">Comptek International</a><br>
+        E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a><br>
+        Дизайн - Артемий Лебедев (<a href="http://www.design.ru/" class="underline">Web Design</a>)
+    </address>
+</footer>
+</body>
 </html>
