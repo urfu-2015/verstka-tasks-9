@@ -1,1 +1,208 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100%;
+    max-height: 100%;
+    margin: 0;
+}
 
+footer
+{
+    text-align: center;
+    width: 100%;
+}
+
+header
+{
+    position: relative;
+    min-height: 30%;
+    max-height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+header > div > div
+{
+    margin: 0;
+}
+
+.abbr
+{
+    padding: 1%;
+    font: 90% sans-serif;
+    color: #a0a0a0;
+}
+
+.ya
+{
+    position: relative;
+    width: 25%;
+    font: 300% Oswald, sans-serif;
+    padding: 0;
+    border: 2px solid #f00;
+    margin-left: 25%;
+    text-align: right;
+    z-index: 2;
+
+    -moz-border-image: -moz-linear-gradient(left bottom, #fff 10%, #f00 100%);
+    -webkit-border-image: -webkit-linear-gradient(left bottom, #fff 10%, #f00 100%);
+    -ms-border-image: -ms-linear-gradient(left bottom, #fff 10%, #f00 100%);
+    -o-border-image: -o-linear-gradient(left bottom, #fff 10%, #f00 100%);
+    border-image: linear-gradient(left bottom, #fff 10%, #f00 100%);
+    border-image-slice: 1;
+}
+
+.ya:first-letter
+{
+    color: #f00;
+    border: 2px solid #f00;
+    font: 110% 'Open Sans', sans-serif;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px #000;
+}
+
+.down
+{
+    position: absolute;
+    top: 40%;
+    height: 60%;
+    margin-left: 35%;
+    border: 2px solid transparent;
+    width: 30%;
+    z-index: -1;
+
+    background: -webkit-linear-gradient(left, #fff 50%, #ffc3d3 100%);
+    background: -moz-linear-gradient(left, #fff 50%, #ffc3d3 100%);
+    background: -o-linear-gradient(left, #fff 50%, #ffc3d3 100%);
+    background: -ms-linear-gradient(left, #fff 50%, #ffc3d3 100%);
+    background: linear-gradient(left, #fff 50%, #ffc3d3 100%);
+
+    -moz-border-image: -moz-linear-gradient(left, #fff 50%, #f00 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #fff 50%, #f00 100%);
+    -ms-border-image: -ms-linear-gradient(left, #fff 50%, #f00 100%);
+    -o-border-image: -o-linear-gradient(left, #fff 50%, #f00 100%);
+    border-image: linear-gradient(to right, #fff 50%, #f00 100%);
+    border-image-slice: 1;
+
+    opacity: .6;
+}
+
+.right
+{
+    float: right;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.right span
+{
+    float: right;
+    border: 1px solid #000;
+}
+
+.first
+{
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+}
+
+.last
+{
+    color: #fff;
+    background-color: #f00;
+}
+
+main
+{
+    margin-top: 1%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+article
+{
+    width: 33%;
+    margin: 0 2%;
+}
+
+img
+{
+    padding: 0 5%;
+    width: 35%;
+}
+
+.text
+{
+    text-align: justify;
+    padding: 5%;
+}
+
+.hot
+{
+    color: #f00;
+    font-weight: bold;
+    padding: 1% 8%;
+}
+
+.example,
+main time,
+.hot,
+.top
+{
+    font-weight: bold;
+}
+
+.top
+{
+    text-align: center;
+}
+
+.top > div
+{
+    display: inline-block;
+    padding: 3% 1%;
+    padding-top: 0%;
+}
+
+.second
+{
+    width: 60%;
+}
+
+.top div:nth-child(odd)
+{
+    color: #f00;
+}
+
+.list,
+.langquery
+{
+    font-size: 80%;
+}
+
+#find
+{
+    margin-left: 17.2%;
+}
+
+#in
+{
+    width: 50%;
+}
+
+label
+{
+    margin-left: 10%;
+}
+
+header,
+img,
+.hot,
+.top
+{
+    transform: rotate(-2deg);
+}
