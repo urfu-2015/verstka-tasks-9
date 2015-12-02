@@ -3,7 +3,8 @@ html
     height: 100%;
 }
 
-body {
+body
+{
     margin: 0;
     padding: 0;
     height: 100%;
@@ -48,7 +49,6 @@ body {
 {
     height: 130px;
 }
-
 
 .flex-container
 {
@@ -109,7 +109,7 @@ body {
 
 .modules-item
 {
-    margin: 50px; 
+    margin: 50px;
 }
 
 .modules-item p:first-child
