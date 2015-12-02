@@ -25,11 +25,14 @@ header img,
     animation-duration: 2s;
 }
 
-@keyframes startShow {
-    50% {
+@keyframes startShow
+{
+    50%
+    {
         transform: rotateY(180deg);
     }
-    to {
+    to
+    {
         transform: rotateY(360deg);
     }
 }
