@@ -1,1 +1,224 @@
+@font-face
+{
+    font-family: "OpenSans-CondLight";
+    src: url(OpenSans-CondLight.ttf);
+    font-weight: normal;
+}
 
+@font-face
+{
+    font-family: "OpenSans-CondLight";
+    src: url(OpenSans-CondBold.ttf);
+    font-weight: bold;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+p
+{
+    font-size: 12px;
+}
+
+.rotated
+{
+    transform: rotate(-1deg);
+}
+
+.border-bot
+{
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, #FFF, #F00 40%, #FFF 35%) 0 0 1 0;
+}
+
+.page
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.top
+{
+    flex-basis: 100%;
+    display: flex;
+}
+
+.top-nav span
+{
+    color: rgba(0, 0, 0, 0.3);
+    font-family: "OpenSans-CondLight";
+    font-weight: bold;
+}
+
+.logo-top
+{
+
+    background-image: linear-gradient(to right, #FFF 70%, #FFC0CB);
+    flex-basis: 35%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #000, #FFF 20%, #F00 50%, #F00) 1 1 1 1;
+}
+
+.logo-top-yandex
+{
+    display: flex;
+    font-size: 58px;
+    box-shadow: 10px 10px 8px 5px rgba(0, 0, 0, .5);
+}
+
+.ya
+{
+    position: relative;
+    border: 2px solid #F00;
+    height: 100%;
+    color: #F00;
+    box-shadow: 8px 0 8px 5px rgba(0, 0, 0, .5);
+}
+
+.ndex
+{
+    position: relative;
+    border: 2px solid #F00;
+    height: 100%;
+}
+
+.comptek
+{
+    position: absolute;
+    width: 120px;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    opacity: .5;
+}
+
+.comp
+{
+    text-align: center;
+    flex-basis: 60%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+
+.tek
+{
+    text-align: center;
+    flex-basis: 40%;
+    border: 1px solid #000;
+    background-color: #F00;
+    color: #FFF;
+}
+
+.top,
+.logo-bot
+{
+    text-align: center;
+}
+
+.top-nav
+{
+    text-align: center;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 4%;
+}
+
+.news
+{
+    padding: 5px;
+    width: 33%;
+    border: 2px solid;
+    border-image: linear-gradient(to bottom, #FFF 30%, #F00 60%, #FFF ) 0 1 0 1;
+}
+
+.news-top p
+{
+    font-size: 18px;
+    color: #f00;
+}
+
+.news-block
+{
+    margin: 3% 0;
+    padding: 3% 0;
+    transition: transform 1s ease-out;
+}
+
+.news-block:hover
+{
+    transform: scale(1.1);
+}
+
+.news-block time
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.news-block p
+
+{
+    font-size: 14px;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13%;
+}
+
+.links
+{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.links span
+{
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 16px;
+    transition: transform 1s ease-out;
+    font-family: "OpenSans-CondLight"; 
+    font-weight: bold;
+}
+
+.links span:hover
+{
+    transform: scale(1.3);
+}
+
+.links span:nth-child(odd)
+{
+    color: #f00;
+}
+
+.search-input
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+#search
+{
+    width: 250px;
+}
+
+footer
+{
+    text-align: center;
+}
