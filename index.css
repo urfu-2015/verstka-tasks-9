@@ -29,7 +29,7 @@ header
 
 .wrapper:before
 {
-    content: "";
+    content: '';
     position: absolute;
 }
 
@@ -39,9 +39,9 @@ header
     left: -3px;
     right: -3px;
     bottom: -3px;
-    background-image: -webkit-gradient(radial, right top, 10, 90% 0%, 150, from(#f00), to(transparent));
-    background-image: -webkit-radial-gradient(right top, 300px 460px, #f00, transparent);
-    background-image: -moz-radial-gradient(right top, farthest-corner, #f00 0%, transparent 72%);
+    background-image: -webkit-gradient(radial, right top, 10, 90% 0%, 150, from(#f00), to(transparent)),
+        -webkit-radial-gradient(right top, 300px 460px, #f00, transparent),
+        -moz-radial-gradient(right top, farthest-corner, #f00 0%, transparent 72%);
     z-index: -2;
 }
 
