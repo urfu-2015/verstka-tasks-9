@@ -1,1 +1,142 @@
+html
+{
+    height: 100%;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header
+{
+    height: 115px;
+}
+
+.main
+{
+    height: 100%;
+}
+
+.type-item
+{
+    height: 50px;
+}
+
+.rating-item
+{
+    height: 100px;
+}
+
+.flex-container .left-side
+{
+    flex: 20%;
+}
+
+.flex-container .main
+{
+    flex: 60%;
+}
+
+.flex-container .right-side
+{
+    flex: 20%;
+}
+
+.footer
+{
+    height: 130px;
+}
+
+
+.flex-container
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item
+{
+    flex: 100%;
+}
+
+.modules-item img
+{
+    height: 350px;
+}
+
+.centrHeader
+{
+    margin: 0 auto;
+    width: 542px;
+    line-height: 1px;
+    text-align: center;
+}
+
+.leftContainer
+{
+    margin: 10px;
+    border-image: url(http://img.artlebedev.ru/everything/yandex/site/saved/VERLINE.GIF) 0 10;
+    border-width: 10px;
+}
+
+.block
+{
+    padding: 5px;
+}
+
+.block p
+{
+    padding: 10px;
+    border-image: url(http://img.artlebedev.ru/everything/yandex/site/saved/HORLINE.GIF) 0 0 3 0;
+    border-width: 10px;
+}
+
+.centrfooter
+{
+    margin: 0 auto;
+    width: 540px;
+    line-height: 1px;
+}
+
+.footerInfo
+{
+    text-align: center;
+}
+
+.modules-item
+{
+    margin: 50px; 
+}
+
+.modules-item p:first-child
+{
+    display: inline;
+    vertical-align: top;
+}
+
+.search
+{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.searchBlock
+{
+    display: inline-block;
+}
+
+.searchBlock input
+{
+    display: block;
+}
+
+.searchBlockInfo p:first-child
+{
+    padding: 10px;
+    border-image: url(http://img.artlebedev.ru/everything/yandex/site/saved/HORLINE.GIF) 0 0 3 0;
+    border-width: 10px;
+}
