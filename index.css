@@ -1,1 +1,88 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Good Vibes Pro', arial, san-serif;
+}
 
+header
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verLine
+{
+    padding-left: 3%;
+}
+
+.leftColumn
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.rightBlock
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+}
+.topButtons
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchInput
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: -40%;
+}
+
+.searchInput label
+{
+    display: block;
+    flex-basis: 30%;
+}
+
+p time,
+p span
+{
+    font-weight: bold;
+}
+
+img
+{
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+img:hover
+{
+    transform: rotateZ(362deg);
+}
