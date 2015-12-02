@@ -1,1 +1,436 @@
+@font-face
+{
+    font-family: Akhand;
+    src: url('Akhand Extrabold.woff');
+}
 
+@font-face
+{
+    font-family: Hermes;
+    src: url('Hermes Normal.woff');
+}
+
+body,
+.header,
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header
+{
+    font-family: Akhand;
+    margin-bottom: 20px;
+}
+
+.osList,
+.logo-container,
+.logo-container-footer,
+.column-border,
+.header-text,
+.menu-text,
+.redline-article-bottom,
+.menu
+{
+    transform: rotateZ(-1.7deg);
+}
+
+.osList
+{
+    font-size: 14px;
+    color: #888;
+    word-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+.logo-container,
+.logo-container-footer
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 530px;
+    font-size: 50px;
+}
+
+.logo
+{
+    margin-left: -60px;
+    display: flex;
+}
+
+.logo-first,
+.logo-end
+{
+    border: 2px solid #f00;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    padding: 0 5px 5px;
+}
+
+.logo-first
+{
+    padding-top: 6px;
+    font-family: Hermes;
+    font-size: 55px;
+    color: #f00;
+    line-height: 50px;
+}
+
+.logo-end
+{
+    font-weight: bold;
+    border-left: 0;
+}
+
+.redline-top-left,
+.redline-bottom,
+.redline-top-right,
+.redline-article-bottom,
+.redline-top-footer
+{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1) 30%);
+}
+
+.redline-bottom-right
+{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.redline-top-left
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 50%;
+}
+
+.redline-bottom
+{
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+    height: 2px;
+    width: 30%;
+}
+
+.redline-top-right
+{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    height: 2px;
+    width: 35%;
+}
+
+.redline-bottom-right
+{
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    height: 2px;
+    width: 60%;
+}
+
+.redline-right-vertical
+{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    height: 100%;
+    width: 2px;
+    background: #f00;
+}
+
+.blackline-top-right
+{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    height: 2px;
+    width: 35%;
+}
+
+.blackline-bottom
+{
+    position: absolute;
+    bottom: -16px;
+    right: 30%;
+    height: 2px;
+    width: 35%;
+}
+
+.blackline-top-right,
+.blackline-bottom
+{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+
+.background
+{
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, .1) 70%);
+    position: absolute;
+    top: 8px;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+}
+
+.blackline-top-left
+{
+    position: absolute;
+    left: 0;
+    top: -8px;
+    height: 2px;
+    width: 32%;
+}
+
+.blackline-bottom-left
+{
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    height: 2px;
+    width: 13%;
+}
+
+.blackline-top-left,
+.blackline-bottom-left
+{
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 80%);
+}
+
+.blackline-left-vertical
+{
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 2px;
+    height: 100%;
+    background: #000;
+}
+
+.logo-top-right
+{
+    display: flex;
+    position: absolute;
+    right: 5px;
+    top: 14px;
+    font-size: 15px;
+    font-family: Arial;
+    opacity: .5;
+}
+
+.logo-comp,
+.logo-tek
+{
+    line-height: 18px;
+    border: 1px solid black;
+    padding: 0 2px;
+}
+
+.logo-comp
+{
+    font-size: 17px;
+    font-weight: 900;
+    background-color: #fff;
+    color: #000;
+}
+
+.logo-tek
+{
+    letter-spacing: 1px;
+    padding-top: 1px;
+    font-weight: normal;
+    background-color: #b00;
+    color: #fff;
+}
+
+main
+{
+    display: flex;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.left-column,
+.right-column
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.left-column
+{
+    width: 34%;
+}
+
+.column-border
+{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1), rgba(255, 0, 0, 0));
+}
+
+.left-column-header
+{
+    display: flex;
+    flex-direction: column;
+    color: #f00;
+    margin-bottom: 10px;
+}
+
+.header-text,
+.menu-text
+{
+    font-family: Hermes;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-text
+{
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.okur-img
+{
+    position: relative;
+    left: 0;
+    height: 25px;
+    width: 117px;
+}
+
+.article-with-border
+{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.redline-article-bottom
+{
+    position: absolute;
+    left: 15px;
+    bottom: -20px;
+    height: 2px;
+    width: 25%;
+}
+
+.article-header
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p
+{
+    margin: 0;
+}
+
+.right-column
+{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu
+{
+    margin-bottom: 15px;
+}
+
+.menu-text
+{
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.menu-text:nth-child(2n)
+{
+    color: #000;
+}
+
+.menu-text:nth-child(2n+1)
+{
+    color: #f00;
+}
+
+.right-column-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.search-query-form
+{
+    display: flex;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+
+.query-label
+{
+    margin-right: 5px;
+}
+
+.small-text
+{
+    font-size: 13px;
+}
+
+.logo-container-footer
+{
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.blackline-left-vertical-footer
+{
+    position: absolute;
+    left: 15px;
+    top: -3px;
+    width: 2px;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.blackline-bottom-left-footer
+{
+    position: absolute;
+    left: 15px;
+    bottom: 3px;
+    width: 15%;
+    height: 2px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .6));
+}
+
+.redline-middle-footer
+{
+    position: absolute;
+    left: 8%;
+    top: 10px;
+    width: 30%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, .6));
+
+}
+
+.redline-top-footer
+{
+    position: absolute;
+    left: 30%;
+    top: 0;
+    width: 30%;
+    height: 2px;
+}
