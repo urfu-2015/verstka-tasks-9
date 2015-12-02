@@ -48,8 +48,8 @@ p
 
 .top-nav span
 {
-    color: rgba(0, 0, 0, 0.3);
-    font-family: "OpenSans-CondLight";
+    color: rgba(0, 0, 0, .3);
+    font-family: 'OpenSans-CondLight';
     font-weight: bold;
 }
 
@@ -76,7 +76,7 @@ p
 .ya
 {
     position: relative;
-    border: 2px solid #F00;
+    border: 2px solid #f00;
     height: 100%;
     color: #f00;
     box-shadow: 8px 0 8px 5px rgba(0, 0, 0, .5);
