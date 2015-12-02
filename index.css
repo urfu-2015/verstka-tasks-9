@@ -1,1 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,cyrillic);
 
+body
+{
+    font: Arial, Helvetica, sans-serif;
+}
+
+main
+{
+    display: flex;
+    margin: 0 40px;
+}
+
+.header-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.encoding
+{
+    margin: 5px;
+    color: #989898;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    transform: rotate(-2deg);
+}
+
+.logo
+{
+    position: relative;
+    margin: 0 auto;
+    text-align: right;
+    width: 600px;
+    height: 70px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #000 10%, #fff 100%);
+    border-image-slice: 1;
+    z-index: 1;
+    transform: rotate(-2deg);
+}
+
+.comptek
+{
+    position: absolute;
+    right: 0;
+    top: 12px;
+    height: 62px;
+    width: 400px;
+    background-image: linear-gradient(to left, #ffe3e3, #fff 50%);
+    border: 3px solid transparent;
+    border-image: linear-gradient(to left, #f00 50%, #fff 100%);
+    border-image-slice: 1;
+    padding: 4px;
+}
+
+.comp
+{
+    font-weight: 900;
+    color: #000;
+    border: 1px solid #000;
+    padding: 1px;
+}
+
+.tek
+{
+    color: #fff;
+    background: #f00;
+    border: 1px solid #000;
+    padding: 1px;
+}
+
+.yandex
+{
+    z-index: 2;
+    width: 360px;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-align: right;
+    background-image: linear-gradient(to left, #fff 50%, rgba(255, 255, 255, 0));
+    border: 2px solid transparent;
+    border-image: linear-gradient(to left, #f00 50%, rgba(255, 255, 255, 0) 100%);
+    border-image-slice: 1;
+}
+
+.ya,
+.ndex
+{
+    box-shadow: 6px 6px 6px rgba(82, 82, 82, .5);
+    padding: 0 5px;
+}
+
+.ya
+{
+    color: #f00;
+    border: 2px solid #f00;
+}
+
+.hot-news-headline
+{
+    color: #f00;
+    font-weight: 900;
+    transform: rotate(-2deg);
+}
+
+.cigarette
+{
+    width: 140px;
+}
+
+.hot-news
+{
+    min-width: 300px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    flex-basis: 600px;
+    transform: rotate(-2deg);
+    border: 3px solid transparent;
+    border-image: linear-gradient(rgba(0, 0, 0, 0), #f00, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.date
+{
+    font-weight: 700;
+    margin: 0;
+}
+
+.news-box
+{
+    margin: 10px;
+    transform: rotate(2deg);
+}
+
+.hot-news-item,
+.red-divide
+{
+    margin: 10px 0;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, #fff, #f00 140px, #fff 150px) 0 1 100%;
+}
+
+.red-divide
+{
+    transform: rotate(-2deg);
+}
+
+.description
+{
+    transform: rotate(2deg);
+}
+
+.news
+{
+    margin: 0;
+}
+
+.search
+{
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: column;
+    padding: 0 90px;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    right: 0;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    transform: rotate(-2deg);
+}
+
+.menu-item
+{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+.menu-item:nth-child(odd)
+{
+    color: #f00;
+    
+}
+
+.right-requests
+{
+    margin: 10px 0;
+}
+.right-requests-label
+{
+    font-weight: 800;
+}
+
+.right-requests-items,
+.right-requests-label
+{
+    margin: 0;
+    padding: 0;
+}
+.right-requests-item
+{
+    list-style-type: none;
+}
+
+.search-form
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.search-input
+{
+    display: flex;
+    flex-direction: column;
+}
+.search-button
+{
+    align-self: flex-start;
+}
+footer
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.black-border-footer
+{
+    margin: 0 auto;
+    height: 36px;
+    width: 500px;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #000 10%, #fff 50%, #fff 3%, #000) 1;
+    transform: rotate(-2deg);
+}
+
+.footer-comptek
+{
+    text-align: right;
+    margin-left: 5px;
+    margin-top: 7px;
+    margin-right: -10px;
+    padding: 5px;
+    background: #fff;
+    border: 3px solid;
+    border-image: linear-gradient(225deg, #f00 10%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0), #828282) 1;
+    background-image: linear-gradient(to left, #ffe3e3, #fff 50%);
+}
+
+.info > p
+{
+    margin: 0;
+}
+
+.info
+{
+    margin: 10px auto;
+}
