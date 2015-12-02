@@ -57,6 +57,11 @@ main
     border-top-width: 0;
 }
 
+.all-news time
+{
+    font-weight: bold;
+}
+
 .okur
 {
     width: 117px;
@@ -136,6 +141,12 @@ nav > div:nth-child(even) > a
 .examples > div
 {
     font-size: 13px;
+}
+
+.examples > h3
+{
+    font-size: 14px;
+    margin: 0;
 }
 
 .not-rotate
