@@ -1,13 +1,13 @@
 @font-face
 {
-    font-family: "OpenSans-CondLight";
+    font-family: 'OpenSans-CondLight';
     src: url(OpenSans-CondLight.ttf);
     font-weight: normal;
 }
 
 @font-face
 {
-    font-family: "OpenSans-CondLight";
+    font-family: 'OpenSans-CondLight';
     src: url(OpenSans-CondBold.ttf);
     font-weight: bold;
 }
@@ -31,7 +31,7 @@ p
 .border-bot
 {
     border-bottom: 2px solid;
-    border-image: linear-gradient(to right, #FFF, #F00 40%, #FFF 35%) 0 0 1 0;
+    border-image: linear-gradient(to right, #fff, #f00 40%, #fff 35%) 0 0 1 0;
 }
 
 .page
@@ -56,14 +56,14 @@ p
 .logo-top
 {
 
-    background-image: linear-gradient(to right, #FFF 70%, #FFC0CB);
+    background-image: linear-gradient(to right, #fff 70%, #fcc);
     flex-basis: 35%;
     position: relative;
     display: flex;
     justify-content: center;
     margin: auto;
     border: 2px solid;
-    border-image: linear-gradient(to right, #000, #FFF 20%, #F00 50%, #F00) 1 1 1 1;
+    border-image: linear-gradient(to right, #000, #fff 20%, #f00 50%, #f00) 1 1 1 1;
 }
 
 .logo-top-yandex
@@ -78,14 +78,14 @@ p
     position: relative;
     border: 2px solid #F00;
     height: 100%;
-    color: #F00;
+    color: #f00;
     box-shadow: 8px 0 8px 5px rgba(0, 0, 0, .5);
 }
 
 .ndex
 {
     position: relative;
-    border: 2px solid #F00;
+    border: 2px solid #f00;
     height: 100%;
 }
 
@@ -103,7 +103,7 @@ p
 {
     text-align: center;
     flex-basis: 60%;
-    background-color: #FFF;
+    background-color: #fff;
     border: 1px solid #000;
     font-weight: bold;
 }
@@ -113,8 +113,8 @@ p
     text-align: center;
     flex-basis: 40%;
     border: 1px solid #000;
-    background-color: #F00;
-    color: #FFF;
+    background-color: #f00;
+    color: #fff;
 }
 
 .top,
@@ -140,7 +140,7 @@ p
     padding: 5px;
     width: 33%;
     border: 2px solid;
-    border-image: linear-gradient(to bottom, #FFF 30%, #F00 60%, #FFF ) 0 1 0 1;
+    border-image: linear-gradient(to bottom, #fff 30%, #f00 60%, #fff ) 0 1 0 1;
 }
 
 .news-top p
@@ -192,7 +192,7 @@ p
     margin: 0 3px;
     font-size: 16px;
     transition: transform 1s ease-out;
-    font-family: "OpenSans-CondLight"; 
+    font-family: 'OpenSans-CondLight';
     font-weight: bold;
 }
 
