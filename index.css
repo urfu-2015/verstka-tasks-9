@@ -1,1 +1,118 @@
+body,
+header,
+.article_header,
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+.article_header
+{
+    align-items: flex-start;
+}
+
+main
+{
+    display: flex;
+    margin: 4%;
+}
+
+.header_wrapper
+{
+    width: auto;
+}
+
+.header_wrapper img
+{
+    height: 100%;
+}
+
+.vertical-line
+{
+    width: 15px;
+    height: 275px;
+}
+
+section.left
+{
+    width: 35%;
+
+}
+
+section.right
+{
+    width: 60%;
+    margin: 10px;
+}
+
+article
+{
+    margin: 10px;
+}
+
+article h3
+{
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+}
+
+article p
+{
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+footer address
+{
+    text-align: center;
+    font-style: normal;
+}
+
+span.link-styled
+{
+    color: #0000ed;
+    text-decoration: underline;
+}
+
+.menu-line
+{
+    height: 27px;
+    text-align: center;
+}
+.menu-line img
+{
+    height: 100%;
+}
+.form-container
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.label-container
+{
+    font-size: 1.25em;
+}
+.input-container
+{
+    display: flex;
+    flex-direction: column;
+}
+.input-container input
+{
+    height: 30px;
+}
+
+.input-container input[type=search]
+{
+    width: 350px;
+}
+.input-container input[type=submit]
+{
+    width: 70px;
+}
