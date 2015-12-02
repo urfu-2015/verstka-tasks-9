@@ -6,6 +6,105 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Поворачиваем время вспять здесь -->
+        <header>
+            <img src="img/kod.gif" alt="Кодировки">
+            <img src="img/logo.gif" alt="Логотип яндекс">
+        </header>
+        <main>
+            <div class="left-column">
+                <div class="vertical-line">
+                    <img src="img/verline.gif" alt="Вертикальная линия">
+                </div>
+                <div class="left-content">
+                    <img src="img/gornews.gif" alt="Горячая новость">
+                    <img src="img/okur.gif" alt="Сигарета">
+                    <article class="news-content">
+                        <time>21-08-1997</time>
+                        <p class="content-text">
+                            Яndex-Web, о котором так долго говорили, наконец
+                            запущен в бета-тестирование. Могло быть и хуже.
+                            Поиск осуществляется по "русскому Интернету".
+                            Присылайте замечания, идеи, а также стоящие сайты
+                            (с русскими текстами, особенно кроме доменов 'su' и 'ru').
+                        </p>
+                    </article>
+                    <div class="horizontal-line">
+                        <img src="img/horline.gif" alt="Горизонтальная линия">
+                    </div>
+                    <article class="news-content">
+                        <time>05-09-1997</time>
+                        <p class="content-text">
+                            Светило советской науки - Вавилов - ожил в прошлое
+                            воскресение. Ю. Алтухов задал ему несколько вопросов,
+                            в том числе: "Вы на чьей стороне?"
+                        </p>
+                    </article>
+                    <div class="horizontal-line">
+                        <img src="img/horline.gif" alt="Горизонтальная линия">
+                    </div>
+                </div>
+                <div class="vertical-line">
+                    <img src="img/verline.gif" alt="Вертикальная линия">
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="info-buttons">
+                    <a href="http://www.artlebedev.ru/everything/yandex/site/saved/ya_help.html"
+                        title="Помощь">
+                        <img src="img/help.gif" alt="Помощь">
+                    </a>
+                    <a href="http://www.artlebedev.ru/everything/yandex/site/saved/addurl.html"
+                        title="Добавить URL">
+                        <img src="img/addurl.gif" alt="Добавить URL">
+                    </a>
+                    <img src="img/chh.gif" alt="ЧХ:-)">
+                    <a href="http://www.artlebedev.ru/everything/yandex/site/saved/stopword.html"
+                        title="Список стоп-слов">
+                        <img src="img/stop.gif" alt="Список стоп-слов">
+                    </a>
+                </div>
+                <form method="GET" action="http://beta.yandex.ru/yandsearch">
+                    <label for="search">Запрос:</label>
+                    <input class="search-text" id="search" name="search" type="text">
+                    <br>
+                    <input class="search-button" type="submit" value="Найти.">
+                </form>
+                <p class="small-text">
+                    Язык запросов аналогичен
+                    <a href="https://yandex.ru/company/">Яndex-Site</a>,
+                    дополнение - поиск по точному слову (без учета других словоформ).
+                </p>
+                <div class="horizontal-line">
+                    <img src="img/horline.gif" alt="Горизонтальная линия">
+                </div>
+                <p class="list-header">Примеры правильных запросов:</p>
+                <ul class="query-list small-text">
+                    <li>беспроводные сети</li>
+                    <li>выставка !связь 97</li>
+                    <li>разработка /1 приложений</li>
+                    <li>(звонок,звонить) (Web, Internet, Интернет)</li>
+                    <li>(модуль|продукт)/(-3 +2) лингвистический</li>
+                    <li>(КомпТек | Dialogic)</li>
+                    <li>(Яndex бесплатно)</li>
+                </ul>
+            </div>
+        </main>
+        <footer class="small-text">
+            <img src="img/bot.gif" alt="Подвал">
+            <p>
+                Copyright&copy; 1997
+                <span class="blue-underline">Comptek International</span>
+            </p>
+            <p>
+                E-mail:
+                <a href="mailto:webadmin@yandex.ru">
+                    webadmin@yandex.ru
+                </a>
+            </p>
+            <p>
+                Дизайн - Артемий Лебедев
+                (<a href="http://www.artlebedev.ru/">Web Design</a>)
+            </p>
+        </footer>
     </body>
 </html>

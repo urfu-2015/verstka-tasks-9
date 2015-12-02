@@ -1,1 +1,121 @@
+body
+{
+    min-width: 700px;
+    font-size: 16px;
+}
 
+header,
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header
+{
+    margin-bottom: 20px;
+}
+
+main
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+}
+
+.left-column
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+}
+
+.left-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+.news-content
+{
+    margin-top: 15px;
+}
+
+.news-content time
+{
+    font-weight: bold;
+}
+
+.news-content p
+{
+    margin-top: 0;
+}
+
+.right-column
+{
+    width: 50%;
+    max-width: 750px;
+    margin-left: 10%;
+}
+
+.info-buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+form
+{
+    margin-left: 10%;
+}
+
+.search-text
+{
+    width: 250px;
+}
+
+.search-button
+{
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+
+.list-header
+{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.query-list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blue-underline
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+.small-text
+{
+    font-size: 13px;
+}
+
+footer
+{
+    margin-top: 20px;
+}
+
+footer p
+{
+    margin: 0;
+}
