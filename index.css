@@ -1,4 +1,5 @@
-.header {
+.header
+{
     transform : rotateZ(-2deg);
     text-align: center;
     border-right: 3px solid red;
@@ -9,14 +10,16 @@
     margin: auto;
     width: 500px;
 }
-.mac-koi-win-dos {
+.mac-koi-win-dos
+{
     padding: 5px;
     text-align: center;
     color: #a9a9a9;
     transform : rotateZ(-2deg);
     font-weight: 600;
 }
-.yandex {
+.yandex
+{
     border-right: 3px solid red;
     border-bottom: 3px solid red;
     border-top: 3px solid red;
@@ -26,32 +29,37 @@
     padding: 20px;
     font-size: 50px;
 }
-.ya {
+.ya
+{
     color: red;
     font-weight: 900;
     height: 100%;
     display: inline-block;
     border: 3px solid red;
 }
-.ndex {
+.ndex
+{
     display: inline-block;
     font-weight: 700;
 }
-.comptek {
+.comptek
+{
     position: absolute;
     top: 10px;
     left: 400px;
     display: inline-block;
     text-align: right;
 }
-.comp {
+.comp
+{
     font-weight: 900;
     padding: 2px;
     border: 1px solid black;
     display: inline-block;
 
 }
-.tek {
+.tek
+{
     font-weight: 900;
     color: white;
     background-color: red;
@@ -60,7 +68,8 @@
     border: 1px solid black;
     display: inline-block;
 }
-.hot-news {
+.hot-news
+{
     padding: 5px;
     float: left;
     margin: 30px;
@@ -68,53 +77,64 @@
     border-left: 1px solid red;
     border-right: 1px solid red;
 }
-.hot-words {
+.hot-words
+{
     transform : rotateZ(-2deg);
     font-size: 15px;
     font-weight: bold;
     color: red;
 }
-.left-line {
+.left-line
+{
     border-left: 2px solid red; /* Параметры линии */
     max-height: 50px;
     margin-left: 20px; /* Отступ слева */
     padding-left: 10px; /* Расстояние от линии до текста */
 }
-.okur {
+.okur
+{
     margin: 20px;
     display: block;
 }
-.main-content {
+.main-content
+{
     float: left;
 }
-.red-text {
+.red-text
+{
     color: red;
 }
-.nav {
+.nav
+{
     margin: 20px;
     transform : rotateZ(-2deg);
     font-weight: 600;
     font-size: 15px;
 }
-.help-text {
+.help-text
+{
     margin: 10px;
     font-size: 15px;
     border-bottom: 1px solid red;
 }
-.true-requests-text {
+.true-requests-text
+{
     margin: 10px;
     font-size: 15px;
 }
-.big-text {
+.big-text
+{
     font-size: 17px;
 }
-.footer {
+.footer
+{
     clear:both;
     width:100%;
     overflow:hidden;
     text-align: center;
 }
-.header-bottom {
+.header-bottom
+{
     transform : rotateZ(-2deg);
     text-align: center;
     border-right: 3px solid red;
@@ -126,9 +146,11 @@
     width: 500px;
     height: 50px;
 }
-.top-text {
+.top-text
+{
     border-bottom: 1px solid red;
 }
-.bot-text {
+.bot-text
+{
     border-bottom: 1px solid red;
 }
