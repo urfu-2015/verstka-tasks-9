@@ -1,1 +1,390 @@
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+header
+{
+    text-align: center;
+    color: #7a7a7a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: .8em;
+    padding: 1%;
+}
+
+main
+{
+    height: 60%;
+}
+
+header,
+main,
+.wrapDescription
+{
+    transform: rotateZ(-2deg);
+}
+
+nav ul,
+h3,
+.wrapBottom
+{
+    transform: rotateZ(-1deg);
+}
+
+header,
+h4,
+h3
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.news,
+.description,
+.query,
+.examples
+{
+    transform: rotateZ(2deg);
+}
+
+.wrapDescription,
+.wrapQuery
+{
+    border-style: solid;
+    border-top-width: 0;
+}
+
+.wrapQuery
+{
+    border-image: linear-gradient(to right, #fff, #f00 20%, #fff 20%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, #fff, #f00 20%, #fff 20%) 1;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+
+.wrapDescription
+{
+    border-image: linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1;
+}
+
+header,
+nav ul
+{
+    font-family: 'Impact', sans-serif;
+}
+
+h1
+{
+    color: #000;
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin: 0;
+    padding-right: 5%;
+    box-shadow: 8px 8px 5px rgba(0,0,0,.5);
+}
+
+.h1,
+.wrapH1
+{
+    padding-left: 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapH1
+{
+    border-style: solid;
+    border-image: linear-gradient(to right, transparent, #f00 100%, transparent 40%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 100%, transparent 40%) 1;
+    margin-left: -20%;
+}
+
+.h1
+{
+    border-right: 2px solid #f00;
+    border-left: none;
+    padding-right: 0;
+}
+
+.wrapH1,
+.blackBorder1
+{
+    border-right: none;
+    margin-top: 10px;
+}
+
+.blackBorder1
+{
+    border-style: solid;
+    border-image: linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
+    border-left: 2px solid #000;
+    width: 10%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.blackBorder2,
+.blackBorder3,
+.blackBorder4
+{
+    border-style: solid;
+    border-bottom-width: 0;
+    position: absolute;
+    height: 0;
+    width: 30%;
+    border-image: linear-gradient(to right, transparent, #6f6f6f 50%, transparent 30%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #6f6f6f 50%, transparent 30%) 1;
+}
+
+.blackBorder2
+{
+    top: 35%;
+    left: 50%;
+}
+
+.blackBorder3
+{
+    top: 110%;
+    left: 40%;
+}
+
+.compTekTop
+{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 15%;
+    height: 60%;
+    margin-left: -7%;
+    display: inline-flex;
+    justify-content: flex-end;
+    border-style: solid;
+    border-image: linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
+    background-image: linear-gradient(to right, transparent 10%, #f2d6d6);
+    border-left-width: 0;
+}
+
+.compTek
+{
+    position: relative;
+    height: 30%;
+    display: inline-flex;
+    font-size: 1.3em;
+    font-family: 'Droid Sans', sans-serif;
+    color: #6f6f6f;
+    border: 1px solid #6f6f6f;
+    margin: 5%;
+    margin-right: 3%;
+}
+
+.comp
+{
+    background: #fff;
+    border-right: 1px solid #000;
+    padding: 3%;
+    font-weight: bold;
+}
+
+.tek
+{
+    background: #bd4141;
+    color: #fff;
+    border-left: 1px solid #000;
+    padding: 3%;
+    margin-right: 15%;
+}
+
+.compTekBottom
+{
+    width: 25%;
+    height: 60%;
+    padding: .3%;
+    padding-right: 0;
+    margin-right: -10%;
+    margin-bottom: 1%;
+    display: inline-flex;
+    justify-content: flex-end;
+    border-style: solid;
+    border-image: linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
+    background-image: linear-gradient(to right, transparent 10%, #f2d6d6);
+    border-left-width: 0;
+}
+
+nav ul li:nth-child(2n+1),
+h1::first-letter,
+h3
+{
+    color: #f00;
+}
+
+h1::first-letter,
+h3
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+h1::first-letter
+{
+    border: 2px solid #f00;
+    border-top: none;
+    border-bottom: none;
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+}
+
+aside.left
+{
+    width: 31%;
+    float: left;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, transparent, #f00, transparent) 1;
+    -webkit-border-image: -webkit-linear-gradient(to bottom, transparent, #f00, transparent) 1;
+    margin-left: 3%;
+    padding: 2%;
+    padding-bottom: 0;
+}
+
+aside.left,
+.examples ul
+{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+aside.right
+{
+    width: 61%;
+    float: right;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+nav
+{
+    margin-left: 20%;
+}
+
+input[type='submit']
+{
+    margin-left: 10%;
+}
+
+.explanation
+{
+    font-size: .8em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: -5%;
+}
+
+.examples h4
+{
+    text-align: left;
+    margin-left: 5%;
+}
+
+.examples ul
+{
+    list-style-type: none;
+    font-size: .8em;
+}
+
+footer
+{
+    text-align: center;
+    font-size: .8em;
+}
+
+footer div
+{
+    font-style: normal;
+}
+
+.noneDecoration
+{
+    text-decoration: none;
+    border-bottom: 1px solid #9ec8dd;
+}
+
+.blackBorder4
+{
+    width: 21%;
+    top: -15%;
+    left: 55%;
+}
+
+.blackBorder5,
+.blackBorder6
+{
+    border-style: solid;
+    width: 10%;
+    height: 60%;
+    position: absolute;
+}
+
+.blackBorder5
+{
+    border-image: linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
+    border-bottom-width: 0;
+    border-left: 2px solid #000;
+    top: -35%;
+    left: 30%;
+}
+
+.blackBorder6
+{
+    width: 5%;
+    border-image: linear-gradient(to left, transparent, #6f6f6f 100%, transparent 80%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to left, transparent, #6f6f6f 100%, transparent 80%) 1;
+    border-top-width: 0;
+    border-left: 2px solid #6f6f6f;
+    top: 5%;
+    left: 31%;
+}
+
+.redBorder1,
+.redBorder2
+{
+    border-style: solid;
+    border-bottom-width: 0;
+    position: absolute;
+    height: 0;
+    width: 25%;
+    border-image: linear-gradient(to right, transparent, #f00 50%, transparent 30%) 1;
+    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 50%, transparent 30%) 1;
+}
+
+.redBorder1
+{
+    top: -15%;
+    left: 40%;
+}
+
+.redBorder2
+{
+    top: 25%;
+    left: 35%;
+    opacity: .5;
+}
