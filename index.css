@@ -35,6 +35,8 @@ body,
 .menu
 {
     transform: rotateZ(-1.7deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .osList
