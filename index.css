@@ -1,1 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
 
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 620px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.encodings-pic
+{
+    width: 107px;
+    height: 15px;
+}
+
+.main-logo-pic
+{
+    width: 542px;
+    height: 95px;
+}
+
+.bottom-logo-pic
+{
+    width: 540px;
+    height: 53px;
+}
+
+main
+{
+    display: flex;
+    width: 95%;
+}
+
+nav
+{
+    width: 35%;
+    display: flex;
+}
+
+.left-vertical-border-pic
+{
+    width: 15px;
+    height: 274px;
+}
+
+.hot-news-pic
+{
+    width: 156px;
+    height: 21px;
+}
+
+.okur-pic
+{
+    width: 117px;
+    height: 25px;
+}
+
+.nav-main
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+article > h4,
+article > p
+{
+    margin: 5px;
+}
+
+.h-b-pic
+{
+    width: 167px;
+    height: 8px;
+    margin: 5px 0 7px 0;
+}
+
+aside
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-wrapper-main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*width: 603px;*/
+    align-items: flex-start;
+}
+
+.aside-wrapper-main > p
+{
+    font-size: 12px;
+}
+
+form
+{
+    position: relative;
+    left: 50px;
+}
+
+.links > a
+{
+    text-decoration: none;
+}
+
+input[type=text]
+{
+    width: 221px;
+}
+
+input[type=submit]
+{
+    position: relative;
+    left: 57px;
+}
+
+h4
+{
+    margin: 0;
+}
+
+ul
+{
+    margin: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+    list-style: none;
+    font-size: 14px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+footer > p
+{
+    margin: 0;
+}
+
+footer span
+{
+    text-decoration: underline;
+    color: #0700ea;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(1.5deg);
+        transform-origin: left top;
+    }
+    to {
+        transform: rotate(0deg);
+        transform-origin: left top;
+    }
+}
+
+.rotate {
+    -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+    -o-animation-name: rotate;
+    animation-name: rotate;
+    animation-duration: 3s;
+}
