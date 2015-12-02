@@ -1,1 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Tenor+Sans&subset=cyrillic,latin);
 
+body
+{
+    min-width: 600px;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 14px;
+}
+
+body,
+header,
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img,
+.management-section a,
+.management-section img
+{
+    animation: startShow;
+    animation-duration: 2s;
+}
+
+@keyframes startShow {
+    50% {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+main
+{
+    width: 95%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.left-main-content
+{
+    width: 40%;
+    padding: 2%;
+}
+
+.right-main-content
+{
+    width: 65%;
+}
+
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.right-main-content
+{
+    margin-left: 7%;
+}
+
+.management-section
+{
+    display: flex;
+}
+
+.find-button
+{
+    border-radius: 3px;
+    position: relative;
+    left: 16%;
+}
+
+.ul-queries
+{
+    list-style-type: none;
+    margin-left: -6%;
+    margin-top: -15px;
+}
+
+.size-xs
+{
+    font-size: .8em;
+}
+
+.article-content p
+{
+    margin: -2px;
+}
+
+time
+{
+    font-weight: 900;
+}
+
+.input-query
+{
+    width: 300px;
+}
