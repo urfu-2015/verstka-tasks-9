@@ -40,7 +40,6 @@ main
 section.left
 {
     width: 35%;
-
 }
 
 section.right
@@ -84,16 +83,19 @@ span.link-styled
     height: 27px;
     text-align: center;
 }
+
 .menu-line img
 {
     height: 100%;
 }
+
 .form-container
 {
     display: flex;
     justify-content: center;
     margin: 10px;
 }
+
 .label-container
 {
     font-size: 1.25em;
@@ -103,6 +105,7 @@ span.link-styled
     display: flex;
     flex-direction: column;
 }
+
 .input-container input
 {
     height: 30px;
@@ -112,6 +115,7 @@ span.link-styled
 {
     width: 350px;
 }
+
 .input-container input[type=submit]
 {
     width: 70px;
