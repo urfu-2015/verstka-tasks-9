@@ -166,18 +166,22 @@ footer span
     color: #0700ea;
 }
 
-@keyframes rotate {
-    from {
+@keyframes rotate
+{
+    from
+    {
         transform: rotate(1.5deg);
         transform-origin: left top;
     }
-    to {
+    to
+    {
         transform: rotate(0deg);
         transform-origin: left top;
     }
 }
 
-.rotate {
+.rotate
+{
     -webkit-animation-name: rotate;
     -moz-animation-name: rotate;
     -o-animation-name: rotate;
