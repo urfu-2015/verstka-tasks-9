@@ -87,7 +87,8 @@ main
     border-top-width: 0;
 }
 
-.search > p {
+.search > p
+{
     font-size: 13px;
     padding: 0;
 }
