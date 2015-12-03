@@ -1,7 +1,7 @@
 html,
 body
 {
-    width: 100%;
+    width: 99%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -346,7 +346,6 @@ footer div
 .blackBorder5
 {
     border-image: linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
     border-bottom-width: 0;
     border-left: 2px solid #000;
     top: -35%;
@@ -357,7 +356,6 @@ footer div
 {
     width: 5%;
     border-image: linear-gradient(to left, transparent, #6f6f6f 100%, transparent 80%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to left, transparent, #6f6f6f 100%, transparent 80%) 1;
     border-top-width: 0;
     border-left: 2px solid #6f6f6f;
     top: 5%;
@@ -387,4 +385,60 @@ footer div
     top: 25%;
     left: 35%;
     opacity: .5;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+{
+    .wrapQuery
+    {
+        transform: rotateZ(-2deg);
+    }
+
+    .news,
+    .examples
+    {
+        transform: rotateZ(0);
+    }
+
+    .blackBorder5
+    {
+        width: 15%;
+        height: 15%;
+    }
+
+    .blackBorder6
+    {
+        height: 10%;
+        top: 85%;
+    }
+
+    .blackBorder4,
+    .redBorder1,
+    .blackBorder5
+    {
+        top: 78%;
+    }
+
+    .redBorder2
+    {
+        top: 85%;
+    }
+
+    .compTekBottom
+    {
+        padding: 0;
+        margin: 2%;
+        margin-right: 30%;
+        margin-bottom: 1%;
+    }
+
+    h1
+    {
+        padding-right: 20px;
+    }
+
+    input[type='submit']
+    {
+        margin-left: 8%;
+    }
 }
