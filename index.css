@@ -53,11 +53,11 @@ header
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background-image: -webkit-gradient(radial, right top, 10, 90% 0%, 450, from(#f00), to(transparent));
-    background-image: radial-gradient(right top, 500px 230px, #f00, transparent);
     background-image: -ms-radial-gradient(right top, 500px 230px, #f00, transparent);
     background-image:
-    -moz-radial-gradient(left, farthest-side, #fff 0%, #fff 90%, #f00 130%);
+-moz-radial-gradient(left, farthest-side, #fff 0%, #fff 90%, #f00 130%);
+    background-image: -webkit-gradient(radial, right top, 10, 90% 0%, 450, from(#f00), to(transparent));
+    background-image: radial-gradient(right top, 350px 230px, #f00, transparent);
     z-index: -2;
 }
 
@@ -67,9 +67,7 @@ header
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(to right, #fff 65%, #f00 400%);
-    background: -webkit-linear-gradient(to right, #fff 65%, #f00 400%);
-    background: -moz-linear-gradient(left, #fff 0%, #fff 50%, #fff 51%, #f00 300%);
+    background: linear-gradient(to right, #fff 0%, #fff 65%, #f00 400%);
     z-index: -1;
 }
 
@@ -136,14 +134,7 @@ aside
     padding: 0 10px;
     border-width: 3px;
     border-style: solid;
-    -webkit-border-image:
-    -webkit-linear-gradient(#f00 50%, rgba(0, 0, 0, 0)) 1 100%;
-    -moz-border-image:
-    -moz-linear-gradient(#f00, rgba(0, 0, 0, 0)) 1 100%;
-    -o-border-image:
-    -o-linear-gradient(#f00, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:
-    linear-gradient(to bottom, #fff 10%, #f00 50%, #fff 90%) 1 100%;
+    border-image: linear-gradient(to bottom, #fff 10%, #f00 50%, #fff 90%) 1 100%;
 }
 
 aside article
@@ -266,11 +257,10 @@ h4
     bottom: -2px;
     background-image:
     -webkit-gradient(radial, right top, 10, 90% 0%, 150, from(#f00), to(transparent));
-    background-image: -webkit-radial-gradient(right top, 350px 230px, #f00, transparent);
     background-image: -ms-radial-gradient(right top, 350px 230px, #f00, transparent);
-    background-image: radial-gradient(right top, 350px 230px, #f00, transparent);
     background-image:
     -moz-radial-gradient(left, farthest-side, #fff 0%, #fff 90%, #f00 130%);
+    background-image: radial-gradient(right top, 350px 230px, #f00, transparent);
     z-index: -2;
 }
 
@@ -280,9 +270,7 @@ h4
     left: 0;
     bottom: 0;
     right: 0;
-    background: linear-gradient(to right, #fff 65%, #f00 400%);
-    background: -moz-linear-gradient(left, #fff 25%, #f00 400%);
-    background: -webkit-linear-gradient(left, #fff 65%, #f00 400%);
+    background: linear-gradient(to right, #fff 0%, #fff 65%, #f00 400%);
     z-index: -1;
 }
 
@@ -307,11 +295,7 @@ hr
     height: 2px;
     margin-left: 0;
     background: #333;
-    background-image: -webkit-linear-gradient(left, #fff, #f00);
-    background-image:         linear-gradient(left, #fff, #f00);
-    background-image:    -moz-linear-gradient(left, #fff, #f00);
-    background-image:     -ms-linear-gradient(left, #fff, #f00);
-    background-image:      -o-linear-gradient(left, #fff, #f00);
+    background-image: linear-gradient(to right, #fff, #f00);
 }
 
 .right hr
