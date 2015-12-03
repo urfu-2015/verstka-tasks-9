@@ -1,8 +1,8 @@
 body
 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 main
@@ -10,6 +10,20 @@ main
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    max-width: 1300px;
+    min-width: 600px;
+}
+
+body > header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > img:last-child
+{
+    flex-basis: 100%;
 }
 
 .hotNewsSection
@@ -20,6 +34,16 @@ main
 .hotNewsSection > img
 {
     display: block;
+}
+
+.hotNewsSection p
+{
+    margin-top: 0;
+}
+
+.hotNewsSection img
+{
+    margin-bottom: 10px;
 }
 
 data
@@ -51,11 +75,25 @@ nav > div:first-child
 
 .searchForm
 {
-    display: flex;
+    margin-left: 10%;
 }
+.searchForm > form
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+input[type='text']
+{
+    width: 250px;
+    margin-left: 9px;
+}
+
 input[type='submit']
 {
-    flex-basis: 100%;
+    align-self: flex-start;
+    margin-left: 60px;
 }
 
 .searchSection > img
@@ -67,6 +105,8 @@ input[type='submit']
 {
     flex-basis: 100%;
 }
+
+.hotNewsSection header,
 .queryExamples > header
 {
     font-size: 16px;
