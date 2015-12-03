@@ -8,6 +8,8 @@ header
 
 .os
 {
+    font-size: 1em;
+    margin-bottom: 0;
     text-transform: uppercase;
     color: #cbd1d4;
     font-family: sans-serif;
@@ -17,16 +19,12 @@ h1
 {
     display: block;
     border: 2px solid transparent;
-    /*-moz-border-image: -moz-linear-gradient(left, #f00 0%, #fff 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, #f00 0%, #fff 100%);
-    border-image: linear-gradient(to left, #f00 0%, #fff 100%);
-    border-image-slice: 1;*/
     font-size: 3em;
 }
 
 .header-transform
 {
-    -webkit-transform: rotate(-1.7deg);
+    transform: rotate(-1.7deg);
 }
 
 .ya
@@ -102,7 +100,7 @@ footer
     width: 3px;
     height: 275px;
     background-image: radial-gradient(#f00 0%, #fff 100%);
-    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 
 .horizontal-delimiter
@@ -110,21 +108,59 @@ footer
     height: 3px;
     width: 230px;
     background-image: linear-gradient(to left, #f00 0%, #fff 100%);
-    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
 }
 
 .left-black
 {
     position: absolute;
-    width: 400px;
+    width: 200px;
     height: 75px;
     left: 37%;
     top: 33%;
     border: 2px solid transparent;
-    -moz-border-image: -moz-linear-gradient(-45deg, #000 0%, #fff 100%);
-    -webkit-border-image: -webkit-linear-gradient(-45deg, #000 0%, #fff 100%);
-    border-image: linear-gradient(to -45deg, #000 0%, #fff 100%);
+    border-image: linear-gradient(115deg, #000 0%, rgba(255, 255, 255, .2) 60%);
     border-image-slice: 1;
 }
-/*.right-red
-.gradient*/
+
+.right-red
+{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 34%;
+    top: 41.3%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(-115deg, #f00 0%, rgba(255, 255, 255, .1) 70%);
+    border-image-slice: 1;
+}
+
+.gradient
+{
+    position: absolute;
+    width: 450px;
+    height: 75px;
+    top: 45%;
+    left: 41%;
+    border: 2px solid transparent;
+    border-image: linear-gradient(-35deg, #f00 0%, rgba(255, 255, 255, .1) 70%);
+    border-image-slice: 1;
+    background-image: linear-gradient(to left, rgba(255, 115, 115, .5) 0%, rgba(255, 255, 255, .1) 70%);
+    border-left-width: 0;
+}
+
+.black-row
+{
+    position: absolute;
+    width: 250px;
+    height: 2px;
+    top: 40%;
+    left: 52%;
+    background-image: linear-gradient(to left, #000 0%, rgba(255, 255, 255, .2) 60%);
+}
+
+.top
+{
+    top: 111%;
+    left: 45%;
+}
