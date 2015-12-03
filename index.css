@@ -53,11 +53,7 @@ header
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background-image: -ms-radial-gradient(right top, 500px 230px, #f00, transparent);
-    background-image:
--moz-radial-gradient(left, farthest-side, #fff 0%, #fff 90%, #f00 130%);
-    background-image: -webkit-gradient(radial, right top, 10, 90% 0%, 450, from(#f00), to(transparent));
-    background-image: radial-gradient(right top, 350px 230px, #f00, transparent);
+    background-image: linear-gradient(to right, #fff 0%, #f00 65%);
     z-index: -2;
 }
 
@@ -255,12 +251,7 @@ h4
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background-image:
-    -webkit-gradient(radial, right top, 10, 90% 0%, 150, from(#f00), to(transparent));
-    background-image: -ms-radial-gradient(right top, 350px 230px, #f00, transparent);
-    background-image:
-    -moz-radial-gradient(left, farthest-side, #fff 0%, #fff 90%, #f00 130%);
-    background-image: radial-gradient(right top, 350px 230px, #f00, transparent);
+    background-image: linear-gradient(to right, #fff 0%, #f00 40%);
     z-index: -2;
 }
 
