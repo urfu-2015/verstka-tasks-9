@@ -1,1 +1,66 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 
+header
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links
+{
+    display: flex;
+    align-items: center;
+}
+
+main
+{
+    display:flex;
+}
+
+.left-column
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left-column-plus-line
+{
+    display: flex;
+    flex-basis: 40%;
+    margin-left: 70px;
+}
+
+.vertical-line
+{
+    width: 50px;
+    height: 274px;
+}
+
+.horizont-line
+{
+    width: 167px;
+    height: 8px;
+}
+
+.right-column
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    align-items: center;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
