@@ -42,7 +42,6 @@ p
 
 .top
 {
-    flex-basis: 100%;
     display: flex;
 }
 
@@ -55,53 +54,50 @@ p
 
 .logo-top
 {
-
-    background-image: linear-gradient(to right, #fff 70%, #fcc);
-    flex-basis: 35%;
-    position: relative;
     display: flex;
-    justify-content: center;
+    background-image: linear-gradient(to right, #fff 70%, #fcc);
+    width: 35%;
+    min-width: 400px;
     margin: auto;
     border: 2px solid;
-    border-image: linear-gradient(to right, #000, #fff 20%, #f00 50%, #f00) 1 1 1 1;
+    border-image: linear-gradient(to right, #000, #fff 20%, #f00 50%, #f00) 1;
 }
 
 .logo-top-yandex
 {
-    display: flex;
+    display: flex; 
     font-size: 58px;
-    box-shadow: 10px 10px 8px 5px rgba(0, 0, 0, .5);
+    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, .5);
+    margin-left: 37%;
 }
 
 .ya
 {
-    position: relative;
     border: 2px solid #f00;
     height: 100%;
     color: #f00;
-    box-shadow: 8px 0 8px 5px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
 }
 
 .ndex
 {
-    position: relative;
     border: 2px solid #f00;
     height: 100%;
 }
 
-.comptek
+.logo-top-comptek
 {
-    position: absolute;
-    width: 120px;
-    top: 5px;
-    right: 5px;
-    display: flex;
+    display: flex;  
+    margin-left: auto;
+    margin-top: 3px;
+    margin-right: 3px;
+    height: 100%;
     opacity: .5;
 }
 
 .comp
 {
-    text-align: center;
+    padding: 0 3px;
     flex-basis: 60%;
     background-color: #fff;
     border: 1px solid #000;
@@ -110,7 +106,7 @@ p
 
 .tek
 {
-    text-align: center;
+    padding: 0 3px;
     flex-basis: 40%;
     border: 1px solid #000;
     background-color: #f00;
@@ -130,8 +126,7 @@ p
 
 .content
 {
-    display: flex;
-    flex-direction: row;
+    display: flex;   
     margin: 30px 4%;
 }
 
@@ -140,7 +135,7 @@ p
     padding: 5px;
     width: 33%;
     border: 2px solid;
-    border-image: linear-gradient(to bottom, #fff 30%, #f00 60%, #fff ) 0 1 0 1;
+    border-image: linear-gradient(to bottom, #fff 30%, #f00 60%, #fff ) 0 1;
 }
 
 .news-top p
@@ -168,7 +163,6 @@ p
 }
 
 .news-block p
-
 {
     font-size: 14px;
 }
@@ -182,7 +176,7 @@ p
 
 .links
 {
-    margin-left: 20%;
+    margin-left: 25%;
     margin-bottom: 5%;
 }
 
@@ -208,8 +202,7 @@ p
 
 .search-input
 {
-    display: flex;
-    flex-direction: row;
+    display: flex;    
     margin-left: 10%;
 }
 
@@ -220,5 +213,6 @@ p
 
 footer
 {
+    margin: auto;
     text-align: center;
 }
