@@ -183,8 +183,7 @@ footer span
 .rotate
 {
     -webkit-animation-name: rotate;
-    -moz-animation-name: rotate;
-    -o-animation-name: rotate;
     animation-name: rotate;
+    -webkitanimation-duration: 3s;
     animation-duration: 3s;
 }
