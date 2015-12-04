@@ -46,8 +46,7 @@ footer .comptek
 {
     border: 3px solid #f00;
     color: #f00;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px;
 }
 
 .red-border
@@ -63,16 +62,12 @@ footer .comptek
     width: 300px;
 }
 
-.red-border,
-.comptek
-{
-    border: none;
-}
-
 .red-border:before,
 .red-border:after,
 .comptek:before,
-.comptek:after
+.comptek:after,
+.black-border:before,
+.black-border:after
 {
     content: '';
     position: absolute;
@@ -90,7 +85,7 @@ footer .comptek
 .red-border:before,
 .comptek:before
 {
-    background: linear-gradient(to right, rgba(125, 185, 232, 0) 0%,rgba(255, 0, 0, 1) 100%);
+    background:linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,252,252,0) 1%,rgba(255,149,149,1) 41%,rgba(255,0,0,1) 99%);
     bottom: -3px;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#ff0000',GradientType=1 );
     left: -3px;
@@ -102,7 +97,7 @@ footer .comptek
 .red-border:after,
 .comptek:after
 {
-    background: #fff;
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 7%,rgba(255,255,255,1) 99%);
     bottom: 0;
     left: 0;
     right: 0;
@@ -125,28 +120,20 @@ footer .comptek
 
 .black-border
 {
-    border: none;
     height: 90px;
     position: relative;
     transform: rotate(-1deg);
     width: 600px;
 }
 
-.black-border:before,
-.black-border:after
-{
-    content: '';
-    position: absolute;
-}
-
 .black-border:before
 {
-    background: linear-gradient(to right, rgba(0,0,0, 65) 0%,rgba(0,0,0, 65) 1%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 99%);
     bottom: -3px;
     left: -3px;
     right: -3px;
     top: -3px;
     z-index: -4;
+    background: linear-gradient(to right, rgba(0,0,0, 65) 0%,rgba(0,0,0, 65) 1%,rgba(0,0,0,0) 60%,rgba(0,0,0,0) 99%);
 }
 
 .black-border:after
@@ -193,16 +180,13 @@ footer .comptek
 
 .address
 {
-    border: none;
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.address .text
+.text
 {
-    border: none;
-    font-weight: normal;
     white-space: pre;
 }
 
@@ -225,13 +209,13 @@ li:nth-child(odd)
     color: #f00;
 }
 
-.comptek-word .comp
+.comp
 {
     background: #fff;
     border: 1px solid #111;
 }
 
-.comptek-word .tek
+.tek
 {
     background: #f00;
     border: 1px solid #111;
@@ -240,7 +224,6 @@ li:nth-child(odd)
 
 .comptek-word
 {
-    border: none;
     font-size: 1.2em;
     height: 20px;
     margin: 8px;
@@ -340,14 +323,14 @@ article
     margin-bottom: 5px;
 }
 
-.data,
+.date,
 .bold
 {
     font-weight: bold;
     margin-top: 20px;
 }
 
-.data
+.date
 {
     display: block;
 }
