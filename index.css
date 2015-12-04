@@ -16,6 +16,16 @@
     src: url('fonts/Hermes/Hermes.woff') format('woff'),
         url('fonts/Hermes/Hermes.ttf') format('truetype');
 }
+@font-face
+{
+    font-family: Open_Sans_Light;
+    src: url('fonts/Open_Sans_Light.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: Open_Sans_Semibold;
+    src: url('fonts/Open_Sans_Semibold.ttf') format('truetype');
+}
 .list_os
 {
     font: 300 15px 'Bebas_Neue_Cyrillic', sans-serif;
@@ -60,7 +70,6 @@ body
     align-items: center;
     justify-content: center;
     margin: 0 0 0 40px;
-    width: 100%;
     min-width: 542px;
 }
 header
@@ -78,6 +87,8 @@ header
 }
 .left_wafer_level1
 {
+    position: relative;
+    left: -5px;
     border-image: linear-gradient(to left,rgb(255,255,255),rgb(0,0,0));
     border-image-repeat: stretch;
     border-image-slice: 1;
@@ -88,11 +99,10 @@ header
 }
 .middle_wafer_level1
 {
-
     background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
     position: relative;
-    top: 80px;
-    width: 160px;
+    top: 95px;
+    width: 170px;
     height: 2px;
 }
 .right_wafer_level1
@@ -106,11 +116,13 @@ header
 }
 .right_wafer_level2
 {
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     border-image: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
     border-image-repeat: stretch;
     border-image-slice: 1;
     border-image-width: 2px;
     border-width: 2px 2px 2px 0;
+    justify-content: flex-end;
     position: absolute;
     background: linear-gradient(to left, rgb(255,228,225), rgb(255,255,255));
     height: 60px;
@@ -118,7 +130,6 @@ header
     top: 25px;
     width: 300px;
     display: flex;
-    justify-content: flex-end;
 }
 .level3
 {
@@ -135,7 +146,7 @@ header
     border-image-slice: 1;
     border-image-width: 2px;
     border-width: 2px;
-    height: 70px;
+    height: 65px;
     width: 150px;
 }
 .right_wafer_level3
@@ -143,32 +154,42 @@ header
     box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     position: relative;
     border: 2px solid red;
-    height: 70px;
+    line-height: 65px;
+    height: 65px;
+    background: rgb(255,255,255);
 }
 .middle_wafer_level4
 {
     box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     border: 2px solid red;
+    line-height: 65px;
     z-index: 10;
+    padding-left: 3px;
+    padding-right: 3px;
     position: relative;
-    height: 70px;
+    height: 65px;
+    background: rgb(255,255,255);
 }
 .comptek
 {
+    font-family: Arial, sans-serif;
     display: flex;
     align-self: flex-start;
 }
 .comp,
 .tek
 {
+    padding: 1px;
     border: 1px solid gray;
 }
 .comp
 {
+    font-family: Open_Sans_Semibold;
     background: rgba(255,255,255,.5);
 }
 .tek
 {
+    font-family: Open_Sans_Light;
     color: white;
     background: indianred;
 }
@@ -192,7 +213,6 @@ main
 }
 .left_side
 {
-    /*border-width: 0 0 0 2px;*/
     border-image: linear-gradient(to top, rgb(255,255,255), rgb(255,0,0), rgb(255,255,255));
     border-image-repeat: stretch;
     border-image-slice: 1;
@@ -208,14 +228,25 @@ main
 {
     transform: rotate(2deg);
 }
+.data_h
+{
+    font-size: 14px;
+    margin: 0;
+}
+.data_p
+{
+    margin: 0;
+}
 .news
 {
     padding: 20px;
 }
 .line
 {
-    background: linear-gradient(to left, rgb(255,255,255), rgb(255,0,0), rgb(255,255,255));
+    margin-left: 5%;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
     height: 2px;
+    width: 150px;
     transform: rotate(-2deg);
 }
 .right_side
@@ -224,10 +255,15 @@ main
     flex-direction: column;
     width: 60%;
     transform: rotate(-2deg);
+    margin: 0 0 0 5%;
 }
 .example_head
 {
     font: 900 15px TimesNewRomans;
+}
+.example_str
+{
+    font-size: 12px;
 }
 .example
 {
@@ -274,4 +310,102 @@ main
 .question_elem
 {
     align-self: flex-start;
+}
+.decor
+{
+    height: 60px;
+    position: relative;
+    display: flex;
+    transform: rotate(-2deg);
+    width: 542px;
+}
+.vert_black1,
+.vert_black2
+{
+    position: absolute;
+    height: 40px;
+    width: 2px;
+}
+.vert_black1
+{
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+}
+.vert_black2
+{
+    left: 10px;
+    top: 10px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+}
+.goriz_black1,
+.goriz_black2,
+.goriz_black3,
+.goriz_red1,
+.goriz_red2
+{
+    position: absolute;
+    height: 2px;
+}
+.goriz_black1
+{
+    width: 200px;
+    background: linear-gradient(to left, rgb(255,255,255), rgb(0,0,0));
+}
+.goriz_black2
+{
+    width: 170px;
+    top: 5px;
+    left: 300px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+}
+.goriz_black3
+{
+    width: 100px;
+    top: 50px;
+    left: 10px;
+    background: linear-gradient(to left, rgb(255,255,255), rgb(0,0,0));
+}
+.goriz_red1
+{
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+}
+.goriz_red2
+{
+    top: 5px;
+    left: 150px;
+    width: 100px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+}
+.label_comp
+{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 200px;
+    left: 270px;
+    top: 10px;
+    padding: 5px;
+    border-image: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    border-image-width: 2px;
+    border-width: 2px;
+    background-image: linear-gradient(to right, rgb(255,255,255), rgb(224,238,238));
+}
+.copyright
+{
+
+    align-self: center;
+    font-size: 12px;
+}
+.contacts
+{
+    display: inline;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
 }
