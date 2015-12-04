@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <input type="checkbox" name="version" value="version" id="checkVersion">
+        <label for="checkVersion">Переключиться на новую версию?</label>
         <header>
             <div class="firstVersion">
                 MAC KOI WIN DOS
@@ -33,14 +35,32 @@
                 </div>
             </div>
             <div class="secondVersion">
-                <img src="http://bit.ly/1jApstB" alt="" />
-                
+                <div class="vvv">
+                    <div class="textLeft">
+                        ПОИСКОВА
+                    </div>
+                    <img class="zoom" src="http://bit.ly/1SCRLn9" alt="zoooom">
+                    <div class="textRight">
+                        СИСТЕМА ДЛЯ ВСЕХ!
+                    </div>
+                </div>
+                <div class="wrapH1">
+                    <div class="h1">
+                        <h1>Яndex</h1>
+                    </div>
+                </div>
+                <div class="blackBorder2"></div>
             </div>
         </header>
         <main>
             <aside class="left">
-                <h3>Горячая новость:</h3>
-                <img src="http://bit.ly/1TkODws" alt="smoking" class="firstVersion">
+                <div class="light">
+                    <img class="secondVersion" src="http://bit.ly/1YNqvGr" alt="light" />
+                    <h3>Горячая новость:</h3>
+                </div>
+                <div class="smoking">
+                    <img src="http://bit.ly/1TkODws" alt="smoking" class="firstVersion">
+                </div>
                 <div class="news first firstVersion">
                     <h4><time datetime="1997-08-21T17:35:00Z">21 августа 1997г.</time></h4>
                     <div class="wrapDescription">
@@ -64,6 +84,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="news first secondVersion">
+                    <h4><time datetime="1998-03-16T17:35:00Z">16 марта 1998г.</time></h4>
+                    <div class="wrapDescription">
+                        <div class="description">
+                            Мы <a href="yandex.ru">принимаем рекламу</a> на yandex.ru
+                        </div>
+                    </div>
+                </div>
+                <div class="news second secondVersion">
+                    <h4><time datetime="1998-03-06T17:35:00Z">6 марта 1998г.</time></h4>
+                    <div class="wrapDescription">
+                        <div class="description">
+                            Новая сказка: Что можно найти в Интернете по поводу
+                            <a href="yandex.ru">8-го марта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="archive secondVersion">
+                    <a href="http://bit.ly/1YNshY7">Архив новостей</a>
+                </div>
             </aside>
             <aside class="right">
                 <nav class="firstVersion">
@@ -78,9 +118,8 @@
                     <div class="query">
                         <label for="query">Запрос:</label>
                         <input id="query" name="text" size="35" value="" maxlength="60" type="text">
-                        <div class="submit">
-                            <input value="Найти." type="submit">
-                        </div>
+                        <div></div>
+                        <input value="Найти." type="submit">
                         <div class="explanation">
                             Язык запросов аналогичен
                             <a href="https://yandex.ru/company/">Яndex-Site</a>,
@@ -100,30 +139,95 @@
                         <li>(Яndex бесплатно)</li>
                     </ul>
                 </div>
+                <nav class="secondVersion">
+                    <ul>
+                        <li>Advanced</li>
+                        <li>Добавить URL</li>
+                        <li>Сказки</li>
+                        <li>Числа</li>
+                    </ul>
+                </nav>
+                <div class="wrapQuery secondVersion">
+                    <div class="advance">
+                        <a href="#">Советы</a>: Как искать в Яndex?
+                    </div>
+                    <div class="query">
+                        <div class="inputColor">
+                            <label for="query1">Запрос:</label>
+                            <input id="query1" name="text" size="40" maxlength="160" type="text" autofocus>
+                        </div>
+                        <div class="submit">
+                            <input value="Найти!" type="submit">
+                            <input type="checkbox" name="strict" value="strict" id="strict">
+                            <label for="strict">
+                                строгий поиск(<a href="#">с языком запросов</a>)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="examples secondVersion">
+                    <h4>Примеры запросов:</h4>
+                    <ul>
+                        <li>правила поведения на праздниках и после них</li>
+                        <li>обязательное медицинское страхование</li>
+                        <li>список православных приходов</li>
+                        <li>компьютеры типа башня или tower</li>
+                    </ul>
+                </div>
             </aside>
         </main>
         <footer>
-            <div class="wrapBottom">
-                <div class="blackBorder4"></div>
-                <div class="blackBorder5"></div>
-                <div class="blackBorder6"></div>
-                <div class="redBorder1"></div>
-                <div class="redBorder2"></div>
-                <div class="compTekBottom">
+            <div class="firstVersion">
+                <div class="wrapBottom">
+                    <div class="blackBorder4"></div>
+                    <div class="blackBorder5"></div>
+                    <div class="blackBorder6"></div>
+                    <div class="redBorder1"></div>
+                    <div class="redBorder2"></div>
+                    <div class="compTekBottom">
+                        <div class="compTek">
+                            <div class="comp">COMP</div>
+                            <div class="tek">TEK</div>
+                        </div>
+                    </div>
+                </div>
+                <address>
+                    <div>Copyright &copy; 1997 <a href="www.compteki.com">Comptek International</a></div>
+                    <div>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></div>
+                    <div>
+                        Дизайн &mdash; Артемий Лебедев
+                        (<a class="noneDecoration" href="http://bit.ly/1lvYIvk">Web Design</a>)
+                    </div>
+                </address>
+            </div>
+            <div class="secondVersion">
+                <div class="firstLineFooter">
+                    <div class="yandexStart">
+                        Яndex. Спрашивайте в ближайшем
+                    </div>
                     <div class="compTek">
                         <div class="comp">COMP</div>
                         <div class="tek">TEK</div>
                     </div>
+                    <div class="yandexFinish">e</div>
                 </div>
+                <div class="os">
+                    <a href="#">MAC</a> | <a href="#">KOI</a> | <a href="#">WIN</a> | <a href="#">DOS</a>
+                </div>
+                <address>
+                    <div class="copyright">
+                        Copyright &copy; 1997, 1998 <a href="www.compteki.com">Comptek International</a>
+                    </div>
+                    <div class="email">
+                        E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a>
+                    </div>
+                    <div>
+                        Дизайн &mdash; Артемий Лебедев
+                        (<a href="http://bit.ly/1lvYIvk">Web Design</a>)
+                    </div>
+                </address>
+                <img src="http://bit.ly/1LSMB10" alt="logo">
             </div>
-            <address>
-                <div>Copyright &copy; 1997 <a href="www.compteki.com">Comptek International</a></div>
-                <div>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></div>
-                <div>
-                    Дизайн &mdash; Артемий Лебедев
-                    (<a class="noneDecoration" href="http://bit.ly/1lvYIvk">Web Design</a>)
-                </div>
-            </address>
         </footer>
     </body>
 </html>
