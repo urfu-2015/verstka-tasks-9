@@ -229,9 +229,9 @@ footer span
 
 .vertical-line-grad
 {
-    background: #fff;
-    background: -moz-linear-gradient(top, #fff 0%, #ff3236 27%, #ff3236 81%, #fff 100%);
-    background: -webkit-linear-gradient(top, #fff 0%,#ff3236 27%,#ff3236 81%,#fff 100%);
+    /*background: #fff;*/
+    /*background: -moz-linear-gradient(top, #fff 0%, #ff3236 27%, #ff3236 81%, #fff 100%);*/
+    /*background: -webkit-linear-gradient(top, #fff 0%,#ff3236 27%,#ff3236 81%,#fff 100%);*/
     background: linear-gradient(to bottom, #fff 0%,#ff3236 27%,#ff3236 81%,#fff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 );
     width: 14px;
@@ -241,9 +241,9 @@ footer span
 
 .horizontal-line-grad
 {
-    background: #fff;
-    background: -moz-linear-gradient(left, #fff 0%, #ff3236 98%);
-    background: -webkit-linear-gradient(left, #fff 0%,#ff3236 98%);
+    /*background: #fff;*/
+    /*background: -moz-linear-gradient(left, #fff 0%, #ff3236 98%);*/
+    /*background: -webkit-linear-gradient(left, #fff 0%,#ff3236 98%);*/
     background: linear-gradient(to right, #fff 0%,#ff3236 98%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#ff3236',GradientType=1 );
     width: 160px;
