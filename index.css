@@ -63,7 +63,7 @@ p
 
 .nav:nth-child(2n + 1)
 {
-    color: #ff0000;
+    color: #f00;
 }
 
 .cont-nav
@@ -86,7 +86,7 @@ h2
 {
     font-size: 1.3em;
     transform: rotate(-1deg);
-    color: #ff0000;
+    color: #f00;
     font-family: 'Ubuntu', sans-serif;
 }
 
