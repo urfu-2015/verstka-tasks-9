@@ -8,6 +8,16 @@ body
 
 }
 
+header,
+main,
+footer,
+h3
+{
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transition: all 1s ease-out;
+}
+
 header
 {
     text-align: center;
@@ -106,8 +116,6 @@ h1
     border-style: solid;
     border-image: linear-gradient(45deg, transparent, #f00 100%) 1;
     border-left-width: 0;
-    margin-left: -108%;
-    width: 180%;
 }
 
 .h1
@@ -401,6 +409,7 @@ input[value='version']:checked ~ header .firstVersion,
 input[value='version']:checked ~ main aside .firstVersion,
 input[value='version']:checked ~ footer .firstVersion
 {
+    animation-name: closing;
     display: none;
 }
 
@@ -435,6 +444,11 @@ input[value='version']:checked ~ main aside.left .light h3
     align-items: flex-end;
 }
 
+input[value='version']:not(:checked) ~ main aside.left .light h3
+{
+    margin-left: -50px;
+}
+
 input[value='version'],
 label
 {
@@ -446,7 +460,7 @@ header .secondVersion
     height: 100%;
 }
 
-header .secondVersion .vvv
+header .secondVersion .logo
 {
     height: 68px;
     padding: 0;
@@ -486,24 +500,6 @@ header .secondVersion .vvv
     width: 80%;
 }
 
-.secondVersion .wrapH1
-{
-    transform: rotateZ(-2deg);
-    width: 50%;
-    margin-left: 20%;
-    position: absolute;
-    top: -18%;
-    left: 50%;
-}
-
-.secondVersion .blackBorder2
-{
-    top: -25%;
-    left: 79%;
-    width: 100%;
-    transform: rotateZ(0);
-}
-
 nav.secondVersion ul
 {
     transform: rotateZ(0);
@@ -514,6 +510,12 @@ nav.secondVersion ul
 
 .light
 {
+    display: inline-flex;
+}
+
+img.secondVersion
+{
+    visibility: hidden;
     display: inline-flex;
 }
 
@@ -648,6 +650,74 @@ footer .secondVersion img
     margin-top: 10px;
 }
 
+input[value='version']:checked ~ main aside .smoking,
+input[value='version']:checked ~ main aside .light img,
+input[value='version']:not(:checked) ~ main aside .smoking,
+input[value='version']:checked ~ header .wrapH1,
+input[value='version']:checked ~ header .blackBorder2,
+input[value='version']:not(:checked) ~ header .firstVersion,
+input[value='version']:not(:checked) ~ main aside .firstVersion,
+input[value='version']:not(:checked) ~ footer .firstVersion,
+input[value='version']:checked ~ main aside .secondVersion,
+input[value='version']:checked ~ footer .secondVersion,
+input[value='version']:not(:checked) ~ header .wrapH1,
+input[value='version']:not(:checked) ~ main aside nav ul,
+input[value='version']:not(:checked) ~ main aside .examples,
+input[value='version']:checked ~ main aside .examples
+{
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+input[value='version']:checked ~ main aside .light img,
+input[value='version']:not(:checked) ~ main aside .smoking,
+input[value='version']:checked ~ main aside .secondVersion,
+input[value='version']:not(:checked) ~ header .firstVersion,
+input[value='version']:not(:checked) ~ main aside .firstVersion
+{
+    visibility: visible;
+    opacity: 0;
+    animation-name: opening;
+}
+
+input[value='version']:checked ~ header .wrapH1
+{
+    animation-name: shiftHTo;
+    position: absolute;
+}
+
+input[value='version']:not(:checked) ~ header .wrapH1
+{
+    animation-name: shiftHFrom;
+    position: relative;
+}
+
+input[value='version']:checked ~ header .blackBorder2
+{
+    animation-name: shiftBlackBorderTo;
+}
+
+input[value='version']:not(:checked) ~ main aside .firstVersion ul
+{
+    animation-name: shiftNavTo;
+}
+
+input[value='version']:not(:checked) ~ footer .firstVersion,
+input[value='version']:checked ~ footer .secondVersion
+{
+    animation-name: shiftUp;
+    visibility: visible;
+    opacity: 0;
+}
+
+input[value='version']:not(:checked) ~ main aside .examples,
+input[value='version']:checked ~ main aside .examples
+{
+    animation-name: shiftLeft;
+    visibility: visible;
+    opacity: 0;
+}
+
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
 {
     .wrapQuery,
@@ -729,5 +799,115 @@ footer .secondVersion img
     header > .secondVersion
     {
         width: 29%;
+    }
+}
+
+@keyframes closeH3
+{
+    100%
+    {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes opening
+{
+    50%
+    {
+        opacity: .5;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes shiftHTo
+{
+    0%
+    {
+        left: 40%;
+    }
+    100%
+    {
+        transform: rotateZ(-2deg);
+        width: 10%;
+        margin-left: 20%;
+        position: absolute;
+        top: 1%;
+        left: 30%;
+    }
+}
+
+@keyframes shiftHFrom
+{
+    0%
+    {
+        transform: rotateZ(-2deg);
+        width: 10%;
+        margin-left: 20%;
+        position: absolute;
+        top: 1%;
+        left: 30%;
+    }
+    100%
+    {
+        padding-left: 10%;
+        position: relative;
+        z-index: 1;
+        border-right: none;
+        margin-top: 10px;
+    }
+}
+
+@keyframes shiftBlackBorderTo
+{
+    100%
+    {
+        top: 1%;
+        left: 56%;
+        width: 30%;
+        transform: rotateZ(2deg);
+    }
+}
+
+@keyframes shiftNavTo
+{
+    0%
+    {
+        transform: rotateZ(2deg);
+    }
+
+    100%
+    {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes shiftUp
+{
+    0%
+    {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shiftLeft
+{
+    0%
+    {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0) rotateZ(2deg);
+        opacity: 1;
     }
 }
