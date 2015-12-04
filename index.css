@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,cyrillic);
 
 body
 {
@@ -17,6 +17,13 @@ header
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
+}
+
+.encodings
+{
+    font-size: 12px;
+    color: #b3b3b3;
+    font-weight: 800;
 }
 
 .encodings-pic
@@ -59,6 +66,15 @@ nav
 {
     width: 156px;
     height: 21px;
+}
+
+.hot-news
+{
+    font-size: 12px;
+    font-weight: 800;
+    color: #ff0000;
+    transform: rotate(-1.5deg);
+    transform-origin: left top;
 }
 
 .okur-pic
@@ -118,6 +134,23 @@ form
 .links > a
 {
     text-decoration: none;
+}
+
+.links > a:nth-child(odd)
+{
+    color: #ff0000;
+}
+
+.links > a:nth-child(even)
+{
+    color: #000;
+}
+
+.links span
+{
+    font-size: 13px;
+    font-weight: 800;
+    display: inline-block;
 }
 
 input[type=text]
@@ -186,4 +219,34 @@ footer span
     animation-name: rotate;
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
+}
+
+.transform-rotate
+{
+    transform: rotate(-1.5deg);
+    transform-origin: left top;
+}
+
+.vertical-line-grad
+{
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #ff3236 27%, #ff3236 81%, #ffffff 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ff3236 27%,#ff3236 81%,#ffffff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#ff3236 27%,#ff3236 81%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+    width: 14px;
+    height: 274px;
+    margin-right: 5px;
+}
+
+.horizontal-line-grad
+{
+    background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 0%, #ff3236 98%);
+    background: -webkit-linear-gradient(left, #ffffff 0%,#ff3236 98%);
+    background: linear-gradient(to right, #ffffff 0%,#ff3236 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff3236',GradientType=1 );
+    width: 160px;
+    height: 2px;
+    margin: 5px 0 7px 5px;
 }
