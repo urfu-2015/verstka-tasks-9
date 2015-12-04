@@ -28,6 +28,7 @@ main,
 .wrapDescription
 {
     transform: rotateZ(-2deg);
+    -webkit-backface-visibility: hidden;
 }
 
 nav ul,
@@ -35,6 +36,7 @@ h3,
 .wrapBottom
 {
     transform: rotateZ(-1deg);
+    -webkit-backface-visibility: hidden;
 }
 
 header,
@@ -51,6 +53,7 @@ h3
 .examples
 {
     transform: rotateZ(2deg);
+    -webkit-backface-visibility: hidden;
 }
 
 .wrapDescription,
@@ -63,7 +66,6 @@ h3
 .wrapQuery
 {
     border-image: linear-gradient(to right, #fff, #f00 20%, #fff 20%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, #fff, #f00 20%, #fff 20%) 1;
     margin-top: 1%;
     margin-left: 10%;
 }
@@ -71,7 +73,6 @@ h3
 .wrapDescription
 {
     border-image: linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1;
 }
 
 header,
@@ -86,7 +87,6 @@ h1
     font-size: 3.5em;
     font-weight: lighter;
     margin: 0;
-    padding-right: 5%;
     box-shadow: 8px 8px 5px rgba(0,0,0,.5);
 }
 
@@ -101,9 +101,10 @@ h1
 .wrapH1
 {
     border-style: solid;
-    border-image: linear-gradient(to right, transparent, #f00 100%, transparent 40%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 100%, transparent 40%) 1;
-    margin-left: -20%;
+    border-image: linear-gradient(45deg, transparent, #f00 100%) 1;
+    border-left-width: 0;
+    margin-left: -108%;
+    width: 180%;
 }
 
 .h1
@@ -123,10 +124,10 @@ h1
 .blackBorder1
 {
     border-style: solid;
-    border-image: linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to left, transparent, #000 100%, transparent 80%) 1;
+    border-image: linear-gradient(-35deg, transparent 30%, #000 100%, transparent) 1;
     border-left: 2px solid #000;
-    width: 10%;
+    border-right-width: 0;
+    width: 15%;
     height: 60%;
     position: absolute;
     top: 20%;
@@ -143,7 +144,6 @@ h1
     height: 0;
     width: 30%;
     border-image: linear-gradient(to right, transparent, #6f6f6f 50%, transparent 30%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #6f6f6f 50%, transparent 30%) 1;
 }
 
 .blackBorder2
@@ -163,14 +163,13 @@ h1
     position: absolute;
     top: 40%;
     left: 60%;
-    width: 15%;
+    width: 20%;
     height: 60%;
-    margin-left: -7%;
+    margin-left: -10%;
     display: inline-flex;
     justify-content: flex-end;
     border-style: solid;
-    border-image: linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
+    border-image: linear-gradient(135deg, transparent 20%, #f00 100%, transparent) 1;
     background-image: linear-gradient(to right, transparent 10%, #f2d6d6);
     border-left-width: 0;
 }
@@ -216,8 +215,7 @@ h1
     display: inline-flex;
     justify-content: flex-end;
     border-style: solid;
-    border-image: linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 100%, transparent 10%) 1;
+    border-image: linear-gradient(155deg, transparent, #f00 100%, transparent) 1;
     background-image: linear-gradient(to right, transparent 10%, #f2d6d6);
     border-left-width: 0;
 }
@@ -253,7 +251,6 @@ aside.left
     float: left;
     border-style: solid;
     border-image: linear-gradient(to bottom, transparent, #f00, transparent) 1;
-    -webkit-border-image: -webkit-linear-gradient(to bottom, transparent, #f00, transparent) 1;
     margin-left: 3%;
     padding: 2%;
     padding-bottom: 0;
@@ -371,7 +368,6 @@ footer div
     height: 0;
     width: 25%;
     border-image: linear-gradient(to right, transparent, #f00 50%, transparent 30%) 1;
-    -webkit-border-image: -webkit-linear-gradient(to right, transparent, #f00 50%, transparent 30%) 1;
 }
 
 .redBorder1
@@ -385,6 +381,11 @@ footer div
     top: 25%;
     left: 35%;
     opacity: .5;
+}
+
+.secondVersion
+{
+    display: none;
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
