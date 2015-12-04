@@ -11,7 +11,7 @@ main
     flex-wrap: nowrap;
     justify-content: center;
     max-width: 1300px;
-    min-width: 600px;
+    min-width: 800px;
 }
 
 body > header
@@ -19,11 +19,6 @@ body > header
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-header > img:last-child
-{
-    flex-basis: 100%;
 }
 
 .hotNewsSection
@@ -98,7 +93,7 @@ input[type='submit']
 
 .searchSection > img
 {
-    height: 100%;
+    height: 8px;
 }
 
 .queryExamples
