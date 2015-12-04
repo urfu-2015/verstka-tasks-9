@@ -1,30 +1,30 @@
 @font-face
 {
     font-family: Bebas_Neue_Cyrillic;
-    src: url('fonts/Bebas_Neue_Cyrillic.woff') format('woff'),
-        url('fonts/Bebas_Neue_Cyrillic.ttf') format('truetype');
+    src: url('fonts2/Bebas_Neue_Cyrillic.woff') format('woff'),
+        url('fonts2/Bebas_Neue_Cyrillic.ttf') format('truetype');
 }
 @font-face
 {
     font-family: CyrillicCompressed;
-    src: url('fonts/CyrillicCompressed.woff') format('woff'),
-        url('fonts/CyrillicCompressed.ttf') format('truetype');
+    src: url('fonts2/CyrillicCompressed.woff') format('woff'),
+        url('fonts2/CyrillicCompressed.ttf') format('truetype');
 }
 @font-face
 {
     font-family: Hermes;
-    src: url('fonts/Hermes.woff') format('woff'),
-        url('fonts/Hermes.ttf') format('truetype');
+    src: url('fonts2/Hermes.woff') format('woff'),
+        url('fonts2/Hermes.ttf') format('truetype');
 }
 @font-face
 {
     font-family: Open_Sans_Light;
-    src: url('fonts/Open_Sans_Light.ttf') format('truetype');
+    src: url('fonts2/Open_Sans_Light.ttf') format('truetype');
 }
 @font-face
 {
     font-family: Open_Sans_Semibold;
-    src: url('fonts/Open_Sans_Semibold.ttf') format('truetype');
+    src: url('fonts2/Open_Sans_Semibold.ttf') format('truetype');
 }
 .list_os
 {
@@ -32,6 +32,7 @@
     letter-spacing: .7px;
     color: rgb(139, 139, 131);
 }
+
 .tip
 {
     font-size: 12px;
