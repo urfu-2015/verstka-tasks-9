@@ -101,7 +101,8 @@ input
     flex-basis: 60%;
     border: 1px solid #000;
     font-family: Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
+    line-height: 30px;
 }
 
 .tek
@@ -111,8 +112,9 @@ input
     border: 1px solid #000;
     color: #fff;
     background-color: #f00;
-    font-family: serif;
+    font-family: sans-serif;
     font-weight: normal;
+    line-height: 30px;
 }
 
 .left
@@ -235,4 +237,5 @@ footer
 .copyright
 {
     padding-top: 20px;
+    text-align: center;
 }
