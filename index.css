@@ -48,7 +48,7 @@ header
 {
     font-size: 50px;
     border: 2px solid #f00;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,.5);
     padding: 0 6px 6px;
 }
 
@@ -124,9 +124,9 @@ main
 .info-buttons,
 .footer-logo
 {
-    transform: rotateZ(-2deg);
-    -webkit-backface-visibility: hidden;
+    transform: rotate(-2deg);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .vertical-line
