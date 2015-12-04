@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Назад в будущее 2</title>
         <link rel="stylesheet" href="index.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!-- Поворачиваем время вспять здесь -->
@@ -15,17 +16,16 @@
                 <span>DOS</span>
             </div>
             <div class="logo">
-                <div class="header-black first"></div>
-                <div class="header-red first"><span class="logoname">Яndex</span></div>
-                <div class="header-black second"></div>
-                <div class="header-red second">
-                    <span class="logosp-1">COMP</span>
-                    <span class="logosp-2"></span>
-                </div>
+                <img src="http://img.artlebedev.ru/everything/yandex/site/saved/LOGO.GIF">
             </div>
         </header>
         <main>
+            <div class="vertical">
+                <img src="http://mokosha.esy.es/Images/line_v.png">
+            </div>
             <div class="width-1">
+                <h2>Горячая новость:</h2>
+                <img src="https://pp.vk.me/c629100/v629100151/31835/XmbXrwQn9mM.jpg" class="fire">
                 <div class="text">
                     <h3>21 августа 1997г.</h3>
                     <p>
@@ -35,6 +35,9 @@
                         доменов 'su' и 'ru').
                     </p>
                 </div>
+                <div class="horiz width-1">
+                    <img src="http://mokosha.esy.es/Images/line.png">
+                </div>
                 <div class="text">
                     <h3>5 сентября 1997г.</h3>
                     <p>
@@ -42,22 +45,35 @@
                         ему несколько вопросов, в том числе: "Вы на чьей стороне?"
                     </p>
                 </div>
+                <div class="horiz width-1">
+                    <img src="http://mokosha.esy.es/Images/line.png">
+                </div>
+            </div>
+            <div class="vertical">
+                <img src="http://mokosha.esy.es/Images/line_v.png">
             </div>
             <div class="width-2">
                 <div class="text">
-                    <span class="nav">Помощь</span>
-                    <span class="nav">Добавить URL</span>
-                    <span class="nav">ЧХ:-)</span>
-                    <span class="nav">Список стоп-слов</span>
+                    <div class="cont-nav">
+                        <span class="nav">Помощь</span>
+                        <span class="nav">Добавить URL</span>
+                        <span class="nav">ЧХ:-)</span>
+                        <span class="nav">Список стоп-слов</span>
+                    </div>
                     <form>
                         <label for="query">Запрос: </label>
-                        <input type="text" id="query">
-                        <input type="button" value="Найти.">
+                        <div>
+                            <input type="text" id="query"><br>
+                            <input type="button" value="Найти.">
+                        </div>
                     </form>
                     <p>
                         Язык запросов аналогичен <a href="">Яndex-Site</a>, дополнение - поиск по точному
                         слову (без учета других словоформ).
                     </p>
+                </div>
+                <div class="horiz width-1">
+                    <img src="http://mokosha.esy.es/Images/line.png">
                 </div>
                 <div class="text">
                     <h3>Примеры правильных запросов:</h3>
@@ -74,9 +90,14 @@
             </div>
         </main>
         <footer>
-            <div class="">
-
+            <div class="logo">
+                <img src="http://img.artlebedev.ru/everything/yandex/site/saved/BOT.GIF">
             </div>
+            <address>
+                Copyright 1997 <a href="">Comptek International</a><br>
+                E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a><br>
+                Дизайн - Артемий Лебедев(<a href="">Web Design</a>)
+            </address>
         </footer>
     </body>
 </html>
