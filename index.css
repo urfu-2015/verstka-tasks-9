@@ -826,12 +826,13 @@ input[value='version']:checked ~ main aside .examples
 {
     0%
     {
+        width: 12%;
         left: 40%;
     }
     100%
     {
         transform: rotateZ(-2deg);
-        width: 10%;
+        width: 12%;
         margin-left: 20%;
         position: absolute;
         top: 1%;
@@ -844,7 +845,7 @@ input[value='version']:checked ~ main aside .examples
     0%
     {
         transform: rotateZ(-2deg);
-        width: 10%;
+        width: 12%;
         margin-left: 20%;
         position: absolute;
         top: 1%;
@@ -856,6 +857,7 @@ input[value='version']:checked ~ main aside .examples
         position: relative;
         z-index: 1;
         border-right: none;
+        width: 12%;
         margin-top: 10px;
     }
 }
