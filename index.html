@@ -9,47 +9,53 @@
     <body>
         <!-- Поворачиваем время вспять здесь -->
         <div class="wrapper">
+            <div class="switch">
+                <input id="toggle" class="toggle toggle-round" type="checkbox">
+                <label for="toggle"></label>
+            </div>
+
             <header>
-                <div class="encoding">mac koi win dos</div>
-                <div class="back">
-                    <hr class="top-hr">
-                    <hr class="bottom-hr">
+                <div class="black-part">
+                    <div class="encoding">mac koi win dos</div>
+                    <hr class="top-black-line">
+                    <hr class="bottom-black-line">
                 </div>
-                <div class="logo_back">
-                    <div class="logo">Яndex</div>
+                <div class="logo-back-shadow"></div>
+                <div class="logo-back">
+                    <div class="logo">
+                        <div class="logo-shadow">
+                            <span class="name"><span class="first-letter">Я</span>ndex</span>
+                        </div>
+                    </div>
                     <div class="comptek">
-                        <div class="comp">comp</div>
-                        <div class="tek">tek</div>
+                        <span class="comp">comp</span>
+                        <span class="tek">tek</span>
                     </div>
                 </div>
             </header>
             <nav>
-                <div class="left-vertical-line">
-                    <hr class="vertical-hr">
-                </div>
-                <div class="news">
+                <div class="news-block">
                     <h1 class="news-header">Горячая новость:</h1>
-                    <img src="images/okur.gif">
-                    <p>
-                        <strong>21 августа 1997г.</strong>
-                        Яndex-Web, о котором так долго говорили, наконец запущен в
-                        бета-тестирование. Могло быть и хуже. Поиск осуществляется по "русскому
-                        Интернету". Присылайте замечания, идеи, а также стоящие сайты (с русскими
-                        текстами, особенно кроме доменов 'su' и 'ru').
-                    </p>
-                    <hr class="red-hr">
-                    <p>
-                        <strong>5 сентября 1997г.</strong>
-                        Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю. Алтухов
-                        задал ему несколько вопросов, в том числе: <q>"Вы на чьей стороне?"</q>
-                    </p>
-                    <hr class="red-hr">
-                </div>
-                <div class="right-vertical-line">
-                    <hr class="vertical-hr">
+                    <div class="news">
+                        <img class="no-rotate" src="images/okur.gif">
+                        <p class="no-rotate">
+                            <strong>21 августа 1997г.</strong>
+                            Яndex-Web, о котором так долго говорили, наконец запущен в
+                            бета-тестирование. Могло быть и хуже. Поиск осуществляется по "русскому
+                            Интернету". Присылайте замечания, идеи, а также стоящие сайты (с
+                            русскими текстами, особенно кроме доменов 'su' и 'ru').
+                        </p>
+                        <hr class="red-line">
+                        <p class="no-rotate">
+                            <strong>5 сентября 1997г.</strong>
+                            Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю.
+                            Алтухов задал ему несколько вопросов, в том числе:
+                            <q>Вы на чьей стороне?</q>
+                        </p>
+                        <hr class="red-line">
+                    </div>
                 </div>
             </nav>
-
             <main>
                 <div class="content">
                     <ul class="links">
@@ -58,19 +64,20 @@
                         <li>ЧХ:-)</li>
                         <li>Список стоп-слов</li>
                     </ul>
-                    <span>Запрос:</span>
                     <label>
+                        Запрос:
                         <input type="text">
                     </label>
-                    <button>Найти</button>
+                    <button>Найти.</button>
                     <p>
                         <small>Язык запросов аналогичен <a href="https://yandex.ru/company/">
                             Яndex-Site</a>, дополнение - поиск по точному слову (без учета других
                             словоформ).
                         </small>
                     </p>
+                    <hr class="red-line">
                     <strong>Примеры правильных запросов:</strong>
-                    <ul>
+                    <ul class="requests">
                         <li>беспроводные сети</li>
                         <li>выставка !связь 97</li>
                         <li>разработка /1 приложений</li>
@@ -83,23 +90,30 @@
             </main>
             <footer>
                 <div class="wrap">
-                    <div class="back">
-                        <hr class="top-hr">
-                        <hr class="red-hr">
+                    <div class="black-part">
+                        <div class="inside-black-part"></div>
+                        <hr class="top-black-line">
                     </div>
-                    <div class="logo_back">
+                    <div class="logo-back-shadow"></div>
+                    <div class="logo-back">
+                        <hr class="top-red-line">
+                        <hr class="bottom-red-line">
                         <div class="comptek">
-                            <div class="comp">comp</div>
-                            <div class="tek">tek</div>
+                            <span class="comp">comp</span>
+                            <span class="tek">tek</span>
                         </div>
                     </div>
                 </div>
-                <address>
-                    <span>Copyright &#169; 1997 Comptek International</span>
-                    <span>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></span>
-                    <span>Дизайн - Артемий Лебедев (Web Design)</span>
-                </address>
             </footer>
+            <address>
+                <span>
+                    Copyright &#169; 1997 <a class="comptekInternational">Comptek International</a>
+                </span>
+                <span>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></span>
+                <span>
+                    Дизайн - Артемий Лебедев (<a href="http://www.artlebedev.ru/">Web Design</a>)
+                </span>
+            </address>
         </div>
     </body>
 </html>
