@@ -28,6 +28,11 @@ p
     transform: rotate(-1deg);
 }
 
+.rotated p
+{
+    transform: rotate(1deg);
+}
+
 .border-bot
 {
     border-bottom: 2px solid;
@@ -56,8 +61,8 @@ p
 {
     display: flex;
     background-image: linear-gradient(to right, #fff 70%, #fcc);
-    width: 35%;
-    min-width: 400px;
+    width: 30%;
+    min-width: 450px;
     margin: auto;
     border: 2px solid;
     border-image: linear-gradient(to right, #000, #fff 20%, #f00 50%, #f00) 1;
@@ -66,23 +71,25 @@ p
 .logo-top-yandex
 {
     display: flex;
-    font-size: 58px;
-    box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, .5);
+    font-size: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
     margin-left: 37%;
+    font-family: Impact, sans-serif;
 }
 
 .ya
 {
+    font-family: Avqest, sans-serif;
+    font-weight: bold;
+    font-size: 55px;
     border: 2px solid #f00;
-    height: 100%;
     color: #f00;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, .3);
 }
 
 .ndex
 {
     border: 2px solid #f00;
-    height: 100%;
 }
 
 .logo-top-comptek
@@ -127,15 +134,19 @@ p
 .content
 {
     display: flex;
-    margin: 30px 4%;
+    justify-content: space-between;
+    margin: 15px 0;
+    margin-left: 3%;
+    margin-right: 15%;
 }
 
 .news
 {
+    margin-right: 5px;
     padding: 5px;
-    width: 33%;
+    width: 45%;
     border: 2px solid;
-    border-image: linear-gradient(to bottom, #fff 30%, #f00 60%, #fff ) 0 1;
+    border-image: linear-gradient(to bottom, #fff 5%,#f00 49%,#fff 84%) 0 1;
 }
 
 .news-top p
@@ -146,9 +157,9 @@ p
 
 .news-block
 {
-    margin: 3% 0;
+    margin: 1% 0;
     padding: 3% 0;
-    transition: transform 1s ease-out;
+    transition: transform 1s ease;
 }
 
 .news-block:hover
@@ -171,7 +182,6 @@ p
 {
     display: flex;
     flex-direction: column;
-    margin-left: 13%;
 }
 
 .links
@@ -185,7 +195,7 @@ p
     display: inline-block;
     margin: 0 3px;
     font-size: 16px;
-    transition: transform 1s ease-out;
+    transition: transform 1s ease;
     font-family: 'OpenSans-CondLight';
     font-weight: bold;
 }
@@ -209,6 +219,11 @@ p
 #search
 {
     width: 250px;
+}
+
+.examples h1
+{
+    font-size: 20px;
 }
 
 footer
