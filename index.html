@@ -43,19 +43,30 @@
             </header>
             <nav>
                 <div class="news-block">
-                    <h1 class="news-header">Горячая новость:</h1>
+                    <h1 class="news-header">
+                        <img class="hidden lamp" src="images/lamp.gif">Горячая новость:
+                    </h1>
                     <div class="news">
-                        <img class="no-rotate" src="images/okur.gif">
+                        <img class="no-rotate okur" src="images/okur.gif">
                         <div>
-                            <p class="no-rotate">
+                            <p class="no-rotate firstp">
                                 <strong>21 августа 1997г.</strong>
                                 Яndex-Web, о котором так долго говорили, наконец запущен в
                                 бета-тестирование. Могло быть и хуже. Поиск осуществляется по
                                 "русскому Интернету". Присылайте замечания, идеи, а также стоящие
                                 сайты (с русскими текстами, особенно кроме доменов 'su' и 'ru').
                             </p>
+                            <p class="no-rotate hidden">
+                                <strong>16 марта 1998г.</strong>
+                                Мы <a class="highlighted-text">принимаем рекламу</a> на yandex.ru
+                            </p>
+                            <p class="no-rotate hidden">
+                                <strong>6 марта 1998г.</strong>
+                                Новая сказка: Что можно найти в Интернете по поводу
+                                <a class="highlighted-text">8-го марта</a>
+                            </p>
                         </div>
-                        <div>
+                        <div class="lastp">
                             <p class="no-rotate">
                                 <strong>5 сентября 1997г.</strong>
                                 Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю.
@@ -63,30 +74,43 @@
                                 <q>Вы на чьей стороне?</q>
                             </p>
                         </div>
+                        <div class="hidden archive no-rotate">
+                            <a class="highlighted-text">Архив новостей</a>
+                        </div>
                     </div>
                 </div>
             </nav>
             <main>
                 <div class="content">
                     <ul class="links">
-                        <li>Помощь</li>
+                        <li class="del red">Помощь</li>
+                        <li class="hidden red">Advanced</li>
                         <li>Добавить URL</li>
-                        <li>ЧХ:-)</li>
-                        <li>Список стоп-слов</li>
+                        <li class="del red">ЧХ:-)</li>
+                        <li class="hidden red">Сказки</li>
+                        <li class="del">Список стоп-слов</li>
+                        <li class="hidden">Числа</li>
                     </ul>
-                    <label>
+                    <span class="hidden advice">
+                        <a class="highlighted-text">Советы</a>: Как искать в Яndex?
+                    </span>
+                    <label class="search">
                         Запрос:
                         <input type="text">
                     </label>
-                    <button>Найти.</button>
-                    <p>
+                    <button>Найти</button>
+                    <label class="search-checkbox hidden">
+                        <input type="checkbox">
+                        строгий поиск (<a class="highlighted-text">с языком запросов</a>)
+                    </label>
+                    <p class="yaSite">
                         <small>Язык запросов аналогичен <a href="https://yandex.ru/company/">
                             Яndex-Site</a>, дополнение - поиск по точному слову (без учета других
                             словоформ).
                         </small>
                     </p>
                     <hr class="red-line">
-                    <strong>Примеры правильных запросов:</strong>
+                    <strong>Примеры <span class="del">правильных</span> запросов:</strong>
                     <ul class="requests">
                         <li>беспроводные сети</li>
                         <li>выставка !связь 97</li>
@@ -95,6 +119,10 @@
                         <li>(модуль|продукт)/(-3 +2) лингвистический</li>
                         <li>(КомпТек | Dialogic)</li>
                         <li>(Яndex бесплатно)</li>
+                        <li class="hidden">правила поведения на праздниках и после них</li>
+                        <li class="hidden">обязательное медицинское страхование</li>
+                        <li class="hidden">список православных приходов</li>
+                        <li class="hidden">компьютеры типа башня или tower</li>
                     </ul>
                 </div>
             </main>
@@ -108,21 +136,30 @@
                     <div class="logo-back">
                         <hr class="top-red-line">
                         <hr class="bottom-red-line">
+                        <div class="hidden">Яndex. Спрашивайте в ближайшем</div>
                         <div class="comptek">
                             <span class="comp">comp</span>
                             <span class="tek">tek</span>
                         </div>
+                        <div class="hidden">e</div>
                     </div>
                 </div>
             </footer>
             <address>
-                <span>
-                    Copyright &#169; 1997 <a class="comptekInternational">Comptek International</a>
+                <span class="hidden code">
+                    <a class="highlighted-text">mac</a> | <a class="highlighted-text">koi</a> |
+                    <a class="highlighted-text">win</a> | <a class="highlighted-text">dos</a></span>
+                <span class="copyright">
+                    Copyright &#169; 1997<span class="hidden">, 1998</span>
+                    <a class="highlighted-text">Comptek International</a>
                 </span>
-                <span>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></span>
-                <span>
+                <span class="email">
+                    E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a>
+                </span>
+                <span class="design">
                     Дизайн - Артемий Лебедев (<a href="http://www.artlebedev.ru/">Web Design</a>)
                 </span>
+                <img class="hidden mtu" src="images/mtu.gif">
             </address>
         </div>
     </body>

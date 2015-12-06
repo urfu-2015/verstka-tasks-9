@@ -12,7 +12,7 @@ body
 
 .hidden
 {
-    visibility: hidden;
+    opacity: 0;
 }
 
 .wrapper
@@ -20,6 +20,10 @@ body
     display: flex;
     flex-flow: row wrap;
     min-width: 900px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
 }
 
 header,
@@ -216,6 +220,7 @@ footer .logo-back
     top: -30px;
     left: 20px;
     height: 30px;
+    padding-right: 4px;
 }
 
 footer .logo-back-shadow
@@ -281,7 +286,7 @@ address span
     text-align: center;
 }
 
-.comptekInternational
+.highlighted-text
 {
     color: #00f;
     text-decoration: underline;
@@ -299,7 +304,7 @@ address span
     border-top-width: 0;
 }
 
-.news > div
+.news > div:not(.archive)
 {
     border: 2px solid;
     border-image: linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1 round;
@@ -358,7 +363,7 @@ li
     cursor: pointer;
 }
 
-.links li:nth-child(2n+1)
+.links li[class*='red']
 {
     color: #f00;
 }
@@ -370,15 +375,17 @@ li
     top: -16px;
     left: 90px;
     margin-bottom: 4px;
-    width: 360px;
+    width: 400px;
 }
 
-label
+.search
 {
+    display: block;
     margin-left: 30px;
+    width: 310px;
 }
 
-input
+.search input
 {
     margin-left: 3px;
     width: 220px;
@@ -386,7 +393,7 @@ input
 
 button
 {
-    display: block;
+    display: inline-block;
     margin-left: 90px;
 }
 
@@ -423,7 +430,6 @@ main .red-line
     display: block;
     position: relative;
     cursor: pointer;
-    user-select: none;
 }
 
 input.toggle-round ~ .switch > label
@@ -475,6 +481,57 @@ input.toggle-round:checked ~ .switch > label:after
 
 /* второй макет */
 
+input.toggle-round:checked ~ header .logo-shadow
+{
+    top: -2px;
+}
+
+input.toggle-round:checked ~ header .comptek,
+input.toggle-round:checked ~ header .encoding
+{
+    display: none;
+}
+
+input.toggle-round:checked ~ header .black-part,
+input.toggle-round:checked ~ header .logo-back
+{
+    visibility: hidden;
+    width: 0;
+}
+
+input.toggle-round:checked ~ header .logo
+{
+    visibility: visible;
+    top: -21px;
+    left: -151px;
+    transition: top 2.1s, left 1s;
+    background-color: transparent;
+    border-left-width: 0;
+}
+
+input.toggle-round:checked ~ header .top-black-line
+{
+    visibility: visible;
+    top: -24px;
+    left: 207px;
+    transform: rotate(2deg);
+    -webkit-transform: perspective(10px) rotate(2deg);
+    transition: transform 2s;
+    transition-delay: 3s;
+}
+
+input.toggle-round:checked ~ header .logo-back-shadow
+{
+    box-shadow: none;
+    background: #f00 linear-gradient(to left, #fff 56%, rgba(255,255,255,.9));
+    border: 2px solid #ccc;
+    transform: skewY(0deg) rotate(0deg);
+    width: 560px;
+    height: 62px;
+    transition: width 1.6s, height 1.6s;
+    left: 0;
+}
+
 .logo-text
 {
     display: block;
@@ -483,17 +540,22 @@ input.toggle-round:checked ~ .switch > label:after
     text-transform: uppercase;
     margin-left: 4px;
     word-spacing: -8px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-.logo-text > span
+input.toggle-round:checked ~ header .logo-text
+{
+    opacity: 1;
+    transition: opacity 2s;
+    transition-delay: 2s;
+}
+
+input.toggle-round:checked ~ header .logo-text > span
 {
     color: #f00;
     font-size: 45px;
     margin: 0 7px;
+    transition: color 2s, margin 1s, font-size 2s;
+    transition-delay: 4s;
 }
 
 img[class='hidden']
@@ -508,11 +570,53 @@ img[class='hidden']
     transform: translateZ(10px);
 }
 
+input.toggle-round:checked ~ header #full-loupe
+{
+    opacity: 1;
+    transition: opacity 4s;
+    transition-delay: 5s;
+}
+
 #part1
 {
     top: -81px;
     left: 93px;
     transform: rotate(-48deg);
+}
+
+input.toggle-round:checked ~ header #part1
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ header #part2
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 6.5s;
+}
+
+input.toggle-round:checked ~ header #part3
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 7s;
+}
+
+input.toggle-round:checked ~ header #part4
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 7.5s;
+}
+
+input.toggle-round:checked ~ header #part5
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 8s;
 }
 
 #part2
@@ -543,54 +647,263 @@ img[class='hidden']
     transform: scale(-1, 1) rotate(-94deg);
 }
 
-input.toggle-round:checked ~ header .logo-back,
-input.toggle-round:checked ~ header .black-part
+.lamp
 {
-    visibility: hidden;
     width: 0;
 }
 
-input.toggle-round:checked ~ header .comptek,
-input.toggle-round:checked ~ header .encoding
+input.toggle-round:checked ~ nav .lamp
+{
+    opacity: 1;
+    width: 55px;
+    transition: opacity 1s, width 1s;
+}
+
+input.toggle-round:checked ~ nav .okur,
+input.toggle-round:checked ~ nav .firstp,
+input.toggle-round:checked ~ nav .lastp,
+input.toggle-round:checked ~ main .yaSite,
+input.toggle-round:checked ~ main .requests li:not(.hidden),
+input.toggle-round:checked ~ main .del
 {
     display: none;
 }
 
-input.toggle-round:checked ~ header .top-black-line,
-input.toggle-round:checked ~ header .logo,
-input.toggle-round:checked ~ header .hidden
+p[class*='hidden']
 {
-    visibility: visible;
+    height: 0;
+    margin-bottom: 0;
+    font-size: 0;
 }
 
-input.toggle-round:checked ~ header .logo
+input.toggle-round:checked ~ nav p[class*='hidden']
 {
-    top: -21px;
-    left: -151px;
-    background-color: transparent;
-    border-left-width: 0;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    margin-bottom: 30px;
+    transition: opacity 1s, width 1s, font-size 1s;
+    transition-delay: .7s;
 }
 
-input.toggle-round:checked ~ header .logo-shadow
+.archive
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+input.toggle-round:checked ~ nav .archive
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    transition: opacity 1s, width 1s, font-size 1s;
+    transition-delay: .7s;
+}
+
+li[class*='hidden']
+{
+    height: 0;
+    width: 0;
+    font-size: 0;
+}
+
+input.toggle-round:checked ~ main .requests li[class='hidden']
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    transition: opacity 1s, width 1s, font-size 1s;
+    transition-delay: .7s;
+}
+
+input.toggle-round:checked ~ main .links li[class*='hidden']
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    transition: opacity .4s, width .4s, font-size .4s;
+    transition-delay: .2s;
+    margin-right: 6px;
+}
+
+input.toggle-round:checked ~ main .links
+{
+    transform: rotate(0deg);
+    top: -53px;
+    left: 166px;
+    transition: rotate 1s, top 1s, left 1s;
+    transition-delay: .6s;
+}
+
+input.toggle-round:checked ~ main label
+{
+    padding: 5px 35px 5px 5px;
+    margin-left: 0;
+    background-color: #fff5cc;
+    font-weight: bold;
+    transition: margin 2s, padding 1s, background-color 3s, font-weight 3s;
+}
+
+input.toggle-round:checked ~ main button
+{
+    margin: 10px 0 20px 70px;
+}
+
+input.toggle-round:checked ~ main .content
+{
+    margin-left: 4vw;
+    margin-top: 40px;
+    transition: margin 5s;
+}
+
+.search-checkbox
+{
+    display: inline;
+    height: 0;
+    width: 0;
+}
+
+input.toggle-round:checked ~ main .search-checkbox
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font: normal 13px serif;
+    background: none;
+    transition: opacity .4s, width .4s;
+    transition-delay: .2s;
+}
+
+.advice
+{
+    height: 0;
+    width: 0;
+}
+
+input.toggle-round:checked ~ main .advice
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 5px 70px;
+    font: normal 13px serif;
+    background: none;
+    transition: margin 1s, opacity .4s, width .4s, height .4s;
+    transition-delay: 2s;
+}
+
+footer div.hidden
+{
+    height: 0;
+    width: 0;
+    font-size: 0;
+    display: inline;
+}
+
+input.toggle-round:checked ~ footer .black-part,
+input.toggle-round:checked ~ footer .logo-back-shadow,
+input.toggle-round:checked ~ footer .top-red-line,
+input.toggle-round:checked ~ footer .bottom-red-line
+{
+    display: none;
+}
+
+input.toggle-round:checked ~ footer .logo-back
+{
+    background: none;
+    border: none;
+    top: 0;
+    left: 0;
+    transform: perspective(0) rotate(0deg);
+    width: 100%;
+    transition: background 1s, border 1s, top 3s, left 3s, transform 4s;
+    transition-delay: 3s;
+}
+
+input.toggle-round:checked ~ footer .comptek
 {
     top: 0;
-}
-
-input.toggle-round:checked ~ header .top-black-line
-{
-    top: -24px;
-    left: 207px;
-    transform: rotate(2deg);
-    -webkit-transform: perspective(10px) rotate(2deg);
-}
-
-input.toggle-round:checked ~ header .logo-back-shadow
-{
-    box-shadow: none;
-    background: #f00 linear-gradient(to left, #fff 56%, rgba(255,255,255,.9));
-    border: 2px solid #ccc;
-    transform: skewY(0deg) rotate(0deg);
-    width: 560px;
-    height: 62px;
     left: 0;
+    margin-right: -4px;
+}
+
+input.toggle-round:checked ~ footer div.hidden
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    color: #888;
+    font: 700 18px 'Roboto', sans-serif;
+    transition: opacity 3s, width 4s, height 4s;
+    transition-delay: 3s;
+}
+
+address span.hidden,
+address img.hidden
+{
+    width: 0;
+    height: 0;
+    display: inline;
+    font-size: 0;
+}
+
+input.toggle-round:checked ~ address
+{
+    width: 250px;
+    text-align: center;
+}
+
+input.toggle-round:checked ~ address .copyright > .hidden
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    transition: opacity .2s, width .2s, height .2s;
+    transition-delay: .4s;
+}
+
+input.toggle-round:checked ~ address .copyright,
+input.toggle-round:checked ~ address .design
+{
+    padding-top: 5px;
+    transition: padding 1s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ address .email,
+input.toggle-round:checked ~ address .code
+{
+    padding-bottom: 5px;
+    transition: padding 1s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ address .code
+{
+    opacity: 1;
+    height: 100%;
+    font: inherit;
+    margin: 15px 0 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 250px;
+    transition: opacity 2s, height 1s, width 1s, margin 1s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ address img.hidden
+{
+    opacity: 1;
+    width: 144px;
+    height: 36px;
+    margin-top: 15px;
+    transition: opacity 2s, height 1s, width 1s, margin 1s;
+    transition-delay: 6s;
 }
