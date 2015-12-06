@@ -10,6 +10,11 @@ body
     padding: 0;
 }
 
+.hidden
+{
+    visibility: hidden;
+}
+
 .wrapper
 {
     display: flex;
@@ -82,8 +87,8 @@ main
     width: 320px;
     height: 62px;
     border: 2px solid;
-    border-image: linear-gradient(40deg, #fff 22%, rgba(255,0,0,.95), #f00) 1;
-    background: #fff linear-gradient(to right, rgba(255,255,255,0) 70%, #fff);
+    border-image: linear-gradient(40deg, transparent 22%, rgba(255,0,0,.95), #f00) 1;
+    background: #fff linear-gradient(to right, transparent 70%, #fff);
 }
 
 .logo-shadow
@@ -104,7 +109,7 @@ main
     width: 185px;
     height: 68px;
     border: 2px solid;
-    border-image: linear-gradient(320deg, rgba(0,0,0,0) 42%, rgba(0,0,0,.9), #000) 1 round;
+    border-image: linear-gradient(320deg, transparent 42%, rgba(0,0,0,.9), #000) 1;
     transform: skewY(1deg) rotate(-2deg);
 }
 
@@ -223,7 +228,7 @@ footer .black-part
     top: 30px;
     left: -25px;
     height: 30px;
-    border-image: linear-gradient(350deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.9), #000) 1 round;
+    border-image: linear-gradient(350deg, transparent 50%, rgba(0,0,0,.9), #000) 1 round;
     transform: perspective(10px) rotate(-1deg);
 }
 
@@ -235,7 +240,7 @@ footer .black-part
     height: 35px;
     width: 60px;
     border: 2px solid;
-    border-image: linear-gradient(205deg, rgba(0,0,0,0) 57%, rgba(0,0,0,.9), #000) 1;
+    border-image: linear-gradient(205deg, transparent 57%, rgba(0,0,0,.9), #000) 1;
 }
 
 footer .comptek
@@ -411,7 +416,7 @@ main .red-line
     visibility: hidden;
 }
 
-.toggle + label
+.toggle ~ .switch > label
 {
     display: block;
     position: relative;
@@ -419,7 +424,7 @@ main .red-line
     user-select: none;
 }
 
-input.toggle-round + label
+input.toggle-round ~ .switch > label
 {
     padding: 2px 0 2px 2px;
     width: 60px;
@@ -428,8 +433,8 @@ input.toggle-round + label
     border-radius: 30px;
 }
 
-input.toggle-round + label:before,
-input.toggle-round + label:after
+input.toggle-round ~ .switch > label:before,
+input.toggle-round ~ .switch > label:after
 {
     display: block;
     position: absolute;
@@ -439,7 +444,7 @@ input.toggle-round + label:after
     content: '';
 }
 
-input.toggle-round + label:before
+input.toggle-round ~ .switch > label:before
 {
     right: 1px;
     background-color: #f1f1f1;
@@ -447,7 +452,7 @@ input.toggle-round + label:before
     transition: background .4s;
 }
 
-input.toggle-round + label:after
+input.toggle-round ~ .switch > label:after
 {
     width: 29px;
     background-color: #fff;
@@ -456,12 +461,135 @@ input.toggle-round + label:after
     transition: margin .4s;
 }
 
-input.toggle-round:checked + label:before
+input.toggle-round:checked ~ .switch > label:before
 {
     background-color: #df8080;
 }
 
-input.toggle-round:checked + label:after
+input.toggle-round:checked ~ .switch > label:after
 {
     margin-left: 30px;
+}
+
+/* второй макет */
+
+.logo-text
+{
+    display: block;
+    color: #aaa;
+    font: 700 25px 'Roboto Mono', sans-serif;
+    text-transform: uppercase;
+    margin-left: 4px;
+    word-spacing: -8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.logo-text > span
+{
+    color: #f00;
+    font-size: 45px;
+    margin: 0 7px;
+}
+
+img[class='hidden']
+{
+    position: relative;
+}
+
+#full-loupe
+{
+    top: -52px;
+    left: 115px;
+    transform: translateZ(10px);
+}
+
+#part1
+{
+    top: -81px;
+    left: 93px;
+    transform: rotate(-48deg);
+}
+
+#part2
+{
+    top: -131px;
+    left: 34px;
+    transform: rotate(-94deg);
+}
+
+#part3
+{
+    top: -53px;
+    left: -109px;
+    transform: scale(-1, 1);
+}
+
+#part4
+{
+    top: -81px;
+    left: -219px;
+    transform: scale(-1, 1) rotate(-48deg);
+}
+
+#part5
+{
+    top: -131px;
+    left: -295px;
+    transform: scale(-1, 1) rotate(-94deg);
+}
+
+
+input.toggle-round:checked ~ header .logo-back,
+input.toggle-round:checked ~ header .black-part
+{
+    visibility: hidden;
+    width: 0;
+}
+
+input.toggle-round:checked ~ header .comptek,
+input.toggle-round:checked ~ header .encoding
+{
+    display: none;
+}
+
+input.toggle-round:checked ~ header .top-black-line,
+input.toggle-round:checked ~ header .logo,
+input.toggle-round:checked ~ header .hidden
+{
+    visibility: visible;
+}
+
+input.toggle-round:checked ~ header .logo
+{
+    top: -21px;
+    left: -151px;
+    background-color: transparent;
+    border-left-width: 0;
+}
+
+input.toggle-round:checked ~ header .logo-shadow
+{
+    top: 0;
+}
+
+input.toggle-round:checked ~ header .top-black-line
+{
+    top: -24px;
+    left: 207px;
+    transform: rotate(2deg);
+    -webkit-transform: perspective(10px) rotate(2deg);
+}
+
+input.toggle-round:checked ~ header .logo-back-shadow
+{
+    box-shadow: none;
+    background: #f00 linear-gradient(to left, #fff 56%, rgba(255,255,255,.9));
+    border: 2px solid #ccc;
+    transform: skewY(0deg) rotate(0deg);
+    width: 560px;
+    height: 62px;
+    left: 0;
 }
