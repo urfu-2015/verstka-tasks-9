@@ -821,8 +821,9 @@ input.toggle-round:checked ~ footer .logo-back
     top: 0;
     left: 0;
     transform: perspective(0) rotate(0deg);
+    -moz-transform: rotate(0deg);
     width: 100%;
-    transition: background 1s, border 1s, top 3s, left 3s, transform 4s;
+    transition: background 1s, border 1s, top 3s, left 3s, rotate 4s;
     transition-delay: 3s;
 }
 
