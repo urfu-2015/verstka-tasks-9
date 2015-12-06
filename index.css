@@ -1,7 +1,8 @@
-@font-face {
+@font-face
+{
     font-family: 'Arial Black';
     src: url('fonts/ariblk.woff2') format('woff2'),
-    url('fonts/ariblk.woff') format('woff');
+        url('fonts/ariblk.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -173,7 +174,8 @@ body
     border-image: linear-gradient(to left, #f00 0%, #f00 25%, transparent 70%) 1;
 }
 
-.yandex, .ya
+.yandex,
+.ya
 {
     display: inline-block;
     font: 45px 'Arial Black', sans-serif;
@@ -182,7 +184,6 @@ body
     border-right: 2px solid #f00;
     border-bottom: 2px solid #f00;
 }
-
 
 .yandex
 {
@@ -450,13 +451,16 @@ footer
 
 @keyframes slide
 {
-    0% {
+    0%
+    {
         transform: translateX(0);
     }
-    50% {
+    50%
+    {
         transform: translateX(-100%);
     }
-    100% {
+    100%
+    {
         transform: translateX(0);
     }
 }
