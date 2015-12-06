@@ -28,7 +28,7 @@ footer
 
 header
 {
-    padding-top: 45px;
+    padding-top: 17px;
 }
 
 address
@@ -66,7 +66,7 @@ main
 .logo-back-shadow
 {
     position: relative;
-    top: -24px;
+    top: -23px;
     left: 305px;
     width: 200px;
     height: 70px;
@@ -89,6 +89,7 @@ main
 .logo-shadow
 {
     position: relative;
+    top: -17px;
     left: 180px;
     width: 140px;
     box-shadow: 8px 5px 6px -1px rgba(0,0,0,.4);
@@ -98,7 +99,7 @@ main
 {
     position: relative;
     top: -16px;
-    left: 170px;
+    left: 168px;
     z-index: 10;
     width: 185px;
     height: 68px;
@@ -121,6 +122,7 @@ main
     color: #f00;
     font: 47px 'Roboto Mono', sans-serif;
     box-shadow: 7px 2px 7px -2px rgba(0,0,0,.5);
+    border-top-width: 0;
 }
 
 .comptek
@@ -131,6 +133,7 @@ main
     left: 380px;
     border: 1px solid #6f6a6a;
     background-color: #fff;
+    height: 20px;
 }
 
 .comp,
@@ -140,6 +143,7 @@ main
     text-transform: uppercase;
     text-align: center;
     padding: 0 3px;
+    height: 20px;
 }
 
 .comp
@@ -163,8 +167,8 @@ main
 .encoding
 {
     position: relative;
-    top: -20px;
-    left: 215px;
+    top: -29px;
+    left: 232px;
     text-transform: uppercase;
     color: #999;
     font: bold 12px 'Fjalla One', sans-serif;
@@ -182,19 +186,19 @@ hr
 hr[class*='black-line']
 {
     background: linear-gradient(to left, rgba(0,0,0,.5), #fff);
-    transform: translateZ(-1px);
+    -webkit-transform: perspective(10px);
 }
 
 .top-black-line
 {
-    top: -18px;
+    top: -7px;
     left: 310px;
 }
 
 .bottom-black-line
 {
-    top: 52px;
-    left: 185px;
+    top: 66px;
+    left: 180px;
     width: 180px;
 }
 
@@ -246,7 +250,7 @@ footer .top-black-line
 
 hr[class*='red-line']
 {
-    background: #f00 linear-gradient(to left, rgba(255,0,0,.2), #fff);
+    background: #f00 linear-gradient(to left, #f00, #fff);
 }
 
 .top-red-line
@@ -283,11 +287,19 @@ address span
     margin-left: 4vw;
     padding: 0 16px;
     border: 2px solid;
-    border-image: linear-gradient(to bottom, #fff, #f00 60%, #fff) 1 round;
+    border-image: linear-gradient(to bottom, #fff, #f00 60%, #fff 95%) 1 round;
     transform: rotate(-2deg);
+    border-top-width: 0;
 }
 
-.news
+.news > div
+{
+    border: 2px solid;
+    border-image: linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1 round;
+    border-top-width: 0;
+}
+
+.no-rotate
 {
     transform: rotate(2deg);
 }
@@ -369,6 +381,12 @@ button
 {
     display: block;
     margin-left: 90px;
+}
+
+main .red-line
+{
+    transform: rotate(-2deg);
+    -webkit-transform: perspective(10px) rotate(-2deg);
 }
 
 .requests
