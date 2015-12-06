@@ -18,13 +18,8 @@
 }
 @font-face
 {
-    font-family: Open_Sans_Light;
-    src: url('fonts2/Open_Sans_Light.ttf') format('truetype');
-}
-@font-face
-{
-    font-family: Open_Sans_Semibold;
-    src: url('fonts2/Open_Sans_Semibold.ttf') format('truetype');
+    font-family: ArchivoBlack-Regular;
+    src: url('fonts2/ArchivoBlack-Regular.ttf') format('truetype');
 }
 .list_os
 {
@@ -124,9 +119,11 @@ header
     border-image-width: 2px;
     border-width: 2px 2px 2px 0;
     justify-content: flex-end;
+    padding-right: 3px;
+    padding-top: 3px;
     position: absolute;
     background: linear-gradient(to left, rgb(255,228,225), rgb(255,255,255));
-    height: 60px;
+    height: 57px;
     left: 210px;
     top: 25px;
     width: 300px;
@@ -173,7 +170,6 @@ header
 }
 .comptek
 {
-    font-family: Arial, sans-serif;
     display: flex;
     align-self: flex-start;
 }
@@ -185,14 +181,20 @@ header
 }
 .comp
 {
-    font-family: Open_Sans_Semibold;
-    background: rgba(255,255,255,.5);
+    font-family: ArchivoBlack-Regular, sans-serif;
+    font-weight: 900;
+    background: rgb(255,255,255);
+    line-height: 15px;
+    opacity: .5;
 }
 .tek
 {
-    font-family: Open_Sans_Light;
+    line-height: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
     color: white;
     background: indianred;
+    opacity: .7;
 }
 main
 {
