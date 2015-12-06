@@ -1,1 +1,910 @@
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.hidden
+{
+    opacity: 0;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 900px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+header,
+footer
+{
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+header
+{
+    padding-top: 17px;
+}
+
+address
+{
+    flex: 1 0 100%;
+    font: normal 13px serif;
+}
+
+nav
+{
+    flex: 1 0 36.5%;
+    display: flex;
+}
+
+main
+{
+    flex: 2 0 63.5%;
+}
+
+/* HEADER */
+
+.logo-back
+{
+    position: relative;
+    top: -5px;
+    right: 175px;
+    width: 480px;
+    height: 62px;
+    border: 2px solid;
+    border-image: linear-gradient(150deg, #fff 45%, rgba(255,0,0,.9), #f00) 1;
+    background: rgba(255,0,0,0) linear-gradient(to right, #fff 56%, #fab7b7);
+    transform: perspective(10px) rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    border-left-width: 0;
+}
+
+.logo-back-shadow
+{
+    position: relative;
+    top: -23px;
+    left: 305px;
+    width: 200px;
+    height: 70px;
+    box-shadow: 8px 14px 6px -2px rgba(0,0,0,.4);
+    transform: skewY(1deg) rotate(-1deg);
+}
+
+.logo
+{
+    position: relative;
+    top: -8px;
+    right: 65px;
+    width: 320px;
+    height: 62px;
+    border: 2px solid;
+    border-image: linear-gradient(40deg, transparent 22%, rgba(255,0,0,.95), #f00) 1;
+    background: #fff linear-gradient(to right, transparent 70%, #fff);
+}
+
+.logo-shadow
+{
+    position: relative;
+    top: -17px;
+    left: 180px;
+    width: 140px;
+    box-shadow: 8px 5px 6px -1px rgba(0,0,0,.4);
+}
+
+.black-part
+{
+    position: relative;
+    top: -16px;
+    left: 168px;
+    z-index: 10;
+    width: 185px;
+    height: 68px;
+    border: 2px solid;
+    border-image: linear-gradient(320deg, transparent 42%, rgba(0,0,0,.9), #000) 1;
+    transform: skewY(1deg) rotate(-2deg);
+}
+
+.name
+{
+    font: 42px 'Anton', sans-serif;
+    margin: 0 5px;
+}
+
+.first-letter
+{
+    border: 2px solid #f00;
+    margin-right: 5px;
+    padding: 0 3px 0 6px;
+    color: #f00;
+    font: 47px 'Roboto Mono', sans-serif;
+    box-shadow: 7px 2px 7px -2px rgba(0,0,0,.5);
+    border-top-width: 0;
+}
+
+.comptek
+{
+    display: inline-block;
+    position: relative;
+    top: -62px;
+    left: 380px;
+    border: 1px solid #6f6a6a;
+    background-color: #fff;
+    height: 20px;
+}
+
+.comp,
+.tek
+{
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 3px;
+    height: 20px;
+}
+
+.comp
+{
+
+    color: #6f6a6a;
+    font: 16px Roboto, sans-serif;
+    font-weight: 900;
+    width: 42px;
+}
+
+.tek
+{
+    background-color: #df8080;
+    color: #fff;
+    font: 16px Roboto, sans-serif;
+    border-left: 1px solid #6f6a6a;
+    width: 35px;
+}
+
+.encoding
+{
+    position: relative;
+    top: -29px;
+    left: 232px;
+    text-transform: uppercase;
+    color: #999;
+    font: bold 12px 'Fjalla One', sans-serif;
+    word-spacing: 8px;
+}
+
+hr
+{
+    position: relative;
+    border: 0;
+    height: 2px;
+    width: 190px;
+}
+
+hr[class*='black-line']
+{
+    background: linear-gradient(to left, rgba(0,0,0,.5), #fff);
+    -webkit-transform: perspective(10px);
+}
+
+.top-black-line
+{
+    top: -7px;
+    left: 310px;
+}
+
+.bottom-black-line
+{
+    top: 66px;
+    left: 180px;
+    width: 180px;
+}
+
+/* FOOTER */
+
+footer .logo-back
+{
+    top: -30px;
+    left: 20px;
+    height: 30px;
+    padding-right: 4px;
+}
+
+footer .logo-back-shadow
+{
+    top: -10px;
+    left: 300px;
+    height: 30px;
+}
+
+footer .black-part
+{
+    top: 30px;
+    left: -25px;
+    height: 30px;
+    border-image: linear-gradient(350deg, transparent 50%, rgba(0,0,0,.9), #000) 1 round;
+    transform: perspective(10px) rotate(-1deg);
+}
+
+.inside-black-part
+{
+    position: relative;
+    top: -5px;
+    left: 10px;
+    height: 35px;
+    width: 60px;
+    border: 2px solid;
+    border-image: linear-gradient(205deg, transparent 57%, rgba(0,0,0,.9), #000) 1;
+}
+
+footer .comptek
+{
+    top: -23px;
+}
+
+footer .top-black-line
+{
+    top: -50px;
+}
+
+hr[class*='red-line']
+{
+    background: #f00 linear-gradient(to left, #f00, #fff);
+}
+
+.top-red-line
+{
+    top: -13px;
+    left: -60px;
+}
+
+.bottom-red-line
+{
+    top: -9px;
+    left: -160px;
+    width: 170px;
+}
+
+/* ADDRESS */
+
+address span
+{
+    display: block;
+    text-align: center;
+}
+
+.highlighted-text
+{
+    color: #00f;
+    text-decoration: underline;
+}
+
+/* NAV */
+
+.news-block
+{
+    margin-left: 4vw;
+    padding: 0 16px;
+    border: 2px solid;
+    border-image: linear-gradient(to bottom, #fff, #f00 60%, #fff 95%) 1 round;
+    transform: rotate(-2deg);
+    border-top-width: 0;
+}
+
+.news > div:not(.archive)
+{
+    border: 2px solid;
+    border-image: linear-gradient(to right, #fff, #f00 40%, #fff 40%) 1 round;
+    border-top-width: 0;
+}
+
+.no-rotate
+{
+    transform: rotate(2deg);
+}
+
+.news-header
+{
+    font: bold 13px 'Arial NarrowBlack', sans-serif;
+    padding-left: 10px;
+    color: #f00;
+}
+
+strong
+{
+    display: block;
+}
+
+P
+{
+    margin-bottom: 30px;
+}
+
+.red-line
+{
+    margin: 0 0 15px;
+}
+
+/* MAIN */
+
+.content
+{
+    margin-left: 13vw;
+}
+
+ul
+{
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+}
+
+.links li
+{
+    display: inline;
+    font: bold 13px 'Arial NarrowBlack', sans-serif;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.links li[class*='red']
+{
+    color: #f00;
+}
+
+.links
+{
+    transform: rotateZ(-2deg);
+    position: relative;
+    top: -16px;
+    left: 90px;
+    margin-bottom: 4px;
+    width: 400px;
+}
+
+.search
+{
+    display: block;
+    margin-left: 30px;
+    width: 310px;
+}
+
+.search input
+{
+    margin-left: 3px;
+    width: 220px;
+}
+
+button
+{
+    display: inline-block;
+    margin-left: 90px;
+}
+
+main .red-line
+{
+    transform: rotate(-2deg);
+    -webkit-transform: perspective(10px) rotate(-2deg);
+}
+
+.requests
+{
+    margin-top: 0;
+    font: 13px serif;
+}
+
+/* SWITCH */
+
+.switch
+{
+    position: relative;
+    top: 20px;
+    left: 92%;
+}
+
+.toggle
+{
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.toggle ~ .switch > label
+{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+input.toggle-round ~ .switch > label
+{
+    padding: 2px 0 2px 2px;
+    width: 60px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 30px;
+}
+
+input.toggle-round ~ .switch > label:before,
+input.toggle-round ~ .switch > label:after
+{
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: '';
+}
+
+input.toggle-round ~ .switch > label:before
+{
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    transition: background .4s;
+}
+
+input.toggle-round ~ .switch > label:after
+{
+    width: 29px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: margin .4s;
+}
+
+input.toggle-round:checked ~ .switch > label:before
+{
+    background-color: #df8080;
+}
+
+input.toggle-round:checked ~ .switch > label:after
+{
+    margin-left: 30px;
+}
+
+/* второй макет */
+
+input.toggle-round:checked ~ header .logo-shadow
+{
+    top: -2px;
+}
+
+input.toggle-round:checked ~ header .comptek,
+input.toggle-round:checked ~ header .encoding
+{
+    display: none;
+}
+
+input.toggle-round:checked ~ header .black-part,
+input.toggle-round:checked ~ header .logo-back
+{
+    visibility: hidden;
+    width: 0;
+}
+
+input.toggle-round:checked ~ header .logo
+{
+    visibility: visible;
+    top: -21px;
+    left: -151px;
+    transition: top 2.1s, left 1s;
+    background-color: transparent;
+    border-left-width: 0;
+}
+
+input.toggle-round:checked ~ header .top-black-line
+{
+    visibility: visible;
+    top: -24px;
+    left: 207px;
+    transform: rotate(2deg);
+    -webkit-transform: perspective(10px) rotate(2deg);
+    transition: transform 2s;
+    transition-delay: 3s;
+}
+
+input.toggle-round:checked ~ header .logo-back-shadow
+{
+    box-shadow: none;
+    background: #f00 linear-gradient(to left, #fff 56%, rgba(255,255,255,.9));
+    border: 2px solid #ccc;
+    transform: skewY(0deg) rotate(0deg);
+    width: 560px;
+    height: 62px;
+    transition: width 1.6s, height 1.6s;
+    left: 0;
+}
+
+.logo-text
+{
+    display: block;
+    color: #aaa;
+    font: 700 25px 'Roboto Mono', sans-serif;
+    text-transform: uppercase;
+    margin-left: 4px;
+    word-spacing: -8px;
+}
+
+input.toggle-round:checked ~ header .logo-text
+{
+    opacity: 1;
+    transition: opacity 2s;
+    transition-delay: 2s;
+}
+
+input.toggle-round:checked ~ header .logo-text > span
+{
+    color: #f00;
+    font-size: 45px;
+    margin: 0 7px;
+    transition: color 2s, margin 1s, font-size 2s;
+    transition-delay: 4s;
+}
+
+img[class='hidden']
+{
+    position: relative;
+}
+
+#full-loupe
+{
+    top: -52px;
+    left: 115px;
+    transform: translateZ(10px);
+}
+
+input.toggle-round:checked ~ header #full-loupe
+{
+    opacity: 1;
+    transition: opacity 4s;
+    transition-delay: 5s;
+}
+
+#part1
+{
+    top: -81px;
+    left: 93px;
+    transform: rotate(-48deg);
+}
+
+input.toggle-round:checked ~ header #part1
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ header #part2
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 6.5s;
+}
+
+input.toggle-round:checked ~ header #part3
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 7s;
+}
+
+input.toggle-round:checked ~ header #part4
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 7.5s;
+}
+
+input.toggle-round:checked ~ header #part5
+{
+    opacity: 1;
+    transition: opacity .5s;
+    transition-delay: 8s;
+}
+
+#part2
+{
+    top: -131px;
+    left: 34px;
+    transform: rotate(-94deg);
+}
+
+#part3
+{
+    top: -53px;
+    left: -109px;
+    transform: scale(-1, 1);
+}
+
+#part4
+{
+    top: -81px;
+    left: -219px;
+    transform: scale(-1, 1) rotate(-48deg);
+}
+
+#part5
+{
+    top: -131px;
+    left: -295px;
+    transform: scale(-1, 1) rotate(-94deg);
+}
+
+.lamp
+{
+    width: 0;
+}
+
+input.toggle-round:checked ~ nav .lamp
+{
+    opacity: 1;
+    width: 55px;
+    transition: opacity 1s, width 1s;
+}
+
+input.toggle-round:checked ~ nav .okur,
+input.toggle-round:checked ~ nav .firstp,
+input.toggle-round:checked ~ nav .lastp,
+input.toggle-round:checked ~ main .yaSite,
+input.toggle-round:checked ~ main .requests li:not(.hidden),
+input.toggle-round:checked ~ main .del
+{
+    display: none;
+}
+
+p[class*='hidden']
+{
+    height: 0;
+    margin-bottom: 0;
+    font-size: 0;
+}
+
+input.toggle-round:checked ~ nav p[class*='hidden']
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    margin-bottom: 30px;
+    transition: opacity 1s, width 1s, font-size 1s;
+    transition-delay: .7s;
+}
+
+.archive
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+input.toggle-round:checked ~ nav .archive
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    transition: opacity 1s, width 1s, font-size 1s;
+    transition-delay: .7s;
+}
+
+li[class*='hidden']
+{
+    height: 0;
+    width: 0;
+    font-size: 0;
+}
+
+input.toggle-round:checked ~ main .requests li[class='hidden']
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    transition: opacity 1s, width 1s, font-size 1s;
+    transition-delay: .7s;
+}
+
+input.toggle-round:checked ~ main .links li[class*='hidden']
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    transition: opacity .4s, width .4s, font-size .4s;
+    transition-delay: .2s;
+    margin-right: 6px;
+}
+
+input.toggle-round:checked ~ main .links
+{
+    transform: rotate(0deg);
+    top: -53px;
+    left: 166px;
+    transition: rotate 1s, top 1s, left 1s;
+    transition-delay: .6s;
+}
+
+input.toggle-round:checked ~ main label
+{
+    padding: 5px 35px 5px 5px;
+    margin-left: 0;
+    background-color: #fff5cc;
+    font-weight: bold;
+    transition: margin 2s, padding 1s, background-color 3s, font-weight 3s;
+}
+
+input.toggle-round:checked ~ main button
+{
+    margin: 10px 0 20px 70px;
+}
+
+input.toggle-round:checked ~ main .content
+{
+    margin-left: 4vw;
+    margin-top: 40px;
+    transition: margin 5s;
+}
+
+.search-checkbox
+{
+    display: inline;
+    height: 0;
+    width: 0;
+}
+
+input.toggle-round:checked ~ main .search-checkbox
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font: normal 13px serif;
+    background: none;
+    transition: opacity .4s, width .4s;
+    transition-delay: .2s;
+}
+
+.advice
+{
+    height: 0;
+    width: 0;
+}
+
+input.toggle-round:checked ~ main .advice
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 5px 70px;
+    font: normal 13px serif;
+    background: none;
+    transition: margin 1s, opacity .4s, width .4s, height .4s;
+    transition-delay: 2s;
+}
+
+footer div.hidden
+{
+    height: 0;
+    width: 0;
+    font-size: 0;
+    display: inline;
+}
+
+input.toggle-round:checked ~ footer .black-part,
+input.toggle-round:checked ~ footer .logo-back-shadow,
+input.toggle-round:checked ~ footer .top-red-line,
+input.toggle-round:checked ~ footer .bottom-red-line
+{
+    display: none;
+}
+
+input.toggle-round:checked ~ footer .logo-back
+{
+    background: none;
+    border: none;
+    top: 0;
+    left: 0;
+    transform: perspective(0) rotate(0deg);
+    -moz-transform: rotate(0deg);
+    width: 100%;
+    transition: background 1s, border 1s, top 3s, left 3s, rotate 4s;
+    transition-delay: 3s;
+}
+
+input.toggle-round:checked ~ footer .comptek
+{
+    top: 0;
+    left: 0;
+    margin-right: -4px;
+}
+
+input.toggle-round:checked ~ footer div.hidden
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    color: #888;
+    font: 700 18px 'Roboto', sans-serif;
+    transition: opacity 3s, width 4s, height 4s;
+    transition-delay: 3s;
+}
+
+address span.hidden,
+address img.hidden
+{
+    width: 0;
+    height: 0;
+    display: inline;
+    font-size: 0;
+}
+
+input.toggle-round:checked ~ address
+{
+    width: 250px;
+    text-align: center;
+}
+
+input.toggle-round:checked ~ address .copyright > .hidden
+{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    font: inherit;
+    transition: opacity .2s, width .2s, height .2s;
+    transition-delay: .4s;
+}
+
+input.toggle-round:checked ~ address .copyright,
+input.toggle-round:checked ~ address .design
+{
+    padding-top: 5px;
+    transition: padding 1s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ address .email,
+input.toggle-round:checked ~ address .code
+{
+    padding-bottom: 5px;
+    transition: padding 1s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ address .code
+{
+    opacity: 1;
+    height: 100%;
+    font: inherit;
+    margin: 15px 0 5px;
+    text-transform: uppercase;
+    font-size: 10px;
+    width: 250px;
+    transition: opacity 2s, height 1s, width 1s, margin 1s;
+    transition-delay: 6s;
+}
+
+input.toggle-round:checked ~ address img.hidden
+{
+    opacity: 1;
+    width: 144px;
+    height: 36px;
+    margin-top: 15px;
+    transition: opacity 2s, height 1s, width 1s, margin 1s;
+    transition-delay: 6s;
+}
