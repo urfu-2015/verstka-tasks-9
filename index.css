@@ -64,8 +64,10 @@ main
     height: 62px;
     border: 2px solid;
     border-image: linear-gradient(150deg, #fff 45%, rgba(255,0,0,.9), #f00) 1;
-    background: #f00 linear-gradient(to right, #fff 56%, rgba(255,255,255,.9));
+    background: rgba(255,0,0,0) linear-gradient(to right, #fff 56%, #fab7b7);
     transform: perspective(10px) rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    border-left-width: 0;
 }
 
 .logo-back-shadow
@@ -540,7 +542,6 @@ img[class='hidden']
     left: -295px;
     transform: scale(-1, 1) rotate(-94deg);
 }
-
 
 input.toggle-round:checked ~ header .logo-back,
 input.toggle-round:checked ~ header .black-part
