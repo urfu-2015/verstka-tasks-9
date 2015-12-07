@@ -161,7 +161,6 @@ header
     box-shadow: 5px 5px 10px rgba(0,0,0,.5);
     border: 2px solid red;
     line-height: 65px;
-    z-index: 10;
     padding-left: 3px;
     padding-right: 3px;
     position: relative;
