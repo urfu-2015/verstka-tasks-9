@@ -13,7 +13,7 @@ main
     flex-wrap: nowrap;
     justify-content: center;
     max-width: 1300px;
-    min-width: 1000px;
+    min-width: 800px;
 }
 
 body > header
@@ -29,6 +29,27 @@ body > header
 .hotNewsSection
 {
     flex-basis: 31%;
+    -webkit-border-image: linear-gradient(#fff 20%, #f00 60%, #fff) 1;
+    -moz-border-image: linear-gradient(#fff 20%, #f00 60%, #fff) 1;
+    -o-border-image: linear-gradient(#fff 20%, #f00 60%, #fff) 1;
+    border-image: linear-gradient(#fff 20%, #f00 60%, #fff) 1;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.hotNewsSection > *
+{
+    -webkit-transform: rotate(2deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(2deg) translate3d(0, 0, 0);
+    -ms-transform: rotate(2deg) translate3d(0, 0, 0);
+    -o-transform: rotate(2deg) translate3d(0, 0, 0);
+    transform: rotate(2deg) translate3d(0, 0, 0);
 }
 
 .hotNewsSection > img
@@ -307,19 +328,6 @@ a .text,
 a .red
 {
     color: #f00;
-}
-
-.verticalLine
-{
-    height: 300px;
-    width: 2px;
-    margin: 0 10px;
-    background: linear-gradient(#fff 20%, #f00 40%, #fff );
-    -webkit-transform: rotate(-2deg) translate3d( 0, 0, 0);
-    -moz-transform: rotate(-2deg) translate3d( 0, 0, 0);
-    -ms-transform: rotate(-2deg) translate3d( 0, 0, 0);
-    -o-transform: rotate(-2deg) translate3d( 0, 0, 0);
-    transform: rotate(-2deg) translate3d( 0, 0, 0);
 }
 
 .horisontalLine
