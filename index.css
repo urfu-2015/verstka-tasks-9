@@ -27,7 +27,6 @@
     letter-spacing: .7px;
     color: rgb(139, 139, 131);
 }
-
 .tip
 {
     font-size: 12px;
@@ -80,6 +79,7 @@ header
     transform: rotate(-2deg);
     display: flex;
     position: relative;
+    backface-visibility: hidden;
 }
 .left_wafer_level1
 {
@@ -197,9 +197,9 @@ header
 }
 main
 {
+    flex-direction: row;
     display: flex;
     width: 100%;
-    flex-direction: row;
 }
 .list_os
 {
@@ -215,6 +215,7 @@ main
 }
 .left_side
 {
+
     border-image: linear-gradient(to top, rgb(255,255,255), rgb(255,0,0), rgb(255,255,255));
     border-image-repeat: stretch;
     border-image-slice: 1;
@@ -245,6 +246,7 @@ main
 }
 .line
 {
+    backface-visibility: hidden;
     margin-left: 5%;
     background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
     height: 2px;
@@ -408,6 +410,7 @@ main
 }
 footer
 {
-    display: flex;
+    backface-visibility: hidden;
     flex-direction: column;
+    display: flex;
 }
