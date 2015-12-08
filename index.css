@@ -10,6 +10,8 @@ header
     flex-direction: column;
     align-items: center;
     transform: rotate(-1deg);
+    position: relative;
+    -webkit-backface-visibility: hidden;
 }
 
 .systems
@@ -17,32 +19,38 @@ header
     font: 1em Impact,sans-serif;
     color: #888;
     padding: 5px;
+    z-index: 1;
+}
+
+.cute-border
+{
+    position: relative;
+    top: -18px;
+    left: -10px;
+    border-image: linear-gradient(to left, transparent 70%, #000) 1;
+    border-style: solid;
+}
+
+.another-cute-border
+{
+    position: relative;
+    border-image: linear-gradient(to right, transparent 60%, #000) 1;
+    border-style: solid none none none;
+    border-width: 3px 0 0 0;
+    top: 10px;
 }
 
 .wrapper
 {
     position: relative;
-    width: 750px;
-    background-image: linear-gradient(to right, #fff, #fcc);
+    width: 700px;
+    background-image: linear-gradient(to right, transparent 50%, #fdd);
+    background-origin: border-box;
     display: flex;
-}
-
-.wrapper:before
-{
-    content: '';
-    position: absolute;
-}
-
-.wrapper:before
-{
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background-image: -webkit-gradient(radial, right top, 10, 90% 0%, 150, from(#f00), to(transparent)),
-        -webkit-radial-gradient(right top, 300px 460px, #f00, transparent),
-        -moz-radial-gradient(right top, farthest-corner, #f00 0%, transparent 72%);
-    z-index: -2;
+    top: 15px;
+    left: 10px;
+    border-image: linear-gradient(to right, transparent 60%, #f00) 1;
+    border-style: solid;
 }
 
 .sponsor
@@ -53,6 +61,7 @@ header
     border-collapse: collapse;
     height: 20px;
     font: 1em Tahoma,sans-serif;
+    padding: 3px;
 }
 
 .sponsor-part1
@@ -74,10 +83,12 @@ header
 {
     display: flex;
     font: 4em Impact,sans-serif;
-    padding: 0 0 0 250px;
+    padding: 0 0 0 220px;
     box-shadow: 4px 4px 10px #555;
     position: relative;
-    border: 2px solid #f00;
+    border-image: linear-gradient(to right, transparent 25%, #f00 60%) 1;
+    border-style: solid;
+    top: -10px;
 }
 
 .first-letter
@@ -132,18 +143,32 @@ h3
 aside
 {
     flex-basis: 400px;
-    border-left: 2px solid #f00;
-    border-right: 2px solid #f00;
+    border-image: linear-gradient(to bottom, transparent, #f00, transparent) 1;
+    border-style: solid;
     padding: 10px;
+    transform: rotate(-2deg)
+}
+
+aside>*
+{
+    transform: rotate(2deg);
+}
+
+header hr
+{
+    transform: rotate(0deg);
+    border: none;
+    background-image: linear-gradient(to right, transparent, #000);
 }
 
 hr
 {
-    border: none; /* Убираем границу для браузера Firefox */
-    background-image: linear-gradient(to right, #fff, #f00); /* Цвет линии для браузера Firefox и Opera */
-    height: 2px; /* Толщина линии */
+    border: none;
+    background-image: linear-gradient(to right, transparent, #f00);
+    height: 3px;
     width: 50%;
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    -webkit-backface-visibility: hidden;
 }
 
 time
@@ -162,7 +187,7 @@ section
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px;
 }
 
 form
@@ -170,10 +195,16 @@ form
     text-align: center;
 }
 
+article
+{
+    align-self: flex-start;
+}
+
 address
 {
     font-style: normal;
     display: inline;
+    transform: rotate(1deg);
 }
 
 footer
@@ -188,10 +219,58 @@ footer
 footer .wrapper
 {
     height: 50px;
+    top: 5px;
+    left: -20px;
 }
 
 footer .sponsor
 {
     position: absolute;
     right: 0;
+}
+
+footer .cute-border
+{
+    position: relative;
+    top: -18px;
+    left: -10px;
+    border-image: linear-gradient(to left, transparent 70%, #000) 1;
+    border-width: 3px 0 0 3px;
+}
+
+footer .another-cute-border
+{
+    border-image: linear-gradient(to right, transparent 60%, #888) 1;
+}
+
+.cute-line
+{
+    position: relative;
+    border-image: linear-gradient(to right, transparent, #f99) 1;
+    border-style: solid none none none;
+    border-width: 3px 0 0 0;
+    top: -25px;
+    left: 50px;
+    width: 250px;
+}
+
+.another-cute-line
+{
+    position: relative;
+    border-image: linear-gradient(to right, transparent, #f00) 1;
+    border-style: solid none none none;
+    border-width: 3px 0 0 0;
+    top: -50px;
+    left: 200px;
+    width: 200px;
+}
+
+footer .the-cuttiest-border
+{
+    position: relative;
+    border-image: linear-gradient(to left, transparent 70%, #888) 1;
+    border-style: none none solid solid;
+    border-width: 0 0 3px 3px;
+    top: 5px;
+    left: 15px;
 }
