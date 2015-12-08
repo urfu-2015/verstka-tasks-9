@@ -453,13 +453,16 @@ footer span
     right: -334px;
     z-index: -1;
     position: relative;
+    -webkit-box-shadow: 1px 1px 10px 0 rgba(122,122,122,1);
+    -moz-box-shadow: 1px 1px 10px 0 rgba(122,122,122,1);
+    box-shadow: 1px 1px 10px 0 rgba(122,122,122,1);
 }
 
 .logo-fill-right
 {
     /*background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,0,0,0.5) 100%);*/
     /*background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,0,0,0.5) 100%);*/
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%, rgba(255, 0, 0, 0.2) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%, rgba(255, 0, 0, .2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#80ff0000',GradientType=1 );
     width: 130px;
     height: 72px;
@@ -529,6 +532,19 @@ footer span
     -moz-box-shadow: 6px 6px 10px 2px rgba(122,122,122,1);
     box-shadow: 6px 6px 10px 2px rgba(122,122,122,1);
 }
+
+/*.right-shadow-logo*/
+/*{*/
+    /*position: relative;*/
+    /*z-index: -10;*/
+    /*top: -685px;*/
+    /*left: 250px;*/
+    /*width: 81px;*/
+    /*height: 65px;*/
+    /*-webkit-box-shadow: 6px 6px 10px 2px rgba(122,122,122,1);*/
+    /*-moz-box-shadow: 6px 6px 10px 2px rgba(122,122,122,1);*/
+    /*box-shadow: 6px 6px 10px 2px rgba(122,122,122,1);*/
+/*}*/
 
 /*Фуф. Теперь нижнее лого*/
 .logo2
@@ -691,7 +707,7 @@ footer span
 {
     /*background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 1%, rgba(255,0,0,0.5) 100%);*/
     /*background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%,rgba(255,0,0,0.5) 100%);*/
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%, rgba(255, 0, 0, 0.2) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 1%, rgba(255, 0, 0, .2) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#80ff0000',GradientType=1 );
     width: 100px;
     height: 36px;
