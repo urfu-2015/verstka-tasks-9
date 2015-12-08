@@ -34,13 +34,11 @@ header
     display: flex;
     justify-content: center;
     background: linear-gradient(to right, #fff 65%, rgba(255, 0, 0, .1) 100%);
-    border-image: linear-gradient(to right, #000 0, #fff 30%, #fff 70%, #f00 80%) 1;
 }
 
 .logo
 {
     display: flex;
-    font-family: Impact, fantasy;
 }
 
 .logo-part-1,
@@ -55,10 +53,14 @@ header
 .logo-part-1
 {
     color: #f00;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-stretch: extra-condensed;
 }
 
 .logo-part-2
 {
+    font-family: fantasy;
     border-left: 0;
 }
 
@@ -74,13 +76,13 @@ header
 .sponsor-part-2
 {
     font-size: 18px;
+    font-family: Arial, fantasy;
     border: 1px solid black;
-    padding: 0 3px;
 }
 
 .sponsor-part-1
 {
-    font-weight: 900;
+    font-weight: bold;
     background-color: #fff;
     color: #000;
     margin-right: -5px;
@@ -145,11 +147,171 @@ main
     background: linear-gradient(to right, #fff 0, #f00 40%);
 }
 
+.up-left-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    width: 2px;
+    height: 70px;
+    background: linear-gradient(to bottom, #000 100%, #000 100%);
+}
+
+.up-up-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, #000 , #fff 100%);
+}
+
+.up-down-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    width: 75px;
+    height: 2px;
+    background: linear-gradient(to right, #000 0, #fff 100%);
+}
+
+.up-right-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 65px;
+    background: linear-gradient(to bottom, #f00 100%, #f00 100%);
+}
+
+.up-up-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.up-down-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 65px;
+    width: 185px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.up-mid-up-red-line
+{
+    position: absolute;
+    right: 350px;
+    top: 63px;
+    width: 110px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.up-mid-down-red-line
+{
+    position: absolute;
+    right: 350px;
+    top: 0;
+    width: 170px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-right-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 30px;
+    background: linear-gradient(to bottom, #f00 100%, #f00 100%);
+}
+
+.down-up-red-line
+{
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 185px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-down-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 330px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-up-line
+{
+    position: absolute;
+    right: 240px;
+    top: -10px;
+    width: 140px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-up-black-line
+{
+    position: absolute;
+    left: 10px;
+    top: -18px;
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, #000 , #fff 100%);
+}
+
+.down-left-black-line
+{
+    position: absolute;
+    left: 10px;
+    top: -18px;
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(to bottom, #000 100%, #000 100%);
+}
+
+.down-right-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    width: 2px;
+    height: 35px;
+    background: linear-gradient(to top, #000 0, #fff 100%);
+}
+
+.down-down-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 75px;
+    height: 2px;
+    background: linear-gradient(to right, #000 , #fff 100%);
+}
+
 .up-black-line
 {
     width: 200px;
     height: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     margin-right: -300px;
     background: linear-gradient(to right, #fff 0, #000 100%);
 }
@@ -282,13 +444,12 @@ footer p
     height: 30px;
     margin-bottom: 10px;
     background: linear-gradient(to right, #fff 65%, rgba(255, 0, 0, .1) 100%);
-    border-image: linear-gradient(to right, #000 0, #fff 30%, #fff 50%, #f00 80%) 1;
 }
 
 .red-middle-line
 {
     position: absolute;
-    top: 15px;
+    top: 5px;
     left: 50px;
     width: 150px;
     height: 2px;
