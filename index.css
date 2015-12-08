@@ -146,10 +146,10 @@ aside
     border-image: linear-gradient(to bottom, transparent, #f00, transparent) 1;
     border-style: solid;
     padding: 10px;
-    transform: rotate(-2deg)
+    transform: rotate(-2deg);
 }
 
-aside>*
+aside > *
 {
     transform: rotate(2deg);
 }
