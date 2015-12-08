@@ -13,89 +13,85 @@ footer
 {
     position: absolute;
     width: 100%;
-    margin-top: 70px;
+    top: 70px;
     text-align: center;
 }
 
 .img
 {
     position: absolute;
-    margin-left: 45%;
+    left: 45%;
     width: 25%;
-    margin-top: 6px;
+    top: 6px;
     opacity: .7;
     background: linear-gradient(to right, #fff 30%, #ebd8e6 100%);
 
     border: 3px solid transparent;
     border-image: linear-gradient(to right, #fff 40%, #f00 100%);
     border-image-slice: 1;
-    z-index: 3;
-    -webkit-backface-visibility: hidden;
+    z-index: 2;
+    backface-visibility: hidden;
 }
 
 .footer
 {
-    margin-bottom: 1%;
+    margin-bottom: 3px;
 }
 
 .black1
 {
     position: absolute;
-    margin-left: 30%;
+    left: 30%;
     width: 40%;
-    padding: 15px;
+    padding: 20px;
     border: 2px solid transparent;
 
     border-image: linear-gradient(to left, #fff 65%, #000 100%);
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-image-slice: 1;
-    z-index: -3;
     border-bottom-width: 0;
 }
 
 .black2
 {
     position: absolute;
-    margin-left: 31%;
-    width: 40%;
-    margin-top: 6px;
+    left: 31%;
+    width: 45%;
+    top: 8px;
     padding: 15px;
     border: 2px solid transparent;
 
     border-image: linear-gradient(to right, #000 5%, #fff 15%);
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-image-slice: 1;
-    z-index: -2;
     border-top-width: 0;
 }
 
 .black3
 {
     position: absolute;
-    margin-left: 40%;
+    left: 40%;
     width: 30%;
-    margin-top: 3px;
+    top: 3px;
     border: 2px solid transparent;
 
     border-image: linear-gradient(to right, #fff 10%, #f00 40%, #fff 41%, #000 90%, #fff 91%);
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-image-slice: 1;
-    z-index: -5;
     border-bottom-width: 0;
 }
 
 .red_middle
 {
     position: absolute;
-    margin-left: 33%;
-    width: 27%;
-    margin-top: 15px;
+    left: 33%;
+    width: 20%;
+    top: 15px;
     border: 2px solid transparent;
 
     border-image: linear-gradient(to right, #fff 5%, #f00 40%, #fff 41%, #fff 100%);
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     border-image-slice: 1;
-    z-index: 2;
     border-bottom-width: 0;
 }
 
@@ -104,12 +100,17 @@ header
     text-align: center;
 }
 
+header > div
+{
+    position: relative;
+}
+
 .abbr
 {
     padding: 7px;
-    font: 70% sans-serif;
+    font: bold 11px 'Oswald', sans-serif;
+    word-spacing: 7px;
     color: #a0a0a0;
-    font-weight: bold;
 }
 
 .ya
@@ -119,7 +120,7 @@ header
     min-width: 200px;
     padding: 0;
     border: 3px solid #f00;
-    margin-left: 25%;
+    left: 30%;
     text-align: right;
     z-index: 2;
 
@@ -131,77 +132,78 @@ header
 {
     color: #f00;
     border: 2px solid #f00;
-    border-bottom: none;
     border-top: none;
-    box-shadow: 2px 2px 5px #000;
-    font-weight: bold;
-    padding: 0 3%;
+    box-shadow: 3px 3px 8px #000;
+    font: bold 50px 'PT Sans Narrow', sans-serif;
+    padding: 0 5px;
+    margin-right: 5px;
+    margin-left: -5px;
 }
 
 .word
 {
     display: inline-block;
-    font-family: 'Noto Sans', sans-serif;
+    font: 45px 'Impact', sans-serif;
+    padding: 0 5px;
     border: 2px solid #f00;
-    box-shadow: 2px 2px 5px #000;
+    box-shadow: 3px 3px 8px #000;
     border-top-width: 0;
     border-left-width: 0;
-    font-size: 230%;
 }
 
 .down
 {
     position: absolute;
-    top: 40%;
-    height: 60%;
-    margin-left: 35%;
+    top: 46px;
+    height: 70px;
+    left: 40%;
     width: 30%;
     min-width: 300px;
-    z-index: -1;
     opacity: .6;
     background: linear-gradient(to right, #fff 50%, #ffc3d3 100%);
 
     border: 2px solid transparent;
     border-image: linear-gradient(to right, #fff 50%, #f00 100%);
     border-image-slice: 1;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .right
 {
     float: right;
-    margin-top: 1%;
-    margin-right: 1%;
+    margin-top: 3px;
+    margin-right: 3px;
 }
 
 .right span
 {
     float: right;
     border: 1px solid #000;
+    padding: 0 2px;
 }
 
 .first
 {
-    font-weight: bold;
     color: #000;
+    font: bold 17px 'Franklin Gothic Heavy', sans-serif;
 }
 
 .last
 {
     color: #fff;
+    font: 16px 'Calibri', sans-serif;
     background-color: #f00;
 }
 
 .black_left
 {
     position: absolute;
-    margin-left: 24%;
-    top: 20%;
-    height: 70%;
+    left: 29%;
+    top: 20px;
+    height: 70px;
     width: 20%;
-    min-width: 200px;
+    min-width: 250px;
     border: 3px solid transparent;
-    z-index: 1;
     border-image: linear-gradient(to right, #000 10%, #fff 50%);
     border-image-slice: 1;
 }
@@ -209,20 +211,19 @@ header
 .black_top_down
 {
     position: absolute;
-    margin-left: 37%;
-    top: 34%;
-    height: 70%;
+    left: 42%;
+    top: 40px;
+    height: 80px;
     width: 50%;
     min-width: 300px;
     border: 3px solid transparent;
-    z-index: 1;
     border-image: linear-gradient(to right, #fff 30%, #000 50%, #fff 51%);
     border-image-slice: 1;
 }
 
 main
 {
-    margin-top: 2%;
+    margin-top: 15px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -235,21 +236,20 @@ article
 
 img
 {
-    padding: 0 5%;
+    padding: 0 20px;
     width: 30%;
 }
 
 .text
 {
     text-align: justify;
-    padding: 5%;
+    padding: 20px;
 }
 
 .hot
 {
     color: #f00;
-    font-weight: bold;
-    padding: 1% 8%;
+    padding: 5px 30px;
 }
 
 .example,
@@ -257,26 +257,32 @@ main time,
 .hot,
 .top
 {
-    font: bold 80% 'Ubuntu Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.hot,
+.top
+{
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .top
 {
-    padding-top: 1%;
+    padding-top: 5px;
     margin-left: 20%;
 }
 
 .top > div
 {
     display: inline-block;
-    padding: 3% 1%;
-    padding-top: 0%;
+    padding: 15px 5px;
+    padding-top: 0;
 }
 
 .second
 {
     width: 55%;
-    padding-left: 2%;
+    padding-left: 20px;
 }
 
 .top div:nth-child(odd)
@@ -319,10 +325,9 @@ footer > div
 .vertical_line2
 {
     width: 3px;
-    background: linear-gradient(to bottom, #fff 10%, #f00 45%, #fff 80%);
+    background: linear-gradient(to bottom, #fff 10%, #f00 45%, #fff 90%);
     transform: rotate(-2deg);
-    z-index: -1;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .vertical_line1
@@ -339,11 +344,11 @@ footer > div
 .horizontal_line2
 {
     width: 50%;
-    background: linear-gradient(to right, #fff 15%, #f00 50%);
+    background: linear-gradient(to right, #fff 20%, #f00 30%);
     transform: rotate(-2deg);
     height: 2px;
-    margin-left: 1%;
-    -webkit-backface-visibility: hidden;
+    margin-left: 5px;
+    backface-visibility: hidden;
 }
 
 .horizontal_line2
