@@ -115,7 +115,11 @@ h1
 {
     border-style: solid;
     border-image: linear-gradient(45deg, transparent, #f00 100%) 1;
+    -webkit-backface-visibility: hidden;
     border-left-width: 0;
+    top: 1%;
+    position: absolute;
+    width: 12%;
 }
 
 .h1
@@ -139,9 +143,9 @@ h1
     border-left: 2px solid #000;
     border-right-width: 0;
     width: 15%;
-    height: 60%;
+    height: 68px;
     position: absolute;
-    top: 20%;
+    top: -10px;
     left: 30%;
 }
 
@@ -159,14 +163,21 @@ h1
 
 .blackBorder2
 {
-    top: 35%;
+    top: -3px;
     left: 50%;
 }
 
 .blackBorder3
 {
-    top: 110%;
+    top: 90px;
     left: 40%;
+}
+
+.overhead
+{
+    height: 10px;
+    margin-top: -30px;
+    -webkit-backface-visibility: hidden;
 }
 
 .compTekTop
@@ -175,7 +186,7 @@ h1
     top: 40%;
     left: 60%;
     width: 20%;
-    height: 60%;
+    height: 68px;
     margin-left: -10%;
     display: inline-flex;
     justify-content: flex-end;
@@ -183,6 +194,7 @@ h1
     border-image: linear-gradient(135deg, transparent 20%, #f00 100%, transparent) 1;
     background-image: linear-gradient(to right, transparent 10%, #f2d6d6);
     border-left-width: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 }
 
 .compTek
@@ -195,7 +207,6 @@ h1
     color: #6f6f6f;
     border: 1px solid #6f6f6f;
     margin: 5%;
-    margin-right: 3%;
 }
 
 .comp
@@ -229,6 +240,7 @@ h1
     border-image: linear-gradient(155deg, transparent, #f00 100%, transparent) 1;
     background-image: linear-gradient(to right, transparent 10%, #f2d6d6);
     border-left-width: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 }
 
 nav ul li:nth-child(2n+1),
@@ -413,6 +425,11 @@ input[value='version']:checked ~ footer .firstVersion
     display: none;
 }
 
+input[value='version']:not(:checked) ~ main
+{
+    margin-top: 68px;
+}
+
 input[value='version']:checked ~ header .secondVersion,
 input[value='version']:checked ~ main aside .secondVersion
 {
@@ -458,6 +475,11 @@ label
 header .secondVersion
 {
     height: 100%;
+}
+
+.compTekTop
+{
+    height: 68px;
 }
 
 header .secondVersion .logo
@@ -524,6 +546,7 @@ img.secondVersion
     margin-top: 10%;
     margin-left: 45%;
     font-size: 1.3em;
+    -webkit-backface-visibility: hidden;
 }
 
 .first.secondVersion .wrapDescription
@@ -683,18 +706,17 @@ input[value='version']:not(:checked) ~ main aside .firstVersion
 input[value='version']:checked ~ header .wrapH1
 {
     animation-name: shiftHTo;
-    position: absolute;
 }
 
 input[value='version']:not(:checked) ~ header .wrapH1
 {
     animation-name: shiftHFrom;
-    position: relative;
 }
 
 input[value='version']:checked ~ header .blackBorder2
 {
     animation-name: shiftBlackBorderTo;
+    -webkit-backface-visibility: hidden;
 }
 
 input[value='version']:not(:checked) ~ main aside .firstVersion ul
@@ -726,7 +748,8 @@ input[value='version']:checked ~ main aside .examples
         transform: rotateZ(-2deg);
     }
 
-    aside.left
+    aside.left,
+    aside.right
     {
         transform: rotateZ(-2deg);
     }
@@ -737,10 +760,14 @@ input[value='version']:checked ~ main aside .examples
     }
 
     .news,
-    aside.left .secondVersion,
-    .examples
+    aside.left .secondVersion
     {
         transform: rotateZ(0);
+    }
+
+    .query
+    {
+        transform: rotateZ(4deg);
     }
 
     .blackBorder5
@@ -800,6 +827,11 @@ input[value='version']:checked ~ main aside .examples
     {
         width: 29%;
     }
+
+    input[value='version']:not(:checked) ~ main aside
+    {
+        margin-top: 68px;
+    }
 }
 
 @keyframes closeH3
@@ -826,16 +858,12 @@ input[value='version']:checked ~ main aside .examples
 {
     0%
     {
-        width: 12%;
-        left: 40%;
+        left: 35%;
     }
     100%
     {
         transform: rotateZ(-2deg);
-        width: 12%;
         margin-left: 20%;
-        position: absolute;
-        top: 1%;
         left: 30%;
     }
 }
@@ -845,19 +873,15 @@ input[value='version']:checked ~ main aside .examples
     0%
     {
         transform: rotateZ(-2deg);
-        width: 12%;
         margin-left: 20%;
-        position: absolute;
-        top: 1%;
         left: 30%;
     }
     100%
     {
         padding-left: 10%;
-        position: relative;
+        left: 31%;
         z-index: 1;
         border-right: none;
-        width: 12%;
         margin-top: 10px;
     }
 }
@@ -891,6 +915,20 @@ input[value='version']:checked ~ main aside .examples
     0%
     {
         transform: translateY(500px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes shiftDown
+{
+    0%
+    {
+        transform: translateY(-500px);
         opacity: 0;
     }
     100%
