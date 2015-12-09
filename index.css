@@ -17,14 +17,262 @@
     justify-content: space-between;
 }
 
+.header__menu
+{
+    transform: perspective(10px) rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    font-size: 12px;
+}
+
+.header__menu--a
+{
+    margin-left: 4px;
+    color: transparent;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    text-decoration: inherit;
+    font-weight: 600;
+}
+
+.logo_yandex
+{
+    position: absolute;
+    left: 4px;
+    top: -9px;
+    padding-left: 25%;
+    padding-right: 5px;
+    border: 2px solid #f00;
+    border-image: linear-gradient(41deg, transparent 18%, rgba(255, 255, 255, .2) 1%, #f00 100%) 1;
+    border-left: 0;
+    transform: perspective(10px);
+    font-size: 54px;
+    font-weight: 900;
+}
+
+.logo_yandex:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    right: -2px;
+    left: auto;
+    width: 60%;
+    height: 107%;
+    background: inherit;
+    box-shadow: 3px 2px 6px -1px;
+
+}
+
+.logo_yandex:first-letter
+{
+    color: #f00;
+    border: 2px solid #f00;
+    box-shadow: 9px 0 17px -4px rgba(0, 0, 0, 0.5);
+    margin: 3px;
+}
+
+.red-line-hor
+{
+    border: none;
+    height: 2px;
+    background: #f00 linear-gradient(to right, #fff, #f00);
+}
+
+.red-line-ver
+{
+    border: none;
+    width: 2px;
+    background: #f00 linear-gradient(to top, #fff, #f00);
+}
+
+.logo-wrap__black
+{
+    transform: perspective(10px) rotate(-1deg);
+    position: relative;
+    padding: 12px 0 0 0;
+    border: 2px solid #000;
+    border-image: linear-gradient(330deg, transparent 73%, rgba(255, 255, 255, .2) 1%, #000 100%) 1;
+    border-bottom: 0;
+}
+
+.logo-wrap__black:before
+{
+    transform: perspective(10px) rotate(-1deg);
+    right: 25px;
+    bottom: 14px;
+    position: absolute;
+    content: '';
+    width: 35%;
+    padding: 12px 0;
+    border: 2px solid #000;
+    border-image: linear-gradient(131deg, rgba(255, 255, 255, .2) 0%, #000 100%) 1;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.logo-wrap__black:after
+{
+    left: 12px;
+    bottom: 3px;
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 20%;
+    padding: 12px 0;
+    border: 2px solid #000;
+    border-image: linear-gradient(220deg, transparent 39%, rgba(255, 255, 255, .2) 1%, #000 100%) 1;
+    border-top: 0;
+}
+
+.logo-wrap__red
+{
+    transform: perspective(10px) rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    height: 20px;
+    position: relative;
+    width: 514px;
+    padding: 3px;
+    border: 2px solid #f00;
+    border-image: linear-gradient(160deg, transparent 50%, rgba(255, 255, 255, .2) 1%, #f00 100%) 1;
+}
+
+.logo-wrap__red:before
+{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 25%;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, .2) 1%, rgba(255, 143, 143, 0.31) 100%);
+}
+
+.logo-wrap__red:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    right: -2px;
+    left: auto;
+    width: 40%;
+    height: 107%;
+    background: inherit;
+    box-shadow: 4px 2px 4px -2px;
+}
+
+.logo-wrap__red-top
+{
+    left: 30%;
+    top: -15px;
+    position: absolute;
+    width: 27%;
+}
+
+.logo-wrap__red-bottom
+{
+    left: 7%;
+    top: -5px;
+    position: absolute;
+    width: 30%;
+}
+
+.logo-comptek
+{
+    z-index: 0;
+    float: right;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 15px;
+    height: 17px;
+}
+
+.logo-comptek__tek,
+.logo-comptek__comp
+{
+    height: 18px;
+    padding: 0 2px;
+}
+
+.logo-comptek__comp
+{
+    font-weight: 900;
+}
+
+.logo-comptek__tek
+{
+    border-left: 1px solid black;
+    background-color: rgba(210, 48, 48, 0.78);
+    color: #ffffff;
+}
+
+.header .logo-wrap__red
+{
+    width: 500px;
+    height: 60px;
+}
+
+.header .logo-wrap__black
+{
+    border: 0;
+}
+
+.logo-wrap__black--hr
+{
+    width: 190px;
+    transform: perspective(10px) rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    border: none;
+    height: 2px;
+    background: #f00 linear-gradient(to right, #fff, #000);
+}
+
+.header .logo-wrap__black:before
+{
+    bottom: 68%;
+}
+
+.header .logo-wrap__black:after
+{
+    left: 0;
+    bottom: 33px;
+    width: 50%;
+    height: 40%;
+    transform: perspective(10px) rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    padding: 12px 0;
+    border: 2px solid #000;
+    border-image: linear-gradient(324deg, transparent 63%, rgba(255, 255, 255, .2) 1%, #000 100%) 1;
+    border-right: 0;
+}
+
 .border-hor-line
 {
     margin: 10px 0;
 }
 
+.border-hor-line--hr
+{
+    margin: inherit;
+    width: 167px;
+    transform: perspective(10px) rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+}
+
 .border-ver-line
 {
     margin: 0 10px;
+}
+
+.border-ver-line--hr
+{
+    margin: inherit;
+    height: 274px;
+    transform: perspective(10px) rotate(-2deg);
+    -moz-transform: rotate(-2deg);
 }
 
 .content
@@ -36,6 +284,11 @@
 .content-left
 {
     width: 33%;
+}
+
+.content-left__article
+{
+    position: relative;
 }
 
 .content-left__article--p
@@ -58,9 +311,27 @@
 
 .content-right__menu
 {
+    margin-bottom: 15px;
+    font-size: 13px;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    transform: perspective(10px) rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+}
+
+.content-right__menu--a
+{
+    margin-left: 15px;
+    color: transparent;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.99);
+    text-decoration: inherit;
+    font-weight: 600;
+}
+
+.content-right__menu--a:nth-child(2n-1)
+{
+    text-shadow: 0 0 1px rgba(255, 0, 0, 0.99);
 }
 
 .content-right__form

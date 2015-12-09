@@ -8,13 +8,29 @@
 </head>
 <body class="page">
 <header class="header">
-    <img src="img/kod.gif">
-    <img src="img/LOGO.GIF">
+    <nav class="header__menu">
+        <a class="header__menu--a" href="#">MAC</a>
+        <a class="header__menu--a" href="#">KOI</a>
+        <a class="header__menu--a" href="#">WIN</a>
+        <a class="header__menu--a" href="#">DOS</a>
+    </nav>
+    <div class="logo-wrap__black">
+        <div class="logo-wrap__red">
+            <div class="logo_yandex">
+                Яndex
+            </div>
+            <div class="logo-comptek">
+                <span class="logo-comptek__comp">COMP</span><span class="logo-comptek__tek">TEK</span>
+            </div>
+        </div>
+        <hr class="logo-wrap__black--hr">
+    </div>
 </header>
 <main class="content">
     <div class="border-ver-line">
-        <img src="img/VERLINE.GIF" alt="var-line">
+        <hr class="red-line-ver border-ver-line--hr">
     </div>
+
     <div class="content-left">
         <img src="img/GORNEWS.GIF"><br>
         <img src="img/okur.gif">
@@ -33,7 +49,7 @@
         </article>
 
         <div class="border-hor-line">
-            <img src="img/HORLINE.GIF" alt="hor-line">
+            <hr class="red-line-hor border-hor-line--hr">
         </div>
 
         <article class="content-left__article">
@@ -41,26 +57,24 @@
                 <span class="content-left__article--date">5 сентября 1997г.</span><br>
                 Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю. Алтухов задал ему
                 несколько вопросов, в том числе: "Вы на чьей стороне?"
-
             <p>
                 <!-- КОНЕЦ НОВОСТИ -->
         </article>
 
         <div class="border-hor-line">
-            <img src="img/HORLINE.GIF" alt="hor-line">
+            <hr class="red-line-hor border-hor-line--hr">
         </div>
     </div>
 
     <div class="border-ver-line">
-        <img src="img/VERLINE.GIF" alt="var-line"><br>
+        <hr class="red-line-ver border-ver-line--hr">
     </div>
     <div class="content-right">
         <nav class="content-right__menu">
-            <a href="ya_help.html"><img src="img/HELP.GIF"></a>
-            <a href="addurl.html"><img src="img/ADDURL.GIF"></a>
-            <a href="chh.html"><img src="img/CHH.GIF"></a>
-            <a href="stopword.html"><img src="img/STOP.GIF"></a>
-
+            <a class="content-right__menu--a" href="ya_help.html">Помощь</a>
+            <a class="content-right__menu--a" href="addurl.html">Добавить URL</a>
+            <a class="content-right__menu--a" href="chh.html">ЧХ:-)</a>
+            <a class="content-right__menu--a" href="stopword.html">Список стоп-слов</a>
         </nav>
         <!-- ПОИСК -->
         <form name="web" method="get" action="http://beta.yandex.ru/yandsearch" class="content-right__form">
@@ -79,7 +93,7 @@
                 дополнение - поиск по точному слову (без учета других словоформ).</p>
 
             <div class="border-hor-line">
-                <img src="img/HORLINE.GIF"  alt="hor-line">
+                <hr class="red-line-hor border-hor-line--hr">
             </div>
 
             <h4 class="content-right__help__title-example">Примеры правильных запросов:</h4>
@@ -98,7 +112,16 @@
 
 </main>
 <footer class="footer">
-    <img src="img/BOT.GIF" alt="footer">
+
+    <div class="logo-wrap__black">
+        <div class="logo-wrap__red">
+            <hr class="logo-wrap__red-top red-line-hor">
+            <hr class="logo-wrap__red-bottom red-line-hor">
+            <div class="logo-comptek">
+                <span class="logo-comptek__comp">COMP</span><span class="logo-comptek__tek">TEK</span>
+            </div>
+        </div>
+    </div>
     <address>Copyright &copy; 1997 <a href="#">Comptek International</a><br>
         E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a><br>
         Дизайн - Артемий Лебедев (<a href="http://www.design.ru/" class="underline">Web Design</a>)
