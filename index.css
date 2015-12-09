@@ -12,6 +12,7 @@ body
 
 .header
 {
+    margin-top: 8px;
     height: 115px;
 }
 
@@ -32,7 +33,7 @@ body
 
 .flex-container .left-side
 {
-    flex: 33%;
+    flex: 34%;
 }
 
 .flex-container .main
@@ -68,7 +69,8 @@ body
 
 .img1
 {
-    padding-right: 8px;
+    padding-left: 1px;
+    padding-right: 7px;
     float: left;
     width: 15px;
     height: 280px;
@@ -84,36 +86,42 @@ body
 
 .img3
 {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 160px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 168px;
     height: 8px;
 }
 
 .img4
 {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 160px;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 170px;
     height: 8px;
 }
 
 .img5
 {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    width: 160px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 168px;
     height: 8px;
+}
+
+.img6
+{
+    margin-top: 5px;
 }
 
 .block
 {
-    padding: 15px;
+    padding-left: 45px;
 }
 
 .centrfooter
 {
-    margin: 0 auto;
+    margin: -10px auto;
     width: 540px;
     line-height: 1px;
 }
@@ -125,19 +133,22 @@ body
 
 .modules-item
 {
-    margin-left: 50px;
+    margin-left: 52px;
+    margin-top: -15px;
 }
 
 .search div:first-child
 {
     display: inline;
     vertical-align: top;
+    margin-right: 4px;
 }
 
 .search
 {
-    margin-left: 100px;
-    margin-bottom: 20px;
+    margin-left: 75px;
+    margin-bottom: 25px;
+    margin-top: 6px;
 }
 
 .searchBlock
@@ -152,9 +163,7 @@ body
 
 .auxiliaryPanel nav
 {
-    margin-left: 185px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-left: 160px;
     display: inline-flex;
 }
 
@@ -188,23 +197,23 @@ body
 
 .title2
 {
-    padding-top: 10px;
+    padding-top: 12px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Garamond Premr Pro';
 }
 
 .title3
 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Garamond Premr Pro';
 }
 
 .title4
 {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Garamond Premr Pro';
 }
 
@@ -215,6 +224,7 @@ body
 
 .auxiliaryPanel
 {
+    margin-top: -10px;
     transform: rotate(-2deg);
     font-weight: bold;
     font-family: 'Arial Narrow';
@@ -232,11 +242,23 @@ body
 
 .footerInfo
 {
-    font-size: 14px;
+    font-size: 13px;
+    padding-top: 10px;
 }
 
 .footerInfo span
 {
     text-decoration: underline;
     color: #0034ff;
+}
+
+.searchBlock input:first-child
+{
+    width: 274px;
+}
+
+.searchBlockInfo
+{
+    margin-left: 30px;
+    margin-top: -1px;
 }
