@@ -1,1 +1,264 @@
+html
+{
+    height: 100%;
+}
 
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header
+{
+    margin-top: 8px;
+    height: 115px;
+}
+
+.main
+{
+    height: 100%;
+}
+
+.type-item
+{
+    height: 50px;
+}
+
+.rating-item
+{
+    height: 100px;
+}
+
+.flex-container .left-side
+{
+    flex: 34%;
+}
+
+.flex-container .main
+{
+    flex: 60%;
+}
+
+.footer
+{
+    height: 130px;
+}
+
+.flex-container
+{
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-item
+{
+    flex: 100%;
+}
+
+.centrHeader
+{
+    margin: 0 auto;
+    width: 542px;
+    line-height: 1px;
+    text-align: center;
+}
+
+.img1
+{
+    padding-left: 1px;
+    padding-right: 7px;
+    float: left;
+    width: 15px;
+    height: 280px;
+}
+
+.img2
+{
+    padding-left: 8px;
+    float: right;
+    width: 15px;
+    height: 280px;
+}
+
+.img3
+{
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 168px;
+    height: 8px;
+}
+
+.img4
+{
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 170px;
+    height: 8px;
+}
+
+.img5
+{
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 168px;
+    height: 8px;
+}
+
+.img6
+{
+    margin-top: 5px;
+}
+
+.block
+{
+    padding-left: 45px;
+}
+
+.centrfooter
+{
+    margin: -10px auto;
+    width: 540px;
+    line-height: 1px;
+}
+
+.footerInfo
+{
+    text-align: center;
+}
+
+.modules-item
+{
+    margin-left: 52px;
+    margin-top: -15px;
+}
+
+.search div:first-child
+{
+    display: inline;
+    vertical-align: top;
+    margin-right: 4px;
+}
+
+.search
+{
+    margin-left: 75px;
+    margin-bottom: 25px;
+    margin-top: 6px;
+}
+
+.searchBlock
+{
+    display: inline-block;
+}
+
+.searchBlock input
+{
+    display: block;
+}
+
+.auxiliaryPanel nav
+{
+    margin-left: 160px;
+    display: inline-flex;
+}
+
+.auxiliaryPanel nav div
+{
+    padding: 10px;
+}
+
+.auxiliaryPanel a
+{
+    text-decoration: none;
+}
+
+.title1
+{
+    cursor: default;
+    color: #f00;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Arial Narrow';
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.title1:hover
+{
+    color: #fc7700;
+}
+
+.title2
+{
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Garamond Premr Pro';
+}
+
+.title3
+{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Garamond Premr Pro';
+}
+
+.title4
+{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Garamond Premr Pro';
+}
+
+.request
+{
+    font-size: 13px;
+}
+
+.auxiliaryPanel
+{
+    margin-top: -10px;
+    transform: rotate(-2deg);
+    font-weight: bold;
+    font-family: 'Arial Narrow';
+}
+
+.auxiliaryPanel a
+{
+    color: #000;
+}
+
+.auxiliaryPanel nav div:nth-child(odd) a
+{
+    color: #f00;
+}
+
+.footerInfo
+{
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.footerInfo span
+{
+    text-decoration: underline;
+    color: #0034ff;
+}
+
+.searchBlock input:first-child
+{
+    width: 274px;
+}
+
+.searchBlockInfo
+{
+    margin-left: 30px;
+    margin-top: -1px;
+}
