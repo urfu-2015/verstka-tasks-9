@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <title>Назад в будущее 2</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <!-- Поворачиваем время вспять здесь -->
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Назад в будущее 2</title>
+    <meta name="keyword" content="яндекс, поиск, новинка">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="page">
+<header class="header">
+    <nav class="header__menu">
+        <a class="header__menu--a" href="#">MAC</a>
+        <a class="header__menu--a" href="#">KOI</a>
+        <a class="header__menu--a" href="#">WIN</a>
+        <a class="header__menu--a" href="#">DOS</a>
+    </nav>
+    <div class="logo-wrap__black">
+        <div class="logo-wrap__red">
+            <h1 class="logo_yandex">
+                Яndex
+            </h1>
+            <div class="logo-comptek">
+                <span class="logo-comptek__comp">COMP</span><span class="logo-comptek__tek">TEK</span>
+            </div>
+        </div>
+        <hr class="logo-wrap__black--hr">
+    </div>
+</header>
+<main class="content">
+    <div class="border-ver-line">
+        <hr class="red-line-ver border-ver-line--hr">
+    </div>
+
+    <div class="content-left">
+        <h2 class="content-left__title">Горячая новость:</h2>
+
+        <img src="img/okur.gif">
+
+        <article class="content-left__article">
+            <!-- РАСКАЛЕННАЯ НОВОСТЬ -->
+            <p class="content-left__article--p">
+                <span class="content-left__article--date">21 августа 1997г.</span><br>
+                Яndex-Web, о котором так долго говорили,
+                наконец запущен в бета-тестирование.
+                Могло быть и хуже.
+                Поиск осуществляется по "русскому Интернету".
+                Присылайте замечания, идеи, а также стоящие сайты
+                (с русскими текстами, особенно кроме доменов 'su' и 'ru').
+            </p>
+        </article>
+
+        <div class="border-hor-line">
+            <hr class="red-line-hor border-hor-line--hr">
+        </div>
+
+        <article class="content-left__article">
+            <p class="content-left__article--p">
+                <span class="content-left__article--date">5 сентября 1997г.</span><br>
+                Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю. Алтухов задал ему
+                несколько вопросов, в том числе: "Вы на чьей стороне?"
+            <p>
+                <!-- КОНЕЦ НОВОСТИ -->
+        </article>
+
+        <div class="border-hor-line">
+            <hr class="red-line-hor border-hor-line--hr">
+        </div>
+    </div>
+
+    <div class="border-ver-line">
+        <hr class="red-line-ver border-ver-line--hr">
+    </div>
+    <div class="content-right">
+        <nav class="content-right__menu">
+            <a class="content-right__menu--a" href="ya_help.html">Помощь</a>
+            <a class="content-right__menu--a" href="addurl.html">Добавить URL</a>
+            <a class="content-right__menu--a" href="chh.html">ЧХ:-)</a>
+            <a class="content-right__menu--a" href="stopword.html">Список стоп-слов</a>
+        </nav>
+        <!-- ПОИСК -->
+        <form name="web" method="get" action="http://beta.yandex.ru/yandsearch" class="content-right__form">
+
+            <label for="text">Запрос:</label>
+
+            <input type="text" name="text" id="text" size="35" value="" maxlength="60"><br>
+
+            <button type="submit">Найти</button>
+
+        </form>
+        <div class="content-right__help">
+
+            <p>Язык запросов аналогичен
+                <a href="http://company.yandex.ru/programs/site/docs/querylang.html">Яndex-Site</a>,
+                дополнение - поиск по точному слову (без учета других словоформ).</p>
+
+            <div class="border-hor-line">
+                <hr class="red-line-hor border-hor-line--hr">
+            </div>
+
+            <h4 class="content-right__help__title-example">Примеры правильных запросов:</h4>
+            <ul class="content-right__help__example">
+                <li>беспроводные сети</li>
+                <li>выставка !связь 97</li>
+                <li>разработка /1 приложений</li>
+                <li>(звонок,звонить) (Web, Internet, Интернет)</li>
+                <li>(модуль|продукт)/(-3 +2) лингвистический</li>
+                <li>(КомпТек | Dialogic)</li>
+                <li>(Яndex бесплатно)</li>
+            </ul>
+        </div>
+
+    </div>
+
+</main>
+<footer class="footer">
+
+    <div class="logo-wrap__black">
+        <div class="logo-wrap__red">
+            <hr class="logo-wrap__red-top red-line-hor">
+            <hr class="logo-wrap__red-bottom red-line-hor">
+            <div class="logo-comptek">
+                <span class="logo-comptek__comp">COMP</span><span class="logo-comptek__tek">TEK</span>
+            </div>
+        </div>
+    </div>
+    <address class="footer__address">
+        Copyright &copy; 1997 <a href="#">Comptek International</a><br>
+        E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a><br>
+        Дизайн - Артемий Лебедев (<a href="http://www.design.ru/" class="underline">Web Design</a>)
+    </address>
+</footer>
+</body>
 </html>
