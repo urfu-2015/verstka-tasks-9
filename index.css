@@ -52,7 +52,7 @@
 {
     z-index: -1;
     position: absolute;
-    content: "";
+    content: '';
     bottom: -2px;
     right: -2px;
     left: auto;
@@ -152,7 +152,7 @@
 {
     z-index: -1;
     position: absolute;
-    content: "";
+    content: '';
     bottom: -2px;
     right: -2px;
     left: auto;
@@ -206,7 +206,7 @@
 {
     border-left: 1px solid black;
     background-color: rgba(210, 48, 48, 0.78);
-    color: #ffffff;
+    color: #fff;
 }
 
 .header .logo-wrap__red
