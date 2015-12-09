@@ -21,76 +21,16 @@
     justify-content: center;
 }
 
-.topOfSite
+.logoYandex
 {
-    text-align: center;
-    font-weight: 900;
-    transform: rotateZ(-2deg);
     height: 100px;
+    width: 700px;
+}
+
+.logoFooter
+{
+    height: 50px;
     width: 600px;
-    border: solid red 3px;
-    border-image: linear-gradient(to right, #000, #fff 22%, #f00 50%, #fff 80%, #f00) 1;
-    background-image: linear-gradient(to right, #fff 70%, #ffc0cb);
-    box-shadow: 8px 8px 8px -2px gray;
-}
-
-.yandex
-{
-    font-family: Roboto;
-    box-shadow: 0 10px 8px -2px #808080;
-}
-
-.ya
-{
-    color: red;
-    font-size: 80px;
-    text-transform: uppercase;
-    position: relative;
-    left: 150px;
-    top: -3px;
-    border: solid red 3px;
-    float: left;
-    box-shadow: 0 3px 8px 3px #808080;
-}
-
-.ndex
-{
-    font-size: 80px;
-    position: relative;
-    left: 147px;
-    top: -3px;
-    border: solid red 3px;
-    float: left;
-}
-
-.comptek
-{
-    font-family: Roboto;
-    text-transform: uppercase;
-}
-
-.comp
-{
-    font-size: 20px;
-    position: relative;
-    border: solid 2px;
-    float: left;
-    left: 251px;
-    margin-top: 4px;
-    background: white;
-}
-
-.tek
-{
-    font-size: 20px;
-    position: relative;
-    border: solid black 2px;
-    background: red;
-    color: white;
-    float: left;
-    left: 249px;
-    margin-right: 4px;
-    margin-top: 4px;
 }
 
 .hot_news,
@@ -182,49 +122,6 @@ img
 .button:hover
 {
     background: #93f5fc;
-}
-
-.footerComptek
-{
-    text-align: center;
-    transform: rotateZ(-2deg);
-    height: 40px;
-    width: 600px;
-    border: solid red 3px;
-    border-image: linear-gradient(to right, #000, #fff 22%, #f00 50%, #fff 80%, #f00) 1;
-    background-image: linear-gradient(to right, #fff 70%, #ffc0cb);
-}
-
-.footer
-{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-
-}
-
-.comp_footer
-{
-    font-size: 20px;
-    position: relative;
-    border: solid 2px;
-    float: left;
-    left: 520px;
-    margin-top: 4px;
-    background: white;
-}
-
-.tek_footer
-{
-    font-size: 20px;
-    position: relative;
-    border: solid black 2px;
-    background: red;
-    color: white;
-    float: left;
-    left: 518px;
-    margin-right: 4px;
-    margin-top: 4px;
 }
 
 footer
