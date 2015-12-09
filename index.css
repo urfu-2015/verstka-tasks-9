@@ -1,1 +1,346 @@
+@font-face
+{
+    font-family: slimWords;
+    src: url('PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf')
+}
+
+@font-face
+{
+    font-family: slimWordsBold;
+    src: url('PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf')
+}
+
+@font-face
+{
+    font-family: anotherFont;
+    src: url('Ubuntu_Condensed/UbuntuCondensed-Regular.ttf')
+}
+
+.wrapper
+{
+    transform: rotate(-2deg);
+    position: relative;
+    margin-top: -10px;
+}
+
+.wrapper:before,
+.wrapper:after
+{
+    content: '';
+    position: absolute;
+}
+
+.wrapper:before
+{
+    top: -10px;
+    left: -10px;
+    right: -4px;
+    bottom: 10px;
+    background-image: linear-gradient(to right, #000 0%, #fff 20%);
+    z-index: -3;
+}
+
+.wrapper:after
+{
+    top: -8px;
+    left: -8px;
+    bottom: 10px;
+    right: 2px;
+    background: #fff;
+    z-index: -3;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header hr
+{
+    bottom: -20px;
+    position: absolute;
+    margin-left: -125px;
+    width: 200px;
+}
+
+.kod
+{
+    color: #888;
+    font-family: anotherFont, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transform: rotate(-2deg);
+    margin-bottom: 20px;
+}
+
+.logo
+{
+    display: flex;
+    width: 500px;
+    position: relative;
+}
+
+.logo:before,
+.logo:after
+{
+    content: '';
+    position: absolute;
+}
+
+.logo:before
+{
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-image: linear-gradient(to right, #fff 0%, #f00 65%);
+    z-index: -2;
+}
+
+.logo:after
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, #fff 0%, #fff 65%, #f00 400%);
+    z-index: -1;
+}
+
+.yandex
+{
+    margin-left: 100px;
+    width: 175px;
+    font-size: 45px;
+    font-weight: 900;
+    border: solid #f00;
+    border-width: 2px 3px 2px 0;
+    box-shadow: 3px 3px 10px #000;
+    font-family: sans-serif;
+}
+
+.ya
+{
+    color: #f00;
+    box-shadow: 3px 3px 10px #000;
+    border-right: solid #f00;
+    border-left: solid #f00;
+}
+
+.ndex
+{
+    margin-left: -10px;
+}
+
+.comptek
+{
+    position: absolute;
+    border: solid 1px #000;
+    right: 10px;
+    top: 7px;
+    padding-bottom: 3px;
+    opacity: .7;
+}
+
+.comp
+{
+    font-weight: 800;
+    padding: 0 5px 3px 5px;
+}
+
+.tek
+{
+    background: #f00;
+    padding: 0 4px 5px 5px;
+    color: #fff;
+}
+
+main
+{
+    display: flex;
+}
+
+aside
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: rotate(-2deg);
+    flex-basis: 30%;
+    margin-left: 20px;
+    padding: 0 10px;
+    border: 3px solid;
+    border-image: linear-gradient(to bottom, #fff 10%, #f00 50%, #fff 90%) 1 100%;
+}
+
+aside article
+{
+    transform: rotate(2deg);
+}
+
+aside > p
+{
+    color: #f00;
+    font-family: anotherFont, sans-serif;
+    font-weight: 600;
+}
+
+aside img
+{
+    align-self: flex-start;
+}
+
+h3
+{
+    margin-bottom: -10px;
+    font-size: 17px;
+}
+
+.right
+{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+}
+
+.menu
+{
+    font-family: anotherFont, sans-serif;
+    align-self: center;
+    transform: rotate(-2deg);
+}
+
+.menu a,
+.menu span
+{
+    text-decoration: none;
+    font-weight: 900;
+    color: #000;
+    margin-left: 20px;
+
+}
+
+.menu a:first-of-type,
+.menu span
+{
+    color: #f00;
+}
+
+form
+{
+    width: 400px;
+    margin-top: 20px;
+    margin-left: -200px;
+    align-self: center;
+}
+
+form input
+{
+    width: 250px;
+    float: left;
+}
+
+form label
+{
+    float: left;
+    width: 60px;
+}
+
+button
+{
+    margin-left: 60px;
+    float: left;
+}
+
+.comment
+{
+    font-size: 13px;
+}
+
+h4
+{
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+.samples
+{
+    font-size: smaller;
+}
+
+.down
+{
+    display: flex;
+    width: 500px;
+    height: 35px;
+    position: relative;
+}
+
+.down:before,
+.down:after
+{
+    content: '';
+    position: absolute;
+}
+
+.down:before
+{
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-image: linear-gradient(to right, #fff 0%, #f00 40%);
+    z-index: -2;
+}
+
+.down:after
+{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, #fff 0%, #fff 65%, #f00 400%);
+    z-index: -1;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info
+{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+hr
+{
+    border: 0;
+    width: 150px;
+    height: 2px;
+    margin-left: 0;
+    background: #333 linear-gradient(to right, #fff, #f00);
+}
+
+.right hr
+{
+    transform: rotate(-2deg);
+}
+
+br
+{
+    clear: left;
+}
+
+.v2
+{
+    display: none;
+}
 
