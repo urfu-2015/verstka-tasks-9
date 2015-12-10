@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: Hermes;
+    src: url('fonts/Hermes.woff');
+}
+
 body
 {
     min-width: 750px;
@@ -44,24 +50,25 @@ header
 .logo-part-1,
 .logo-part-2
 {
-    font-size: 50px;
+    font-size: 55px;
     border: 2px solid #f00;
     box-shadow: 5px 5px 10px 0 rgba(0,0,0,.5);
-    padding: 0 6px 6px;
+    padding: 8px;
 }
 
 .logo-part-1
 {
     color: #f00;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    font-stretch: extra-condensed;
+    font-family: Hermes, sans-serif;
 }
 
 .logo-part-2
 {
-    font-family: fantasy;
+    font-family: Hermes, sans-serif;
+    font-weight: 300;
+    letter-spacing: -2px;
     border-left: 0;
+    margin-left: -5px;
 }
 
 .sponsor
@@ -76,7 +83,8 @@ header
 .sponsor-part-2
 {
     font-size: 18px;
-    font-family: Arial, fantasy;
+    font-family: Helvetica, sans-serif;
+    padding: 0 4px 0;
     border: 1px solid black;
 }
 
