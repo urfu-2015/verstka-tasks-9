@@ -24,7 +24,7 @@ body
     border: 2px solid #f00;
     border-top: none;
     font-size: 60px;
-    box-shadow: 5px 8px 7px rgba(0,0,0,0.7);
+    box-shadow: 5px 8px 7px rgba(0, 0, 0, .7);
 }
 
 .yandex-word-second-part
@@ -148,7 +148,8 @@ time
 {
     heigth: 1px;
     width: 100%;
-    transform: skew(0deg, -2deg);
+    perspective: 200px;
+    transform: translateZ(1px) skew(0deg, -2deg);
     border: none;
     border-bottom: 2px solid;
     -webkit-border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
@@ -156,8 +157,6 @@ time
     -o-border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
     border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
     margin: 10px;
-    perspective: 200px;
-    transform: translateZ(1px);
 }
 
 header
