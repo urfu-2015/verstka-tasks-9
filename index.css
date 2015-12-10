@@ -1,1 +1,465 @@
+@font-face
+{
+    font-family: Hermes;
+    src: url('fonts/Hermes.woff');
+}
 
+body
+{
+    min-width: 750px;
+    font-size: 16px;
+}
+
+header,
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header
+{
+    margin-bottom: 20px;
+}
+
+.encoding
+{
+    font-family: Impact, fantasy;
+    font-size: 13px;
+    color: #999;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.header-logo
+{
+    width: 550px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #fff 65%, rgba(255, 0, 0, .1) 100%);
+}
+
+.logo
+{
+    display: flex;
+}
+
+.logo-part-1,
+.logo-part-2
+{
+    font-size: 55px;
+    border: 2px solid #f00;
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,.5);
+    padding: 8px;
+}
+
+.logo-part-1
+{
+    color: #f00;
+    font-family: Hermes, sans-serif;
+}
+
+.logo-part-2
+{
+    font-family: Hermes, sans-serif;
+    font-weight: 300;
+    letter-spacing: -2px;
+    border-left: 0;
+    margin-left: -5px;
+}
+
+.sponsor
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: .5;
+}
+
+.sponsor-part-1,
+.sponsor-part-2
+{
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    padding: 0 4px 0;
+    border: 1px solid black;
+}
+
+.sponsor-part-1
+{
+    font-weight: bold;
+    background-color: #fff;
+    color: #000;
+    margin-right: -5px;
+}
+
+.sponsor-part-2
+{
+    background-color: #a00;
+    color: #fff;
+}
+
+main
+{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3%;
+}
+
+.left-column
+{
+    display: flex;
+    justify-content: flex-start;
+    width: 34%;
+}
+
+.left-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5px;
+}
+
+.encoding,
+.header-logo,
+.vertical-line,
+.horizontal-line,
+.up-black-line,
+.down-black-line,
+.hot-news,
+.info-buttons,
+.footer-logo
+{
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.vertical-line
+{
+    width: 6px;
+    height: 275px;
+    background: linear-gradient(to bottom, #fff 0, #f00 50%, #fff 100%);
+}
+
+.horizontal-line
+{
+    width: 170px;
+    height: 2px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #fff 0, #f00 40%);
+}
+
+.up-left-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    width: 2px;
+    height: 70px;
+    background: linear-gradient(to bottom, #000 100%, #000 100%);
+}
+
+.up-up-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, #000 , #fff 100%);
+}
+
+.up-down-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: 60px;
+    width: 75px;
+    height: 2px;
+    background: linear-gradient(to right, #000 0, #fff 100%);
+}
+
+.up-right-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 65px;
+    background: linear-gradient(to bottom, #f00 100%, #f00 100%);
+}
+
+.up-up-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.up-down-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 65px;
+    width: 185px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.up-mid-up-red-line
+{
+    position: absolute;
+    right: 350px;
+    top: 63px;
+    width: 110px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.up-mid-down-red-line
+{
+    position: absolute;
+    right: 350px;
+    top: 0;
+    width: 170px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-right-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 30px;
+    background: linear-gradient(to bottom, #f00 100%, #f00 100%);
+}
+
+.down-up-red-line
+{
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 185px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-down-red-line
+{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 330px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-up-line
+{
+    position: absolute;
+    right: 240px;
+    top: -10px;
+    width: 140px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
+
+.down-up-black-line
+{
+    position: absolute;
+    left: 10px;
+    top: -18px;
+    width: 160px;
+    height: 2px;
+    background: linear-gradient(to right, #000 , #fff 100%);
+}
+
+.down-left-black-line
+{
+    position: absolute;
+    left: 10px;
+    top: -18px;
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(to bottom, #000 100%, #000 100%);
+}
+
+.down-right-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    width: 2px;
+    height: 35px;
+    background: linear-gradient(to top, #000 0, #fff 100%);
+}
+
+.down-down-black-line
+{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 75px;
+    height: 2px;
+    background: linear-gradient(to right, #000 , #fff 100%);
+}
+
+.up-black-line
+{
+    width: 200px;
+    height: 2px;
+    margin-bottom: 12px;
+    margin-right: -300px;
+    background: linear-gradient(to right, #fff 0, #000 100%);
+}
+
+.down-black-line
+{
+    width: 200px;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: -50px;
+    background: linear-gradient(to right, #fff 0, #000 40%);
+}
+
+.hot-news
+{
+    font-family: Impact, fantasy;
+    font-size: 16px;
+    color: #f00;
+    margin-left: 10px;
+}
+
+.cigarette
+{
+    height: 25px;
+    width: 117px;
+    margin-left: 10px;
+}
+
+.news-content
+{
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.news-content time
+{
+    font-weight: bold;
+}
+
+.news-content p
+{
+    margin-top: 0;
+}
+
+.right-column
+{
+    width: 50%;
+    max-width: 750px;
+    margin-left: 10%;
+}
+
+.info-buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 12px;
+}
+
+.ref-container a
+{
+    font-family: Impact, fantasy;
+    font-size: 14px;
+    margin-right: 20px;
+    color: #f00;
+    text-decoration: none;
+}
+
+.ref-container a:nth-child(2n)
+{
+    color: #000;
+}
+
+form
+{
+    margin-left: 10%;
+}
+
+.search-text
+{
+    width: 250px;
+}
+
+.search-button
+{
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+
+.list-header
+{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.query-list
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.blue-underline
+{
+    color: blue;
+    text-decoration: underline;
+}
+
+.small-text
+{
+    font-size: 13px;
+}
+
+footer
+{
+    margin-top: 20px;
+}
+
+footer p
+{
+    margin: 0;
+}
+
+.footer-logo
+{
+    position: relative;
+    width: 550px;
+    height: 30px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #fff 65%, rgba(255, 0, 0, .1) 100%);
+}
+
+.red-middle-line
+{
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(to right, #fff 0, #f00 100%);
+}
