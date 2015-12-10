@@ -147,7 +147,6 @@ footer
     position: relative;
     height: 100px;
     width: 500px;
-    font-weight: 700;
 }
 
 .kod
@@ -264,7 +263,6 @@ footer
 
 .comp
 {
-    display: inline;
     position: absolute;
     padding: 0 3px;
     top: 5px;
@@ -276,7 +274,6 @@ footer
 
 .tek
 {
-    display: inline;
     position: absolute;
     top: 5px;
     right: 5px;
