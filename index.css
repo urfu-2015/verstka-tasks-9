@@ -1,1 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster|Tenor+Sans&subset=cyrillic,latin);
+@import url(https://fonts.googleapis.com/css?family=Arimo:700|Oswald:700);
 
+body
+{
+    min-width: 600px;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1vw;
+}
+
+.ul-encodings
+{
+    display: flex;
+    margin: 0 5px 5px;
+    font-family: 'Oswald', sans-serif;
+    color: #777;
+    font-size: .7em;
+}
+
+.red-first-letter
+{
+    color: #f00;
+    font-family: 'Tenor Sans', sans-serif;
+    border: 2px solid #f00;
+    border-top: none;
+    font-size: 60px;
+    box-shadow: 5px 8px 7px rgba(0, 0, 0, .7);
+}
+
+.yandex-word-second-part
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    padding: 0;
+}
+
+.management-section a,
+.management-section div
+{
+    color: #f00;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+body,
+header,
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main
+{
+    width: 95%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.hot-news-content
+{
+    width: 40%;
+    padding: 2%;
+    border: 2px solid;
+    -webkit-border-image: linear-gradient(#fff, rgba(255,0,0,.8), #f00 50%, #fff 100%) 1;
+    -moz-border-image: linear-gradient(#fff, rgba(255,0,0,.8), #f00 50%, #fff 100%) 1;
+    -o-border-image: linear-gradient(#fff, rgba(255,0,0,.8), #f00 50%, #fff 100%) 1;
+    border-image: linear-gradient(#fff, rgba(255,0,0,.8), #f00 50%, #fff 100%) 1;
+    border-top: none;
+    border-bottom: none;
+}
+
+.main-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transform: skew(2deg);
+}
+
+.query-language-block
+{
+    width: 65%;
+    margin-left: 7%;
+}
+
+.find-button
+{
+    border-radius: 3px;
+    position: relative;
+    left: 16%;
+}
+
+.ul-queries
+{
+    margin-top: -15px;
+}
+
+.ul-queries,
+.ul-encodings
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.size-xs
+{
+    font-size: .8em;
+}
+
+.article-content p
+{
+    margin: 0;
+}
+
+time
+{
+    font-weight: 900;
+}
+
+.input-query
+{
+    width: 300px;
+}
+
+.management-section
+{
+    display: flex;
+    transform: skew(0deg, -2deg);
+    position: relative;
+    left: 100px;
+    top: -5%;
+    margin-bottom: 10px;
+}
+
+.management-section a:nth-child(2),
+.management-section .stop-words-list
+{
+    color: #000;
+}
+
+.red-border-bottom
+{
+    heigth: 1px;
+    width: 100%;
+    perspective: 200px;
+    transform: translateZ(1px) skew(0deg, -2deg);
+    border: none;
+    border-bottom: 2px solid;
+    -webkit-border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
+    -moz-border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
+    -o-border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
+    border-image: linear-gradient(100deg, #fff 5%, rgba(255, 0, 0, .6) 20%, #f00 40%, #fff 40%) 1;
+    margin: 10px;
+}
+
+header
+{
+    perspective: 200px;
+    transform: translateZ(1px) skew(0deg, -3deg);
+    width: 500px;
+}
+
+.ul-encodings li
+{
+    margin: 0 5px;
+}
+
+.logo
+{
+    padding: 10px;
+    width: 500px;
+    height: 80px;
+    border: 2px solid;
+    -webkit-border-image: linear-gradient(100deg, #000, #fff 30%, #ffd 50%, rgba(0, 0, 0, .6) 70%, #fff 80%) 1;
+    -moz-border-image: linear-gradient(100deg, #000, #fff 30%, #ffd 50%, rgba(0, 0, 0, .6) 70%, #fff 80%) 1;
+    -o-border-image: linear-gradient(100deg, #000, #fff 30%, #ffd 50%, rgba(0, 0, 0, .6) 70%, #fff 80%) 1;
+    border-image: linear-gradient(100deg, #000, #fff 30%, #ffd 50%, rgba(0, 0, 0, .6) 70%, #fff 80%) 1;
+
+}
+
+.logo-yandex
+{
+    display: flex;
+    margin: 0 auto 10px;
+    width: 300px;
+    position: absolute;
+    box-shadow: 8px 10px 3px -2px rgba(0,0,0,.3);
+    border: 2px solid;
+    -webkit-border-image: linear-gradient(100deg, #fff 10%, rgba(255,0,0,.7), #f00) 1;
+    -moz-border-image: linear-gradient(100deg, #fff 10%, rgba(255,0,0,.7), #f00) 1;
+    -o-border-image: linear-gradient(100deg, #fff 10%, rgba(255,0,0,.7), #f00) 1;
+    border-image: linear-gradient(100deg, #fff 10%, rgba(255,0,0,.7), #f00) 1;
+}
+
+.empty
+{
+    width: 150px;
+}
+
+.comptek,
+.comptek-footer
+{
+    width: 200px;
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    height: 75px;
+    padding: 0 5px;
+    z-index: -1;
+    border: 3px solid;
+    -webkit-border-image: linear-gradient(100deg, #fff 30%, rgba(255,0,0,.7), #f00) 1;
+    -moz-border-image: linear-gradient(100deg, #fff 30%, rgba(255,0,0,.7), #f00) 1;
+    -o-border-image: linear-gradient(100deg, #fff 30%, rgba(255,0,0,.7), #f00) 1;
+    border-image: linear-gradient(100deg, #fff 30%, rgba(255,0,0,.7), #f00) 1;
+    background: linear-gradient(to right, #fff 30%, #fbb);
+    box-shadow: 5px 4px 1px -2px rgba(0,0,0,.3);
+}
+
+.comptek-footer
+{
+    width: 500px;
+    height: 30px;
+    top: 10px;
+    left: 15px;
+    -webkit-border-image: linear-gradient(100deg, #fff 40%, rgba(255,0,0,.7) 80%, #f00) 1;
+    -moz-border-image: linear-gradient(100deg, #fff 40%, rgba(255,0,0,.7) 80%, #f00) 1;
+    -o-border-image: linear-gradient(100deg, #fff 40%, rgba(255,0,0,.7) 80%, #f00) 1;
+    border-image: linear-gradient(100deg, #fff 40%, rgba(255,0,0,.7) 80%, #f00) 1;
+    background: linear-gradient(to right, #fff 70%, #fbb);
+}
+
+.black-border-footer
+{
+    height: 30px;
+    width: 200px;
+    border: 3px solid;
+    border-top-width: 0;
+    -webkit-border-image: linear-gradient(100deg, rgba(0, 0, 0, .6), rgba(0,0,0,.4) 20%, #fff 35%) 1;
+    -moz-border-image: linear-gradient(100deg, rgba(0, 0, 0, .6), rgba(0,0,0,.4) 20%, #fff 35%) 1;
+    -o-border-image: linear-gradient(100deg, rgba(0, 0, 0, .6), rgba(0,0,0,.4) 20%, #fff 35%) 1;
+    border-image: linear-gradient(100deg, rgba(0, 0, 0, .6), rgba(0,0,0,.4) 20%, #fff 35%) 1;
+    position: relative;
+    left: -5px;
+    top: -10px;
+}
+
+.red-border-footer
+{
+    height: 30px;
+    width: 400px;
+    border: 2px solid black;
+    -webkit-border-image: linear-gradient(100deg, #fff 15%, rgba(255, 0, 0, .9) 45%, #fff 50%,
+            rgba(0, 0, 0, .5) 95%, rgba(0, 0, 0, .5) 95%, #fff 95%) 1;
+    -moz-border-image: linear-gradient(100deg, #fff 15%, rgba(255, 0, 0, .9) 45%, #fff 50%,
+            rgba(0, 0, 0, .5) 95%, rgba(0, 0, 0, .5) 95%, #fff 95%) 1;
+    -o-border-image: linear-gradient(100deg, #fff 15%, rgba(255, 0, 0, .9) 45%, #fff 50%,
+            rgba(0, 0, 0, .5) 95%, rgba(0, 0, 0, .5) 95%, #fff 95%) 1;
+    border-image: linear-gradient(100deg, #fff 15%, rgba(255, 0, 0, .9) 45%, #fff 50%,
+            rgba(0, 0, 0, .5) 95%, rgba(0, 0, 0, .5) 95%, #fff 95%) 1;
+    position: relative;
+    left: 100px;
+    top: -47px;
+    z-index: -1;
+}
+
+.comptek p,
+.comptek-footer p
+{
+    float: right;
+    margin: 3px auto 0;
+    border: 2px solid #777;
+    padding: 2px;
+    font-weight: 900;
+}
+
+.comptek p:first-child,
+.comptek-footer p:first-child
+{
+    background: rgb(139, 0, 0);
+    color: #fff;
+}
+
+.comptek p:nth-child(2),
+.comptek-footer p:nth-child(2)
+{
+    background: #ffe;
+    color: rgb(105, 105, 105);
+}
+
+.logo-footer
+{
+    width: 500px;
+    height: 15px;
+    perspective: 200px;
+    transform: translateZ(1px) skew(0deg, -2deg);
+    border: 3px solid;
+    border-bottom-width: 0;
+    -webkit-border-image: linear-gradient(100deg, #000, rgba(0,0,0,.5) 10%, #fff 30%) 1;
+    -moz-border-image: linear-gradient(100deg, #000, rgba(0,0,0,.5) 10%, #fff 30%) 1;
+    -o-border-image: linear-gradient(100deg, #000, rgba(0,0,0,.5) 10%, #fff 30%) 1;
+    border-image: linear-gradient(100deg, #000, rgba(0,0,0,.5) 10%, #fff 30%) 1;
+    padding: 15px;
+    margin-bottom: 15px;
+}
