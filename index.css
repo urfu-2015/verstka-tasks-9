@@ -1,1 +1,361 @@
+body
+{
+    margin: 0;
+    width: 99%;
+    min-width: 750px;
+}
 
+footer
+{
+    position: relative;
+}
+
+.info
+{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    text-align: center;
+}
+
+.img
+{
+    position: absolute;
+    left: 215px;
+    width: 325px;
+    top: 13px;
+    opacity: .7;
+    background: linear-gradient(to right, #fff 30%, #ebd8e6 100%);
+
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #fff 40%, #f00 100%);
+    border-image-slice: 1;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.footer
+{
+    margin-bottom: 3px;
+}
+
+.black1
+{
+    position: absolute;
+    width: 550px;
+    padding: 20px;
+    border: 2px solid transparent;
+
+    border-image: linear-gradient(to left, #fff 65%, #000 100%);
+    backface-visibility: hidden;
+    border-image-slice: 1;
+    border-bottom-width: 0;
+}
+
+.black2
+{
+    position: absolute;
+    left: 10px;
+    width: 600px;
+    top: 10px;
+    padding: 15px;
+    border: 2px solid transparent;
+
+    border-image: linear-gradient(to right, #000 5%, #fff 15%);
+    backface-visibility: hidden;
+    border-image-slice: 1;
+    border-top-width: 0;
+}
+
+.black3
+{
+    position: absolute;
+    left: 170px;
+    width: 380px;
+    top: 7px;
+    border: 2px solid transparent;
+
+    border-image: linear-gradient(to right, #fff 10%, #f00 40%, #fff 41%, #000 90%, #fff 91%);
+    backface-visibility: hidden;
+    border-image-slice: 1;
+    border-bottom-width: 0;
+}
+
+.red_middle
+{
+    position: absolute;
+    left: 20px;
+    width: 250px;
+    top: 20px;
+    border: 2px solid transparent;
+
+    border-image: linear-gradient(to right, #fff 10%, #f00 75%, #fff 76%, #fff 100%);
+    backface-visibility: hidden;
+    border-image-slice: 1;
+    border-bottom-width: 0;
+}
+
+header,
+footer
+{
+    text-align: center;
+}
+
+.header_div,
+.footer_div
+{
+    position: relative;
+    width: 540px;
+    margin: auto;
+}
+
+.abbr
+{
+    padding: 7px;
+    font: bold 11px 'Oswald', sans-serif;
+    word-spacing: 7px;
+    color: #a0a0a0;
+}
+
+.ya
+{
+    position: relative;
+    width: 325px;
+    top: 10px;
+    min-width: 200px;
+    padding: 0;
+    border: 3px solid #f00;
+    left: 10px;
+    text-align: right;
+    z-index: 2;
+
+    border-image: linear-gradient(to right, #fff 10%, #f00 50%);
+    border-image-slice: 1;
+}
+
+.word:first-letter
+{
+    color: #f00;
+    border: 2px solid #f00;
+    border-top: none;
+    box-shadow: 3px 3px 8px #000;
+    font: bold 50px 'PT Sans Narrow', sans-serif;
+    padding: 0 5px;
+    margin-right: 5px;
+    margin-left: -5px;
+}
+
+.word
+{
+    display: inline-block;
+    font: 45px 'Impact', sans-serif;
+    padding: 0 5px;
+    border: 2px solid #f00;
+    box-shadow: 3px 3px 8px #000;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+
+.down
+{
+    position: absolute;
+    top: 18px;
+    height: 70px;
+    left: 150px;
+    width: 385px;
+    min-width: 300px;
+    opacity: .6;
+    background: linear-gradient(to right, #fff 50%, #ffc3d3 100%);
+
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #fff 50%, #f00 100%);
+    border-image-slice: 1;
+    backface-visibility: hidden;
+}
+
+.right
+{
+    float: right;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.right span
+{
+    float: right;
+    border: 1px solid #000;
+    padding: 0 2px;
+}
+
+.first
+{
+    color: #000;
+    font: bold 17px 'Franklin Gothic Heavy', sans-serif;
+}
+
+.last
+{
+    color: #fff;
+    font: 16px 'Calibri', sans-serif;
+    background-color: #f00;
+}
+
+.black_left
+{
+    position: absolute;
+    top: 0;
+    height: 70px;
+    width: 260px;
+    min-width: 250px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #000 10%, #fff 50%);
+    border-image-slice: 1;
+}
+
+.black_top_down
+{
+    position: absolute;
+    left: 150px;
+    top: 12px;
+    height: 80px;
+    width: 390px;
+    min-width: 300px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #fff 50%, #000 80%, #fff 51%);
+    border-image-slice: 1;
+}
+
+main
+{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+article
+{
+    width: 35%;
+}
+
+img
+{
+    padding: 0 20px;
+    width: 30%;
+}
+
+.text
+{
+    text-align: justify;
+    padding: 20px;
+}
+
+.hot
+{
+    color: #f00;
+    padding: 5px 30px;
+}
+
+.example,
+main time,
+.hot,
+.top
+{
+    font-weight: bold;
+}
+
+.hot,
+.top
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.top
+{
+    padding-top: 5px;
+    margin-left: 20%;
+}
+
+.top > div
+{
+    display: inline-block;
+    padding: 15px 5px;
+    padding-top: 0;
+}
+
+.second
+{
+    width: 55%;
+    padding-left: 20px;
+}
+
+.top div:nth-child(odd)
+{
+    color: #f00;
+}
+
+.list,
+.langquery
+{
+    font-size: 80%;
+}
+
+#find
+{
+    margin-left: 60px;
+}
+
+#in
+{
+    width: 50%;
+    margin-left: 60px;
+}
+
+label
+{
+    position: absolute;
+}
+
+header,
+img,
+.hot,
+.top,
+footer > div
+{
+    transform: rotate(-2deg);
+}
+
+.vertical_line1,
+.vertical_line2
+{
+    width: 2px;
+    background: linear-gradient(to bottom, #fff 10%, #f00 45%, #fff 90%);
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+}
+
+.vertical_line1
+{
+    margin-left: 4%;
+}
+
+.vertical_line2
+{
+    margin-right: 4%;
+}
+
+.horizontal_line1,
+.horizontal_line2
+{
+    width: 50%;
+    background: linear-gradient(to right, #fff 20%, #f00 40%);
+    transform: rotate(-2deg);
+    height: 1.5px;
+    margin-left: 5px;
+    backface-visibility: hidden;
+}
+
+.horizontal_line2
+{
+    width: 20%;
+}
