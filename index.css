@@ -396,9 +396,9 @@ footer span
     top: -3px;
     right: -30px;
     position: relative;
-    -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0 2px 8px 0 rgba(50, 50, 50, 0.75);
-    box-shadow:         0 2px 8px 0 rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0 2px 8px 0 rgba(50, 50, 50, .75);
+    -moz-box-shadow:    0 2px 8px 0 rgba(50, 50, 50, .75);
+    box-shadow:         0 2px 8px 0 rgba(50, 50, 50, .75);
 }
 
 .logo-middle-vertical-r-1
