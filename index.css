@@ -328,7 +328,7 @@ footer > div
 .vertical_line1,
 .vertical_line2
 {
-    width: 3px;
+    width: 2px;
     background: linear-gradient(to bottom, #fff 10%, #f00 45%, #fff 90%);
     transform: rotate(-2deg);
     backface-visibility: hidden;
@@ -348,9 +348,9 @@ footer > div
 .horizontal_line2
 {
     width: 50%;
-    background: linear-gradient(to right, #fff 20%, #f00 30%);
+    background: linear-gradient(to right, #fff 20%, #f00 40%);
     transform: rotate(-2deg);
-    height: 2px;
+    height: 1.5px;
     margin-left: 5px;
     backface-visibility: hidden;
 }
