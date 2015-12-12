@@ -23,8 +23,8 @@
 
 .logoYandex
 {
-    height: 100px;
-    width: 700px;
+    height: 90px;
+    width: 600px;
 }
 
 .logoFooter
@@ -37,9 +37,14 @@
 .byLine
 {
     font-family: Russo One;
-    font-size: 20px;
+    font-size: 15px;
     transform: rotateZ(-2deg);
     color: red;
+}
+
+.cigarette
+{
+    width: 150px;
 }
 
 .news
@@ -68,7 +73,7 @@ span,
 .langOfReq_,
 footer
 {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 img
