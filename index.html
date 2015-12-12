@@ -8,7 +8,10 @@
     <body>
         <!-- Поворачиваем время вспять здесь -->
         <div class="encodings">
-            <span>MAC KOI WIN DOS</span>
+            <a href="/ya_mac.html">MAC</a>
+            <a href="/ya_koi.html">KOI</a>
+            <a href="/ya_win.html">WIN</a>
+            <a href="/ya_dos.html">DOS</a>
         </div>
         <header class="logo">
             <div class="box black"></div>
@@ -32,7 +35,7 @@
         <main>
             <div class="news">
                 <article class="first-article">
-                    <h5>Горячая новость:</h5>
+                    <h2>Горячая новость:</h2>
                     <img src="img/okur.gif" alt="Окурочек">
                     <time datetime="1997-08-21">21 августа 1997г.</time>
                     <p>
@@ -42,7 +45,7 @@
                         'ru').
                     </p>
                 </article>
-                <div class="border"></div>
+                <div class="bottom-border"></div>
                 <article class="second-article">
                     <time datetime="1997-09-05">5 сентября 1997г.</time>
                     <p>
@@ -50,7 +53,7 @@
                         ему несколько вопросов, в том числе: "Вы на чьей стороне?"
                     </p>
                 </article>
-                <div class="border"></div>
+                <div class="bottom-border"></div>
             </div>
             <div class="queries">
                 <nav>
@@ -60,18 +63,20 @@
                     <a href="/stop-word.html">Список стоп-слов</a>
                 </nav>
                 <div class="query">
-                    <label for="query">Запрос:</label> <input id="query" type="text"><br>
-                    <button>Найти.</button>
-                    <p>
+                    <form action="..." method="POST" enctype="text/plain">
+                        <label for="search">Запрос:</label> <input id="search" type="text"><br>
+                        <button type="submit">Найти.</button>
+                    </form>
+                    <small>
                         Язык запросов аналогичен
                         <a href="https://company.yandex.ru/programs/site/docs/querylang.html">
                             Яndex-Site
                         </a>, дополнение - поиск по точному слову (без учета других словоформ).
-                    </p>
+                    </small>
                 </div>
-                <div class="border"></div>
+                <div class="bottom-border"></div>
                 <div class="examples">
-                    <h4>Примеры правильных запросов:</h4>
+                    <h3>Примеры правильных запросов:</h3>
                     <ul>
                         <li>беспроводные сети</li>
                         <li>выставка !связь 97</li>
@@ -98,8 +103,10 @@
                     </div>
                 </div>
             </div>
-            <p>Copyright &copy; 1997 <a href="https://www.comptek.ru/">Comptek International</a></p>
-            <p>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></p>
+            <p>Copyright &copy; 1997 <a href="https://www.comptek.ru/" target="_blank">
+                Comptek International
+            </a></p>
+            <address>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></address>
             <p>Дизайн - Артемий Лебедев (<a href="http://www.design.ru/">Web Design</a>)</p>
         </footer>
     </body>
