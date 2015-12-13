@@ -35,10 +35,10 @@
         <main>
             <div class="news">
                 <article class="first-article">
-                    <h2>Горячая новость:</h2>
-                    <img src="img/okur.gif" alt="Окурочек">
+                    <h1>Горячая новость:</h1>
+                    <img class="publ-time" src="img/okur.gif" alt="Окурочек">
                     <time datetime="1997-08-21">21 августа 1997г.</time>
-                    <p>
+                    <p class="text">
                         Яndex-Web, о котором так долго говорили, наконец запущен в бета-тестирование. Могло
                         быть и хуже. Поиск осуществляется по "русскому Интернету". Присылайте замечания,
                         идеи, а также стоящие сайты (с русскими текстами, особенно кроме доменов 'su' и
@@ -47,8 +47,8 @@
                 </article>
                 <div class="bottom-border"></div>
                 <article class="second-article">
-                    <time datetime="1997-09-05">5 сентября 1997г.</time>
-                    <p>
+                    <time class="publ-time" datetime="1997-09-05">5 сентября 1997г.</time>
+                    <p class="text">
                         Светило советской науки - Вавилов - ожил в прошлое воскресение. Ю. Алтухов задал
                         ему несколько вопросов, в том числе: "Вы на чьей стороне?"
                     </p>
@@ -56,15 +56,15 @@
                 <div class="bottom-border"></div>
             </div>
             <div class="queries">
-                <nav>
+                <nav class="navigation">
                     <a href="/ya_help.html">Помощь</a>
                     <a href="/addurl.html">Добавить URL</a>
                     <a href="#">ЧХ:-)</a>
                     <a href="/stop-word.html">Список стоп-слов</a>
                 </nav>
                 <div class="query">
-                    <form action="..." method="POST" enctype="text/plain">
-                        <label for="search">Запрос:</label> <input id="search" type="text"><br>
+                    <form action="..." method="POST" enctype="application/x-www-form-urlencoded">
+                        <label for="search">Запрос:</label> <input id="search" type="search"><br>
                         <button type="submit">Найти.</button>
                     </form>
                     <small>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="bottom-border"></div>
                 <div class="examples">
-                    <h3>Примеры правильных запросов:</h3>
+                    <h1>Примеры правильных запросов:</h1>
                     <ul>
                         <li>беспроводные сети</li>
                         <li>выставка !связь 97</li>
@@ -103,11 +103,12 @@
                     </div>
                 </div>
             </div>
-            <p>Copyright &copy; 1997 <a href="https://www.comptek.ru/" target="_blank">
-                Comptek International
-            </a></p>
+            <p class="copyright">
+                Copyright &copy; 1997
+                <a href="https://www.comptek.ru/" target="_blank">Comptek International</a>
+            </p>
             <address>E-mail: <a href="mailto:webadmin@yandex.ru">webadmin@yandex.ru</a></address>
-            <p>Дизайн - Артемий Лебедев (<a href="http://www.design.ru/">Web Design</a>)</p>
+            <p class="design">Дизайн - Артемий Лебедев (<a href="http://www.design.ru/">Web Design</a>)</p>
         </footer>
     </body>
 </html>
