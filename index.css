@@ -23,6 +23,11 @@
     font-weight: bold;
 }
 
+address
+{
+    font-style: normal;
+}
+
 body
 {
     text-align: center;
@@ -39,9 +44,15 @@ body > header
 
 .header-encodings
 {
-    color: #949494;
-    font: bold .9em Akhand;
     transform: rotate(-5deg);
+    backface-visibility: hidden;
+}
+
+.header-encodings a
+{
+    color: #949494;
+    font: bold .9em Akhand, sans-serif;
+    text-decoration: none;
 }
 
 .yandex-logo
@@ -57,6 +68,7 @@ body > header
     padding: 5px;
     box-shadow: 3px 3px 5px #949494;
     transform: rotate(-4deg);
+    backface-visibility: hidden;
     background: white;
     z-index: 1000;
 }
@@ -68,7 +80,7 @@ body > header
     left: -2px;
     display: inline-block;
     color: red;
-    font-family: Hermes;
+    font-family: Hermes, sans-serif;
     padding: 6px 4px;
     border: 2px solid red;
     box-sizing: border-box;
@@ -78,7 +90,7 @@ body > header
 
 .ndex-text
 {
-    font-family: Hermes;
+    font-family: Hermes, sans-serif;
     display: inline-block;
     padding-left: 40px;
 }
@@ -92,6 +104,7 @@ body > header
     height: 71px;
     background: linear-gradient(to left, red, white);
     transform: rotate(-2deg);
+    backface-visibility: hidden;
 }
 
 .pink-box
@@ -150,7 +163,7 @@ body > header
 
 .comp-logo
 {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     display: table-cell;
     padding: 1px;
     font-weight: bold;
@@ -162,7 +175,7 @@ body > header
     background: red;
     color: white;
     padding: 1px;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
 }
 
 .red-line
@@ -202,6 +215,7 @@ body > header
     left: 350px;
     top: 115px;
     transform: rotate(-2deg);
+    backface-visibility: hidden;
 }
 
 .top-grey-line
@@ -211,6 +225,7 @@ body > header
     left: 350px;
     top: 22px;
     transform: rotate(-2deg);
+    backface-visibility: hidden;
 }
 
 .square-vert-line
@@ -222,6 +237,7 @@ body > header
     height: 70px;
     background: black;
     transform: rotate(-3deg);
+    backface-visibility: hidden;
 }
 
 .square-top-line
@@ -233,6 +249,7 @@ body > header
     width: 130px;
     background: linear-gradient(to left, white, black);
     transform: rotate(-3deg);
+    backface-visibility: hidden;
 }
 
 .square-bottom-line
@@ -244,6 +261,7 @@ body > header
     width: 70px;
     background: linear-gradient(to left, white, black);
     transform: rotate(-3deg);
+    backface-visibility: hidden;
 }
 
 .two-column-container
@@ -264,8 +282,9 @@ body > header
 
 .hot-news
 {
-    font-family: Hermes;
+    font-family: Hermes, sans-serif;
     transform: rotate(-1deg);
+    backface-visibility: hidden;
     color: red;
     font-size: 1.1em;
     margin-bottom: 7px;
@@ -276,8 +295,9 @@ body > header
     margin: 15px 0;
 }
 
-.left-column-paragraph header
+.left-column-paragraph time
 {
+    display: block;
     font-weight: bold;
 }
 
@@ -286,6 +306,7 @@ body > header
     width: 45%;
     margin: 25px 0;
     transform: rotate(-1deg);
+    backface-visibility: hidden;
 }
 
 .right-column
@@ -299,11 +320,12 @@ body > header
 
 .right-column-nav
 {
-    font-family: Hermes;
+    font-family: Hermes, sans-serif;
     font-weight: bold;
     transform: rotate(-2deg);
     text-align: center;
     margin-bottom: 15px;
+    backface-visibility: hidden;
 }
 
 .right-column-nav a
@@ -312,9 +334,19 @@ body > header
     color: black;
 }
 
+.right-column-nav a:hover
+{
+    color: red;
+}
+
 a.red
 {
     color: red;
+}
+
+a.red:hover
+{
+    color: black;
 }
 
 .query-form
@@ -355,6 +387,7 @@ a.red
     left: 100px;
     background: black;
     transform: rotate(-2deg);
+    backface-visibility: hidden;
 }
 
 .footer-top-line
@@ -366,6 +399,7 @@ a.red
     background: linear-gradient(to left, white, black);
     width: 155px;
     transform: rotate(-2deg);
+    backface-visibility: hidden;
 }
 
 .red-box-small
@@ -412,6 +446,7 @@ body > footer
     width: 2px;
     height: 250px;
     transform: rotate(-3deg);
+    backface-visibility: hidden;
 }
 
 .left-column-left-red-line
