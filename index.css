@@ -41,7 +41,7 @@ body
     height: 2px;
     background: rgba(157, 157, 157, .2);
     opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity .3s, transform .3s;
     transform: translateY(-3px);
 }
 
@@ -307,7 +307,8 @@ main
     position: relative;
 }
 
-.navigation a::after {
+.navigation a::after
+{
     position: absolute;
     content: '';
     bottom: 0;
@@ -315,14 +316,14 @@ main
     width: 100%;
     height: 2px;
     opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity .3s, transform .3s;
     transform: translateY(10px);
 }
 
 .navigation a:hover::after
 {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
 }
 
 .navigation a:nth-child(2n)
