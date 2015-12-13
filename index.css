@@ -1,1 +1,464 @@
+@font-face
+{
+    font-family: Akhand;
+    src: url('fonts/Akhand.woff');
+}
 
+@font-face 
+{
+    font-family: Hermes;
+    src: url('fonts/Hermes.woff');
+}
+
+@font-face
+{
+    font-family: Helvetica;
+    src: url('fonts/HelveticaNeue.woff');
+}
+
+@font-face
+{
+    font-family: Helvetica;
+    src: url('fonts/HelveticaNeue-Bold.woff');
+    font-weight: bold;
+}
+
+address
+{
+    font-style: normal;
+}
+
+body
+{
+    text-align: center;
+}
+
+body > header
+{
+    position: relative;
+    padding: 5px;
+    width: 700px;
+    height: 150px;
+    margin: auto;
+}
+
+.header-encodings
+{
+    transform: rotate(-5deg);
+    backface-visibility: hidden;
+}
+
+.header-encodings a
+{
+    color: #949494;
+    font: bold .9em Akhand, sans-serif;
+    text-decoration: none;
+}
+
+.yandex-logo
+{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    border: 2px solid red;
+    font-size: 3em;
+    font-weight: bold;
+    box-sizing: border-box;
+    height: 72px;
+    padding: 5px;
+    box-shadow: 3px 3px 5px #949494;
+    transform: rotate(-4deg);
+    backface-visibility: hidden;
+    background: white;
+    z-index: 1000;
+}
+
+.ya-letter
+{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: inline-block;
+    color: red;
+    font-family: Hermes, sans-serif;
+    padding: 6px 4px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    height: 72px;
+    box-shadow: 3px 3px 5px #949494;
+}
+
+.ndex-text
+{
+    font-family: Hermes, sans-serif;
+    display: inline-block;
+    padding-left: 40px;
+}
+
+.red-box
+{
+    position: absolute;
+    top: 33px;
+    left: 350px;
+    width: 300px;
+    height: 71px;
+    background: linear-gradient(to left, red, white);
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+}
+
+.pink-box
+{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    background: linear-gradient(to left, pink, white);
+}
+
+.shadow-box
+{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    box-shadow: 1px 0 5px #949494;
+}
+
+.red-box-white-border
+{
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    top: 0;
+    right: 170px;
+    background: linear-gradient(to left, pink, white);
+    z-index: 2000;
+}
+
+.red-box-white-point
+{
+    position: absolute;
+    top: -10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 1000px;
+    right: 140px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), white);
+    z-index: 2001;
+}
+
+.comptek-logo
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: table;
+    border: 1px solid #949494;
+}
+
+.comp-logo
+{
+    font-family: Helvetica, sans-serif;
+    display: table-cell;
+    padding: 1px;
+    font-weight: bold;
+}
+
+.tek-logo
+{
+    display: table-cell;
+    background: red;
+    color: white;
+    padding: 1px;
+    font-family: Helvetica, sans-serif;
+}
+
+.red-line
+{
+    height: 2px;
+    background: linear-gradient(to left, red, white);
+}
+
+.logo-top-line
+{
+    width: 150px;
+    position: absolute;
+    top: -2px;
+    left: -152px;
+    z-index: 2000;
+}
+
+.logo-bottom-line
+{
+    width: 70px;
+    position: absolute;
+    bottom: -2px;
+    left: -72px;
+    z-index: 2000;
+}
+
+.grey-line
+{
+    height: 2px;
+    background: linear-gradient(to left, #707070, white);
+}
+
+.bottom-grey-line
+{
+    position: absolute;
+    width: 120px;
+    left: 350px;
+    top: 115px;
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+}
+
+.top-grey-line
+{
+    position: absolute;
+    width: 290px;
+    left: 350px;
+    top: 22px;
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+}
+
+.square-vert-line
+{
+    position: absolute;
+    width: 2px;
+    top: 40px;
+    left: 100px;
+    height: 70px;
+    background: black;
+    transform: rotate(-3deg);
+    backface-visibility: hidden;
+}
+
+.square-top-line
+{
+    position: absolute;
+    height: 2px;
+    top: 37px;
+    left: 100px;
+    width: 130px;
+    background: linear-gradient(to left, white, black);
+    transform: rotate(-3deg);
+    backface-visibility: hidden;
+}
+
+.square-bottom-line
+{
+    position: absolute;
+    height: 2px;
+    top: 108px;
+    left: 102px;
+    width: 70px;
+    background: linear-gradient(to left, white, black);
+    transform: rotate(-3deg);
+    backface-visibility: hidden;
+}
+
+.two-column-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column
+{
+    flex-basis: 35%;
+    text-align: left;
+    padding: 0 0 0 70px;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+}
+
+.hot-news
+{
+    font-family: Hermes, sans-serif;
+    transform: rotate(-1deg);
+    backface-visibility: hidden;
+    color: red;
+    font-size: 1.1em;
+    margin-bottom: 7px;
+}
+
+.left-column-paragraph
+{
+    margin: 15px 0;
+}
+
+.left-column-paragraph time
+{
+    display: block;
+    font-weight: bold;
+}
+
+.paragraph-delimiter-line
+{
+    width: 45%;
+    margin: 25px 0;
+    transform: rotate(-1deg);
+    backface-visibility: hidden;
+}
+
+.right-column
+{
+    flex-basis: 49%;
+    box-sizing: border-box;
+    padding: 0 10px 0 100px;
+    text-align: left;
+    margin: 0;
+}
+
+.right-column-nav
+{
+    font-family: Hermes, sans-serif;
+    font-weight: bold;
+    transform: rotate(-2deg);
+    text-align: center;
+    margin-bottom: 15px;
+    backface-visibility: hidden;
+}
+
+.right-column-nav a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.right-column-nav a:hover
+{
+    color: red;
+}
+
+a.red
+{
+    color: red;
+}
+
+a.red:hover
+{
+    color: black;
+}
+
+.query-form
+{
+    margin-bottom: 15px;
+}
+
+.small-text
+{
+    font-size: smaller;
+}
+
+.right-queries-article
+{
+    font-size: smaller;
+}
+
+.right-queries-article header
+{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.footer-drawing
+{
+    position: relative;
+    width: 500px;
+    height: 70px;
+    margin: auto;
+}
+
+.footer-vert-black-line
+{
+    position: absolute;
+    top: 22px;
+    width: 2px;
+    height: 20px;
+    left: 100px;
+    background: black;
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+}
+
+.footer-top-line
+{
+    position: absolute;
+    top: 20px;
+    height: 2px;
+    left: 100px;
+    background: linear-gradient(to left, white, black);
+    width: 155px;
+    transform: rotate(-2deg);
+    backface-visibility: hidden;
+}
+
+.red-box-small
+{
+    height: 30px;
+    width: 233px;
+    top: 25px;
+    left: 130px;
+    z-index: -1;
+}
+
+.shadow-box-small
+{
+    width: 25px;
+}
+
+.comptek-logo-small
+{
+    top: 3px;
+    right: 3px;
+}
+
+body > footer
+{
+    font-size: smaller;
+}
+
+.vert-red-line-top
+{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, red, white);
+}
+
+.vert-red-line-bottom
+{
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, red, white);
+}
+
+.vert-red-line
+{
+    width: 2px;
+    height: 250px;
+    transform: rotate(-3deg);
+    backface-visibility: hidden;
+}
+
+.left-column-left-red-line
+{
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+
+.left-column-right-red-line
+{
+    position: absolute;
+    top: 50px;
+    right: -15px;
+}
