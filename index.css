@@ -25,10 +25,11 @@ header
 .cute-border
 {
     position: relative;
-    top: -18px;
+    top: -13px;
     left: -10px;
     border-image: linear-gradient(to left, transparent 70%, #000) 1;
     border-style: solid;
+    height: 90px;
 }
 
 .another-cute-border
@@ -37,7 +38,7 @@ header
     border-image: linear-gradient(to right, transparent 60%, #000) 1;
     border-style: solid none none none;
     border-width: 3px 0 0 0;
-    top: 10px;
+    top: 3px;
 }
 
 .wrapper
@@ -47,7 +48,7 @@ header
     background-image: linear-gradient(to right, transparent 50%, #fdd);
     background-origin: border-box;
     display: flex;
-    top: 15px;
+    top: 10px;
     left: 10px;
     border-image: linear-gradient(to right, transparent 60%, #f00) 1;
     border-style: solid;
@@ -60,16 +61,18 @@ header
     display: flex;
     border-collapse: collapse;
     height: 20px;
-    font: 1em Tahoma,sans-serif;
-    padding: 3px;
+    font: .9em Tahoma,sans-serif;
+    padding: 4px;
+    opacity: .5;
 }
 
 .sponsor-part1
 {
     background-color: #fff;
-    color:#333;
+    color: #333;
     border: 1px solid #000;
     font-weight: bold;
+    padding: 1px;
 }
 
 .sponsor-part2
@@ -77,6 +80,7 @@ header
     background-color: #c44;
     color:#fff;
     border: 1px solid #000;
+    padding: 1px;
 }
 
 .name
@@ -108,6 +112,7 @@ main
 ul
 {
     display: flex;
+    transform: rotate(-2deg);
 }
 
 ul li a
@@ -120,7 +125,6 @@ ul li
 {
     font:  bold 1em Arial,sans-serif;
     padding: 0 10px;
-    transform: rotate(-2deg);
     list-style: none;
 }
 
@@ -136,49 +140,43 @@ ul li:nth-child(2n+1)
 
 h3
 {
-    font: bold 1em sans-serif;
+    font: bold 1em Impact,sans-serif;
     color: #f00;
 }
 
 aside
 {
     flex-basis: 400px;
-    border-image: linear-gradient(to bottom, transparent, #f00, transparent) 1;
+    border-image: linear-gradient(to bottom, transparent , #f00, transparent 70%) 1;
     border-style: solid;
     padding: 10px;
     transform: rotate(-2deg);
 }
 
-aside > *
+.in-aside
 {
     transform: rotate(2deg);
 }
 
-header hr
+.separator
 {
-    transform: rotate(0deg);
-    border: none;
-    background-image: linear-gradient(to right, transparent, #000);
+    transform: rotate(-2deg);
+    background-image: linear-gradient(to right, transparent, #f00);
+    width: 40%;
 }
 
 hr
 {
     border: none;
-    background-image: linear-gradient(to right, transparent, #f00);
+    background-image: linear-gradient(to right, transparent, #000);
     height: 3px;
-    width: 50%;
-    transform: rotate(-1deg);
+    width: 30%;
     -webkit-backface-visibility: hidden;
 }
 
 time
 {
     font-weight: bold;
-}
-
-img
-{
-    width: 100%;
 }
 
 section
@@ -204,7 +202,6 @@ address
 {
     font-style: normal;
     display: inline;
-    transform: rotate(1deg);
 }
 
 footer
@@ -213,14 +210,14 @@ footer
     flex-direction: column;
     align-items: center;
     position: relative;
-    transform: rotate(-1deg);
 }
 
 footer .wrapper
 {
-    height: 50px;
+    height: 30px;
     top: 5px;
     left: -20px;
+    -webkit-backface-visibility: hidden;
 }
 
 footer .sponsor
@@ -236,11 +233,14 @@ footer .cute-border
     left: -10px;
     border-image: linear-gradient(to left, transparent 70%, #000) 1;
     border-width: 3px 0 0 3px;
+    transform: rotate(-1deg);
+    height: 50px;
 }
 
 footer .another-cute-border
 {
-    border-image: linear-gradient(to right, transparent 60%, #888) 1;
+    border-image: linear-gradient(to right, transparent 70%, #888) 1;
+    width: 90%;
 }
 
 .cute-line
@@ -249,7 +249,7 @@ footer .another-cute-border
     border-image: linear-gradient(to right, transparent, #f99) 1;
     border-style: solid none none none;
     border-width: 3px 0 0 0;
-    top: -25px;
+    top: -20px;
     left: 50px;
     width: 250px;
 }
@@ -260,7 +260,7 @@ footer .another-cute-border
     border-image: linear-gradient(to right, transparent, #f00) 1;
     border-style: solid none none none;
     border-width: 3px 0 0 0;
-    top: -50px;
+    top: -40px;
     left: 200px;
     width: 200px;
 }
