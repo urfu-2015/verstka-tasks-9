@@ -6,17 +6,16 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <input type="radio" name="version" value="old" id="old" checked>
-        <input type="radio" name="version" value="new" id="new">
+        <input type="radio" name="version" value="old" id="old">
+        <input type="radio" name="version" value="new" id="new" checked>
         <header class="header-transform old">
             <div class="left-black old"></div>
-            <div class="right-red">
+            <div class="right-red old">
                 <h1><span class="ya red-text">Я</span><span class="ndex">ndex</span></h1>
             </div>
             <div class="gradient old"></div>
             <div class="top black-row old"></div>
             <div class="black-row old"></div>
-            </div>
             <div></div>
             <h3 class="os old">
                 <span>mac</span>
@@ -25,45 +24,60 @@
                 <span>dos</span>
             </h3>
         </header>
+        <header class="new">
+            <div class="right-red header-transform new">
+                <h1><span class="ya red-text">Я</span><span class="ndex">ndex</span></h1>
+            </div>
+            <div class="yandex-header new">
+                <span>Поискова</span>
+                <span class="for-image">я</span>
+                <span>система для всех!</span>
+            </div>
+            <div class="black-row new"></div>
+            <div class="head-links-new bold-text new">
+                <a class="red-text">Advanced</a>
+                <a>Добавить URL</a>
+                <a class="red-text">Сказки</a>
+                <a>Числа</a>
+            </div>
+            <div></div>
+        </header>
         <main>
             <label for="new"></label>
             <label for="old"></label>
-            <div class="header new">
-                Поискова<span class="for-image">я</span> система для всех!
-            </div>
-            <img class="lens" alt="lens" src="ya_.gif">
-            <div class="black-row new"></div>
-            <div class="vertical-delimiter"></div>
+            <div class="vertical-delimiter old"></div>
             <div class="left-col">
-                <div class="new rectangle"></div>
-                <p class="bold-text red-text hot header-transform">Горячая новость:</p>
-                <img src="http://img.artlebedev.ru/everything/yandex/site/saved/okur.gif"
-                alt="cigarette" class="old">
-                <img src="http://img.artlebedev.ru/everything/yandex/site2/saved/lamp.gif"
-                alt="light" class="new light">
-                <p class="old">
-                    <span class="bold-text">21 августа 1997г.</span><br>
-                    Яndex-Web, о котором так долго говорили, наконец запущен в бета-тестирование.
-                    Могло быть и хуже. Поиск осуществляется по "русскому Интернету".
-                    Присылайте замечания, идеи, а также стоящие сайты
-                    (с русскими текстами, особенно кроме доменов 'su' и 'ru').
-                </p>
-                <p class="new">
-                    <span class="bold-text">16 марта 1998г.</span><br>
-                    Мы принимаем рекламу на yandex.ru
-                </p>
-                <div class="horizontal-delimiter old"></div>
-                <p class="old">
-                    <span class="bold-text">5 сентября 1997г.</span><br>
-                    Светило советской науки - Вавилов - ожил в прошлое воскресение.
-                    Ю. Алтухов задал ему несколько вопросов, в том числе: "Вы на чьей стороне?"
-                </p>
-                <p class="new">
-                    <span class="bold-text">6 марта 1998г.</span><br>
-                    Новая сказка: Что можно найти в Интернете по поводу 8-го марта
-                </p>
-                <a href="#" class="new">Архив новостей</a>
-                <div class="horizontal-delimiter old"></div>
+                <div>
+                    <div class="new rectangle"></div>
+                    <p class="bold-text red-text hot header-transform">Горячая новость:</p>
+                    <img src="http://img.artlebedev.ru/everything/yandex/site/saved/okur.gif"
+                    alt="cigarette" class="old">
+                    <img src="http://img.artlebedev.ru/everything/yandex/site2/saved/lamp.gif"
+                    alt="light" class="new light">
+                    <p class="old">
+                        <span class="bold-text">21 августа 1997г.</span><br>
+                        Яndex-Web, о котором так долго говорили, наконец запущен в бета-тестирование.
+                        Могло быть и хуже. Поиск осуществляется по "русскому Интернету".
+                        Присылайте замечания, идеи, а также стоящие сайты
+                        (с русскими текстами, особенно кроме доменов 'su' и 'ru').
+                    </p>
+                    <p class="new">
+                        <span class="bold-text">16 марта 1998г.</span><br>
+                        Мы принимаем рекламу на yandex.ru
+                    </p>
+                    <div class="horizontal-delimiter old"></div>
+                    <p class="old">
+                        <span class="bold-text">5 сентября 1997г.</span><br>
+                        Светило советской науки - Вавилов - ожил в прошлое воскресение.
+                        Ю. Алтухов задал ему несколько вопросов, в том числе: "Вы на чьей стороне?"
+                    </p>
+                    <p class="new">
+                        <span class="bold-text">6 марта 1998г.</span><br>
+                        Новая сказка: Что можно найти в Интернете по поводу 8-го марта
+                    </p>
+                    <p class="new link-like archive">Архив новостей</p>
+                    <div class="horizontal-delimiter old"></div>
+                </div>
             </div>
             <div class="vertical-delimiter two"></div>
             <div class="right-col">
@@ -73,7 +87,7 @@
                     <a class="red-text">ЧХ:)</a>
                     <a>Список стоп-слов</a>
                 </div>
-                <p class="new">
+                <p class="new advices">
                     <span class="link-like">Советы:</span> Как искать в Яndex?
                 </p>
                 <p class="form">
@@ -112,6 +126,13 @@
                         <li>компьютеры типа башня или tower</li>
                     </ul>
                 </div>
+                <aside class="new">
+                    <div class="yandex">
+                        Яндекс. Спрашивайте в ближайшем
+                        <span class="comp">comp</span>
+                        <span class="tek">tek</span>е
+                    </div>
+                </aside>
             </div>
         </main>
         <aside class="transform old">
@@ -121,13 +142,6 @@
             <div class="red-line"></div>
             <div class="bottom red-line"></div>
             <div class="middle black-row"></div>
-        </aside>
-        <aside class="new">
-            <div class="yandex">
-                Яндекс. Спрашивайте в ближайшем
-                <span class="comp">comp</span>
-                <span class="tek">tek</span>е
-            </div>
         </aside>
         <footer>
             <p class="old">
@@ -148,6 +162,8 @@
             <p class="new">
                 Дизайн - Артемий Лебедев (<a href="http://www.artlebedev.ru/">Web Design</a>)
             </p>
+            <img src="http://img.artlebedev.ru/everything/yandex/site2/saved/mtu.gif"
+                alt="Сервер" class="new">
         </footer>
     </body>
 </html>
