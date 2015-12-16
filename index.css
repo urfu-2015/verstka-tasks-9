@@ -478,8 +478,19 @@ img
     display: none;
 }
 
+.animation
+{
+    transform: translateX(-400px);
+}
+
+#old:checked ~ header
+{
+    transform: rotate(-2deg) translateX(0px);
+}
+
 #new:checked ~ header
 {
+    transform: translateX(0px);
     height: 125px;
 }
 #new:checked ~ header .black-row
