@@ -485,12 +485,12 @@ img
 
 #old:checked ~ header
 {
-    transform: rotate(-2deg) translateX(0px);
+    transform: rotate(-2deg) translateX(0);
 }
 
 #new:checked ~ header
 {
-    transform: translateX(0px);
+    transform: translateX(0);
     height: 125px;
 }
 #new:checked ~ header .black-row
