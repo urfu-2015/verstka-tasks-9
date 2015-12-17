@@ -208,15 +208,17 @@ input[type='text']
 .header-logo
 {
     margin-bottom: 30px;
+    height: 100px;
 }
 
 .yandex-logo
 {
-    height: 70px;
-    width: 270px;
+    height: 74px;
+    width: 142px;
     display: inline-block;
-    margin-top: 20px;
-    margin-left: 60px;
+    position: absolute;
+    left: 520px;
+    top: 30px;
 }
 
 .yandex-ya
@@ -250,6 +252,15 @@ input[type='text']
     height: 2px;
     -webkit-backface-visibility: hidden;
     position: absolute;
+}
+
+.yandex-left-lines
+{
+    width: 140px;
+    height: 74px;
+    position: absolute;
+    left: 530px;
+    top: 30px;
 }
 
 .vertical-logo-line
