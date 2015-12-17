@@ -1,1 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One:&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Anton:&subset=latin,cyrillic');
+
+.main
+{
+    display: flex;
+    height: 300px;
+    transform: rotateZ(-2deg);
+}
+
+.code
+{
+    color: #949494;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    transform: rotateZ(-1deg);
+    font-family: Anton;
+    word-spacing: 7px;
+    letter-spacing: .5px;
+}
+
+.main_head
+{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-19px);
+}
+
+.logoyandex
+{
+    width: 542px;
+    height: 95px;
+}
+
+date
+{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.logofooter
+{
+    width: 540px;
+    height: 53px;
+}
+
+h1
+{
+    font-family: Russo One;
+    font-weight: 500;
+    color: red;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+.cigarette
+{
+    width: 120px;
+    height: 25px;
+    transform: translateX(-10px) translateY(-25px);
+}
+
+.news
+{
+    width: 420px;
+    border-style: solid;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-image: linear-gradient(to bottom, #fff, #f00, #fff) 1;
+    transform: translateY(-50px);
+    margin-left: 45px;
+}
+
+.langofreq
+{
+    padding-top: 20px;
+    border-top-width: 0;
+    border-style:solid;
+    border-image: linear-gradient(to right, #fff, #f00 35%, #fff 25%) 1;
+    transform: translateX(15px) translateY(-15px) /*rotateZ(-2deg)*/;
+}
+
+.langofreq1
+{
+    padding-top: 30px;
+    border-top-width: 0;
+    border-style:solid;
+    border-image: linear-gradient(to right, #fff, #f00 30%, #fff 20%) 1;
+    transform: translateX(-75px) translateY(-15px) rotateZ(-1deg);
+}
+
+.new
+{
+    transform: translateY(-35px);
+    padding-bottom: 20px;
+}
+
+.text
+{
+    font-size: 13px;
+    transform: translateX(-70px);
+}
+
+.new,
+footer
+{
+    font-size: 16px;
+}
+
+img
+{
+    margin-top: 20px;
+}
+
+.date,
+.examples
+{
+    font-weight: 700;
+}
+
+.examples
+{
+    font-size: 15px;
+}
+.byline
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 13px;
+    margin-left: 145px;
+    font-family: Russo One;
+    font-weight: 900;
+    transform:  translateY(-30px) rotateZ(-2deg);
+    font-size: 12px;
+
+}
+
+.right_site
+{
+    width: 45%;
+    transform: translateY(-30px);
+    margin-left: 90px;
+}
+
+.red > a
+{
+    color: red;
+    text-decoration: none;
+}
+
+.black > a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.red,
+.black
+{
+    margin: 10px;
+
+}
+
+.request
+{
+    transform: translateX(-70px);
+}
+
+span,
+footer
+{
+    font-size: 13px;
+}
+
+li
+{
+    list-style-type: none;
+    font-size: 13px;
+    transform: translateX(-45px);
+}
+
+.inputs
+{
+    transform: translateX(50px) translateY(-30px);
+}
+
+input[type='text']
+{
+    width: 278px;
+}
+
+.button
+{
+    transform: translateX(27.5px);
+}
+
+input[type='button']:hover
+{
+    background: #93f5fc;
+}
+
+footer
+{
+    text-align: center;
+    transform: translateY(-15px);
+}
+
+.without_slope
+{
+    transform: rotateZ(2deg);
+}
 
