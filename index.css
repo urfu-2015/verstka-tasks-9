@@ -162,7 +162,7 @@ a
 .form
 {
     font-weight: bold;
-    padding-left: 13%;
+    padding-left: 150px;
 }
 
 #search
@@ -266,6 +266,7 @@ footer
 
 .right-red
 {
+    transition: all 1.7s ease;
     position: absolute;
     width: 300px;
     height: 63px;
@@ -478,14 +479,31 @@ img
     display: none;
 }
 
-.animation
-{
-    transform: translateX(-400px);
-}
-
 #old:checked ~ header
 {
     transform: rotate(-2deg) translateX(0);
+}
+
+#old:checked ~ header .new
+{
+    transform: translateX(-400px);
+    display: none;
+}
+
+#old:checked ~ main input[type='button']
+{
+    margin-left: 160px;
+}
+
+#old:checked ~ main .form
+{
+    margin-bottom: 0;
+}
+
+#old:checked ~ main .vertical-delimiter
+{
+    margin-top: 40px;
+    height: 275px;
 }
 
 #new:checked ~ header
@@ -502,6 +520,7 @@ img
 
 #new:checked ~ header .right-red
 {
+    transition: all 1.7s ease;
     left: 49%;
     top: 26px;
     z-index: 2;
@@ -642,7 +661,6 @@ footer p
 .header
 {
     transition: all 1.7s ease;
-    transform: translateY(-300px);
     width: 500px;
     height: 63px;
     line-height: 63px;
