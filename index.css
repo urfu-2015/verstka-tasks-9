@@ -38,7 +38,7 @@ header
     border-image: linear-gradient(to right, transparent 60%, #000) 1;
     border-style: solid none none none;
     border-width: 3px 0 0 0;
-    top: 3px;
+    top: 5px;
 }
 
 .wrapper
@@ -86,21 +86,33 @@ header
 .name
 {
     display: flex;
-    font: 4em Impact,sans-serif;
-    padding: 0 0 0 220px;
-    box-shadow: 4px 4px 10px #555;
     position: relative;
+    padding: 0 0 0 220px;
     border-image: linear-gradient(to right, transparent 25%, #f00 60%) 1;
     border-style: solid;
     top: -10px;
+    border-collapse: collapse;
+    z-index: 5;
+    box-shadow: 12px 0 10px -7px #555;
+    margin: -1px 0 0 -1px;
+}
+
+.name-shadow
+{
+    display: flex;
+    font: 4em Impact,sans-serif;
+    box-shadow: 0 8px 10px -3px #555;
+    border: 2px solid #f00;
+    z-index: -1;
+    margin: -2px -2px -2px 0;
 }
 
 .first-letter
 {
     border: 2px solid #f00;
     color: #f00;
-    box-shadow: 4px 0 15px #555;
-    margin-right: 5px;
+    box-shadow: 8px 0 10px -3px #555;
+    margin:-1px 5px 0 -1px;
 }
 
 main
