@@ -1,1 +1,288 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+}
 
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-1deg);
+    position: relative;
+    -webkit-backface-visibility: hidden;
+}
+
+.systems
+{
+    font: 1em Impact,sans-serif;
+    color: #888;
+    padding: 5px;
+    z-index: 1;
+}
+
+.cute-border
+{
+    position: relative;
+    top: -13px;
+    left: -10px;
+    border-image: linear-gradient(to left, transparent 70%, #000) 1;
+    border-style: solid;
+    height: 90px;
+}
+
+.another-cute-border
+{
+    position: relative;
+    border-image: linear-gradient(to right, transparent 60%, #000) 1;
+    border-style: solid none none none;
+    border-width: 3px 0 0 0;
+    top: 5px;
+}
+
+.wrapper
+{
+    position: relative;
+    width: 700px;
+    background-image: linear-gradient(to right, transparent 50%, #fdd);
+    background-origin: border-box;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    border-image: linear-gradient(to right, transparent 60%, #f00) 1;
+    border-style: solid;
+}
+
+.sponsor
+{
+    position: absolute;
+    right: 0;
+    display: flex;
+    border-collapse: collapse;
+    height: 20px;
+    font: .9em Tahoma,sans-serif;
+    padding: 4px;
+    opacity: .5;
+}
+
+.sponsor-part1
+{
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #000;
+    font-weight: bold;
+    padding: 1px;
+}
+
+.sponsor-part2
+{
+    background-color: #c44;
+    color:#fff;
+    border: 1px solid #000;
+    padding: 1px;
+}
+
+.name
+{
+    display: flex;
+    position: relative;
+    padding: 0 0 0 220px;
+    border-image: linear-gradient(to right, transparent 25%, #f00 60%) 1;
+    border-style: solid;
+    top: -10px;
+    border-collapse: collapse;
+    z-index: 5;
+    box-shadow: 12px 0 10px -7px #555;
+    margin: -1px 0 0 -1px;
+}
+
+.name-shadow
+{
+    display: flex;
+    font: 4em Impact,sans-serif;
+    box-shadow: 0 8px 10px -3px #555;
+    border: 2px solid #f00;
+    z-index: -1;
+    margin: -2px -2px -2px 0;
+}
+
+.first-letter
+{
+    border: 2px solid #f00;
+    color: #f00;
+    box-shadow: 8px 0 10px -3px #555;
+    margin:-1px 5px 0 -1px;
+}
+
+main
+{
+    display: flex;
+    padding: 20px;
+}
+
+ul
+{
+    display: flex;
+    transform: rotate(-2deg);
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li
+{
+    font:  bold 1em Arial,sans-serif;
+    padding: 0 10px;
+    list-style: none;
+}
+
+ul li:nth-child(2n)
+{
+    color: #000;
+}
+
+ul li:nth-child(2n+1)
+{
+    color: #f00;
+}
+
+h3
+{
+    font: bold 1em Impact,sans-serif;
+    color: #f00;
+}
+
+aside
+{
+    flex-basis: 400px;
+    border-image: linear-gradient(to bottom, transparent , #f00, transparent 70%) 1;
+    border-style: solid;
+    padding: 10px;
+    transform: rotate(-2deg);
+}
+
+.in-aside
+{
+    transform: rotate(2deg);
+}
+
+.separator
+{
+    transform: rotate(-2deg);
+    background-image: linear-gradient(to right, transparent, #f00);
+    width: 40%;
+}
+
+hr
+{
+    border: none;
+    background-image: linear-gradient(to right, transparent, #000);
+    height: 3px;
+    width: 30%;
+    -webkit-backface-visibility: hidden;
+}
+
+time
+{
+    font-weight: bold;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+form
+{
+    text-align: center;
+}
+
+article
+{
+    align-self: flex-start;
+}
+
+address
+{
+    font-style: normal;
+    display: inline;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer .wrapper
+{
+    height: 30px;
+    top: 5px;
+    left: -20px;
+    -webkit-backface-visibility: hidden;
+}
+
+footer .sponsor
+{
+    position: absolute;
+    right: 0;
+}
+
+footer .cute-border
+{
+    position: relative;
+    top: -18px;
+    left: -10px;
+    border-image: linear-gradient(to left, transparent 70%, #000) 1;
+    border-width: 3px 0 0 3px;
+    transform: rotate(-1deg);
+    height: 50px;
+}
+
+footer .another-cute-border
+{
+    border-image: linear-gradient(to right, transparent 70%, #888) 1;
+    width: 90%;
+}
+
+.cute-line
+{
+    position: relative;
+    border-image: linear-gradient(to right, transparent, #f99) 1;
+    border-style: solid none none none;
+    border-width: 3px 0 0 0;
+    top: -20px;
+    left: 50px;
+    width: 250px;
+}
+
+.another-cute-line
+{
+    position: relative;
+    border-image: linear-gradient(to right, transparent, #f00) 1;
+    border-style: solid none none none;
+    border-width: 3px 0 0 0;
+    top: -40px;
+    left: 200px;
+    width: 200px;
+}
+
+footer .the-cuttiest-border
+{
+    position: relative;
+    border-image: linear-gradient(to left, transparent 70%, #888) 1;
+    border-style: none none solid solid;
+    border-width: 0 0 3px 3px;
+    top: 5px;
+    left: 15px;
+}
