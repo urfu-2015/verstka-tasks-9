@@ -1,20 +1,17 @@
 @font-face
 {
     font-family: Bebas_Neue_Cyrillic;
-    src: url('fonts/Bebas_Neue_Cyrillic.woff') format('woff'),
-    url('fonts/Bebas_Neue_Cyrillic.ttf') format('truetype');
+    src: url('fonts/Bebas_Neue_Cyrillic.woff') format('woff'), url('fonts/Bebas_Neue_Cyrillic.ttf') format('truetype');
 }
 @font-face
 {
     font-family: CyrillicCompressed;
-    src: url('fonts/CyrillicCompressed.woff') format('woff'),
-    url('fonts/CyrillicCompressed.ttf') format('truetype');
+    src: url('fonts/CyrillicCompressed.woff') format('woff'), url('fonts/CyrillicCompressed.ttf') format('truetype');
 }
 @font-face
 {
     font-family: Hermes;
-    src: url('fonts/Hermes.woff') format('woff'),
-    url('fonts/Hermes.ttf') format('truetype');
+    src: url('fonts/Hermes.woff') format('woff'), url('fonts/Hermes.ttf') format('truetype');
 }
 @font-face
 {
