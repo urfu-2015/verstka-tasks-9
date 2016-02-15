@@ -1,1 +1,416 @@
+@font-face
+{
+    font-family: Bebas_Neue_Cyrillic;
+    src: url('fonts/Bebas_Neue_Cyrillic.woff') format('woff'), url('fonts/Bebas_Neue_Cyrillic.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: CyrillicCompressed;
+    src: url('fonts/CyrillicCompressed.woff') format('woff'), url('fonts/CyrillicCompressed.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: Hermes;
+    src: url('fonts/Hermes.woff') format('woff'), url('fonts/Hermes.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: ArchivoBlack-Regular;
+    src: url('fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}
+/*HTML*/
+header
+{
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main
+{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    font-size: 18px;
+}
+.systems
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 10%;
+    color: #939393;
+    transform: rotate(-1deg);
+    font-size: .8em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+/*/HTML*/
+/*LOGO*/
+.borders
+{
+    transform: rotate(-2deg);
+    display: flex;
+    position: relative;
+    backface-visibility: hidden;
+}
+.right-border
+{
+    position: relative;
+    top: 5px;
+    left: -5px;
+    border-image: linear-gradient(to left,rgb(255,255,255),rgb(0,0,0));
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    border-width: 2px;
+    height: 70px;
+    width: 150px;
+}
+.bottom-border
+{
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 2px;
+}
+.left-border
+{
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+    position: relative;
+    top: 15px;
+    left: -10px;
+    height: 2px;
+    width: 150px;
+}
+.content-border
+{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+    border-image: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    border-width: 2px 2px 2px 0;
+    justify-content: flex-end;
+    padding-right: 3px;
+    padding-top: 3px;
+    position: absolute;
+    background: linear-gradient(to left, rgb(255,228,225), rgb(255,255,255));
+    height: 57px;
+    left: 210px;
+    top: 25px;
+    width: 300px;
+    display: flex;
+}
+.logo
+{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    display: flex;
+}
+.logo-start
+{
+    position: relative;
+    border-image: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    border-width: 2px;
+    height: 65px;
+    width: 150px;
+}
+.ndex
+{
+    font: 50px CyrillicCompressed, sans-serif;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+    padding: 0 5px 0 5px;
+    position: relative;
+    border: 2px solid red;
+    line-height: 65px;
+    height: 65px;
+    background: rgb(255,255,255);
+    z-index: 50;
+}
+.ya
+{
+    font: 50px Hermes,sans-serif;
+    color: red;
+    vertical-align: middle;
+    box-shadow: 10px 5px 10px rgba(0,0,0,.5);
+    border: 2px solid red;
+    line-height: 65px;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: relative;
+    height: 65px;
+    background: rgb(255,255,255);
+    z-index: 100;
+}
+.comptek
+{
+    display: flex;
+    align-self: flex-start;
+}
+.comp,
+.tek
+{
+    padding: 1px;
+    border: 1px solid gray;
+}
+.comp
+{
+    font-family: ArchivoBlack-Regular, sans-serif;
+    font-weight: 900;
+    background: rgb(255,255,255);
+    line-height: 15px;
+    opacity: .5;
+}
+.tek
+{
+    line-height: 15px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    color: white;
+    background: indianred;
+    opacity: .7;
+}
+/*/LOGO*/
 
+/*NEWS*/
+.news-block
+{
+
+    border-image: linear-gradient(to top, rgb(255,255,255), rgb(255,0,0), rgb(255,255,255));
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    width: 33%;
+    transform: rotate(-2deg);
+    padding: 0 30px 0 30px;
+
+}
+.line
+{
+    backface-visibility: hidden;
+    margin-left: 5%;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+    height: 2px;
+    width: 150px;
+    transform: rotate(-1deg);
+}
+.hot-news
+{
+    font: 300 15px CyrillicCompressed, sans-serif;
+    transform: rotate(-1deg);
+    color: #f00;
+}
+.date
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.post
+{
+    transform: rotate(2deg);
+}
+
+p
+{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 85%;
+}
+.fire
+{
+    width: 25%;
+}
+/*/NEWS*/
+
+/*NAV*/
+.menu
+{
+    display: flex;
+    padding: 5px 20px 0 20px;
+    transform: rotate(-2deg);
+    width: 550px;
+    justify-content: center;
+}
+.red_nav,
+.black_nav
+{
+    font: 300 15px CyrillicCompressed, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+.red_nav
+{
+    text-decoration: none;
+    color: red;
+}
+.black_nav
+{
+    text-decoration: none;
+    color: black;
+}
+/*/NAV*/
+
+/*GEN*/
+.general
+{
+    margin-left: 100px;
+}
+.general p
+{
+    font-size: 70%;
+}
+.nav
+{
+    font: 300 15px CyrillicCompressed, sans-serif;
+    white-space: nowrap;
+    text-decoration: none;
+    margin: 0 0 0 8%;
+}
+.nav:nth-child(2n + 1)
+{
+    color: #f00;
+}
+.cont-nav
+{
+    display: flex;
+    transform: skewY(-1deg);
+    width: 60%;
+    margin: 5px 150px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: .9em;
+    font-weight: bold;
+}
+.query-form
+{
+    margin: 10px 100px;
+    display: flex;
+}
+.query-title
+{
+    padding-right: 10px;
+}
+#query
+{
+    width: 160%;
+}
+.examples
+{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.list-examples li
+{
+    list-style-type: none;
+    font-size: 70%;
+    line-height: 1.4em;
+}
+
+.list-examples
+{
+    margin: 0 0;
+    padding-left: 0;
+}
+/*/GEN*/
+
+/*FOOTER*/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-logo
+{
+    height: 60px;
+    position: relative;
+    display: flex;
+    transform: rotate(-2deg);
+    width: 500px;
+}
+.top-vert-black,
+.bottom-vert-black
+{
+    position: absolute;
+    height: 40px;
+    width: 2px;
+}
+.top-vert-black
+{
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+}
+.bottom-vert-black
+{
+    left: 10px;
+    top: 10px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+}
+.top-goriz-black,
+.rigth-goriz-black,
+.bottom-goriz-black,
+.left-goriz-red,
+.right-goriz-red
+{
+    position: absolute;
+    height: 2px;
+}
+.top-goriz-black
+{
+    width: 200px;
+    background: linear-gradient(to left, rgb(255,255,255), rgb(0,0,0));
+}
+.rigth-goriz-black
+{
+    width: 170px;
+    top: 5px;
+    left: 300px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(0,0,0));
+}
+.bottom-goriz-black
+{
+    width: 100px;
+    top: 50px;
+    left: 10px;
+    background: linear-gradient(to left, rgb(255,255,255), rgb(0,0,0));
+}
+.left-goriz-red
+{
+    top: 25px;
+    left: 20px;
+    width: 150px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+}
+.right-goriz-red
+{
+    top: 10px;
+    left: 150px;
+    width: 100px;
+    background: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+}
+.label_comp
+{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 200px;
+    left: 270px;
+    top: 15px;
+    padding: 5px;
+    border-image: linear-gradient(to right, rgb(255,255,255), rgb(255,0,0));
+    border-image-repeat: stretch;
+    border-image-slice: 1;
+    border-image-width: 2px;
+    border-width: 2px;
+    background-image: linear-gradient(to right, rgb(255,255,255), rgb(224,238,238));
+}
+.copyright
+{
+    font-size: 80%;
+    text-align: center;
+}
+/*/FOOTER*/
